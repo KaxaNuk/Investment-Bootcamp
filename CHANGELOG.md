@@ -14,6 +14,24 @@ bundled HTML.**
   "alpha" outside a regression intercept, retired files and folders, placeholders, and slide
   numbers.
 
+### Changed
+
+- **S01 deck.**
+  - No longer names an internal fund: step 8 is outside the course and the repository.
+  - Promises a correct test of an idea, not a funded strategy.
+  - Maps seven sessions, S00 to S06, with the syllabus outcomes.
+  - The tools and the Data Curator install are a recap of S00, in uv on Python 3.13 with the
+    current `init excel`.
+  - The homework is the README's: one source per claim, the objective and the benchmark entry
+    pushed, and `Config/.env` never committed.
+- **S02 deck.**
+  - Keeps "alpha" for Jensen's intercept only.
+  - Shows its 21 unattributed quotations as takeaways.
+  - Marks the history of research as Financial Markets S08's pre-reading.
+  - Uses the README's seven questions and a kill switch with a comparator.
+  - Corrects five citations: the Dow editorials (dropped), Damodaran 1996, Khandani and Lo 2011,
+    and the full titles of McLean and Pontiff and of Jensen, Kelly and Pedersen.
+
 ### Fixed
 
 - Every deck's browser tab showed nothing or "Bundled Page"; it now shows the session name.
