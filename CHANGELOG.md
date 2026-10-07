@@ -47,6 +47,15 @@ bundled HTML.**
   - The ETF exercise names the KN-TU30 sleeve instead of placeholders.
   - The alternative sizing is homework and a trial, and the close names S05's outcomes.
   - The momentum leads carry their years.
+- **S05 deck.**
+  - Names Backtest Engine 0.66.0 and Attribution Analysis 0.2.0 beside every worked-example figure,
+    and labels the hand-taken differences "derived".
+  - Calls the Brinson total "active return" (the library's alpha column).
+  - Prices the README's run list: at most 10 of the demo's 20 backtests, with sub-periods
+    2006-2011, 2012-2019 and 2020-2024 and none past 2024.
+  - Makes the counterfactual arms and the holdout run homework inside the demo window.
+  - Marks the factor layer "not assessed" on the public path.
+  - Every paste box now says "your assistant".
 
 ### Fixed
 

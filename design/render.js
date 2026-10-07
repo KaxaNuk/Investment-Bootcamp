@@ -97,7 +97,7 @@ function pasteBox(s) {
   }).join('');
   const behind = s.behind ? `<div style="font-size: 24px; line-height: 1.45; color: #A5A29B; margin-top: 18px; padding-top: 16px; border-top: 2px solid #3A3833;">${fmt(s.behind, PAPER)}</div>` : '';
   return `    <div style="background: ${CARD_D}; padding: 30px 42px 33px; margin-top: 36px; flex: none;">
-      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: ${RED}; letter-spacing: 0.16em;">PASTE THIS INTO CLAUDE OR CODEX</div>
+      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: ${RED}; letter-spacing: 0.16em;">PASTE THIS INTO YOUR ASSISTANT</div>
       <div style="${MONO} font-size: ${s.pasteSize || 26}px; line-height: 1.45; color: ${PAPER}; margin-top: 16px;">${lines}</div>
       ${behind}
     </div>`;
