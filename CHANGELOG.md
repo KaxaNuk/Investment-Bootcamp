@@ -39,6 +39,14 @@ bundled HTML.**
   - The data is pre-work on KN-TU30 to 2024-12-31, with Yahoo and no key.
   - The stop and the to-do follow the README: the screen counted, the blueprint drafted, the demo
     not yet activated.
+- **S04 deck.** Is now Blueprint Before the Rule:
+  - The opening mirrors S03's to-do.
+  - The benchmark entry dates from S01.
+  - The blueprint is drafted as homework and pushed alone before the rule, with its statistics
+    section, trial budget, sub-periods and holdout test.
+  - The ETF exercise names the KN-TU30 sleeve instead of placeholders.
+  - The alternative sizing is homework and a trial, and the close names S05's outcomes.
+  - The momentum leads carry their years.
 
 ### Fixed
 
