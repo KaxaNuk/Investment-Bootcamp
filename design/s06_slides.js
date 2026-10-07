@@ -1,0 +1,309 @@
+// S06 slide copy: the single source for the deck and the markdown copy.
+// Inline markup: `code` renders in mono; **text** renders in accent.
+module.exports = [
+  {
+    type: 'cover', label: 'Cover', kicker: 'INVESTMENT BOOTCAMP',
+    title1: 'Final Strategy', title2: '& Presentation', numeral: '06',
+    deck: 'Your run, challenged by its own blueprint, put to the gate, then defended in ten minutes.',
+    contents: ['CHALLENGE YOUR OWN RUN', 'TRY TO BREAK IT', 'THE GATE', 'DEFEND IT'],
+    notes: 'Session 06, the last one in the room: today nothing new is built. You challenge the run you priced in session 05 against the blueprint you committed in session 04, you try to break it, you put it to the gate, and you learn to defend it. Two rules for the day. Every number you say comes from FINDINGS_1.md or RESULTS.md, with its file. And a no is a result: the worked example says no four times, and it is the best thing in it.',
+  },
+  {
+    type: 'cards', label: 'Who priced them', kicker: 'SESSION 05 · HOMEWORK',
+    title: 'Who priced them', deck: 'Show the file, not the curve.',
+    cards: [
+      { t: 'Your book, net', b: 'Priced by the engine, costs on.', chip: 'FINDINGS_1.md' },
+      { t: 'Your control', b: 'One ingredient out, same dates.' },
+      { t: 'Both layers', b: 'Brinson-Fachler, then the factor model.' },
+      { t: 'Your count', b: 'Every variant you ranked.', dark: true },
+    ],
+    callout: ['THE RULE TODAY', 'A number not in `FINDINGS_1.md` is not in the room.'],
+    notes: 'Hands up, card by card, with the file open. The book row and the control row must sit on the same rebalance dates; a control that chose its own dates differs in two things, and the gap is two effects read as one. Attribution: who ran both layers, and who ran the third pass, Brinson-Fachler again on the residual? Almost nobody; neither did the example, and the gate will say so. Last: who can say their trial count without looking? If you cannot, it is not published yet, and that is the first thing you fix today.',
+  },
+  {
+    type: 'statement', label: 'This session', kicker: 'THIS SESSION',
+    title: 'From “it works”', titleDark: ' to “we trust it.”',
+    deck: 'Challenge the run, try to break it, put it to the gate, then defend it.',
+    steps: [
+      ['BIBLIOTHECA', 'Sessions 02–03'], ['UNIVERSE', 'Session 03'], ['DATA', 'Session 03'],
+      ['PORTFOLIO', 'Session 04'], ['BACKTEST', 'Session 05'], ['ATTRIBUTION', 'Session 05'],
+      ['PAPER TRADING', 'The gate', true], ['PRODUCTION', 'Outside the repo'],
+    ],
+    callout: ['NOTICE', 'Nothing graduates today. A signature does, after five rows.'],
+    notes: 'The question of the day: how do you know this actually works? Not visually, not because the chart looks good, but because it survives structured evaluation. Step 7 has two halves: the gate, which we run today, and the paper run, which only a book that passes the gate gets. Step 8 never enters the repository. If your FINDINGS_1.md is still empty, pair with a neighbour whose is not: today runs on findings.',
+  },
+
+  // ── 01 CHALLENGE YOUR OWN RUN
+  {
+    type: 'divider', label: 'Section 01', kicker: 'SECTION 01',
+    title: 'Challenge your own run',
+    deck: 'the blueprint is fixed · the findings answer to it · the git log keeps the order',
+    notes: 'Section one turns the blueprint against its own run. You wrote predictions you were willing to be wrong about; now we check whether the run treated them that way. The blueprint never changes: a prediction worded better after its test is not a prediction.',
+  },
+  {
+    type: 'cards', label: 'The blueprint judges the run', kicker: 'CHALLENGE · THE CHECKS',
+    title: 'The blueprint judges the run', deck: 'A prediction is something you were willing to be wrong about.',
+    cards: [
+      { t: 'Verdict vs falsifier', b: 'Either limb fires: falsified.' },
+      { t: 'The tally', b: 'Count the rows yourself.' },
+      { t: 'The run vs the plan', b: 'Window, universe, costs. Disclosed, or a finding.' },
+      { t: 'The order', b: 'Notes before the blueprint, the blueprint before the rule.', chip: 'git log', dark: true },
+    ],
+    callout: ['THE SOFT WORD', '“Mixed” where a limb fired is a falsification, renamed.'],
+    notes: 'Four of challenge’s ten checks, the four you can do by hand. A falsifier with two limbs fires when either limb fires; split or mixed in its place is the single most useful thing to catch. Count the verdict rows and compare them with the sentence that sums them up. A deviation from the frozen window, universe or costs is fine when it is in the caveats or the journal, and a finding when it is nowhere. The order lives only in git: a blueprint committed with its rule, or after it, cannot be told from one written afterwards, and a note read after the blueprint cannot have informed it.',
+  },
+  {
+    type: 'live', label: 'Let the researcher disagree', kicker: 'LIVE · THE CHALLENGE',
+    title: 'Let the researcher disagree', deck: '`challenge` reads your files and reports in chat.',
+    code: ['/challenge 1', { codex: 'follow ~/.apm/apm_modules/KaxaNuk/KaxaNuk-Researcher/.apm/prompts/challenge.prompt.md for experiment 1' }],
+    behind: 'Behind the line: it reads `BLUEPRINT_1.md`, `FINDINGS_1.md`, `JOURNAL_1.md`, `RESULTS.md`, `OBJECTIVE.md` and every cited note, in that order.',
+    cards: [
+      { t: 'It writes', b: 'One `JOURNAL_1.md` entry, on your go.' },
+      { t: 'It never', b: 'Edits your files, computes a number, declares graduation.' },
+      { t: 'You fix', b: 'The findings, from a re-run. Never a reword.', accent: true },
+    ],
+    callout: ['THEN', 'A falsified claim moves in `OBJECTIVE.md`, through `objective`.'],
+    notes: 'Run it in your strategy folder, researcher added; it refuses in liquid-golden-cross, and it refuses while FINDINGS_1.md reports nothing, because challenging a run in progress invites findings written to match. Read the report out loud to your neighbour: what held, what failed and by which falsifier, what the findings do not say. It also checks the trial count, the notes behind each prediction, and whether two published numbers reconcile; on a disagreement it asks for a re-run and never supplies the value. It compares the package version you challenge with against the one that drafted the blueprint: a mismatch is disclosed, not a failure. Say yes to the journal entry; FINDINGS_1.md and RESULTS.md are yours to correct.',
+  },
+
+  // ── 02 TRY TO BREAK IT
+  {
+    type: 'divider', label: 'Section 02', kicker: 'SECTION 02',
+    title: 'Try to break it',
+    deck: 'curves, not cells · the count beside the winner · net, or not at all',
+    notes: 'Section two: robustness is survival. A real strategy survives parameter changes, different regimes and years it was not found on. If small changes break it, it is not a strategy. Three tests, each one a row of the gate.',
+  },
+  {
+    type: 'cards', label: 'A curve, not a cell', kicker: 'ROBUSTNESS · PERTURBATION',
+    title: 'A curve, not a cell', deck: 'Move what the blueprint declared. Read the shape.',
+    cards: [
+      { t: 'The grid', b: 'The settings it named; the cells that keep the sign.', chip: '12 of 15' },
+      { t: 'Sub-periods', b: 'Ahead of the control in how many of three?' },
+      { t: 'Both measures', b: 'Sharpe and CAGR, against the control.' },
+      { t: 'A wiped copy', b: 'Same figures from a clean clone.', dark: true },
+    ],
+    callout: ['THE TEST', 'A setting that carries the result is a setting, not a strategy.'],
+    notes: 'The grid is the one your blueprint declared, not one you choose now: the example’s Experiment 1 asked for twelve cells of fifteen to keep the sign of its Sharpe margin, and got twelve. A parameter degrading monotonically across three settings is information; a variant beating its control by 0.001 Sharpe is not. Read every cell against the control on both Sharpe and CAGR: a Sharpe edge with a CAGR deficit is the example’s exact failure. Never choose a parameter on the metric it is judged by. Last, wipe the working copy and re-run: the example did it for every experiment and printed the same figures.',
+  },
+  {
+    type: 'cards', label: 'Publish N', kicker: 'ROBUSTNESS · THE TRIAL COUNT',
+    title: 'Publish N', deck: 'The best Sharpe of N trials is the largest of N draws.',
+    cards: [
+      { t: 'What counts', b: 'Every variant ranked, every feature screened.' },
+      { t: 'Excluded, by name', b: 'A dropped run keeps its name and its reason.', chip: 'RESULTS.md' },
+      { t: 'A rescue is a trial', b: 'A no-rescue lever moved after the result: a new experiment.' },
+      { t: 'Deflated, or say so', b: 'Publishing N is the minimum.', dark: true },
+    ],
+    callout: ['THE EXAMPLE', '31 · 43 · 54 · 68: liquid-golden-cross’s count, published at each experiment.'],
+    notes: 'A reader cannot discount a best-of-N result without knowing N, so the count goes in FINDINGS_1.md under The trial count, and RESULTS.md compiles it; one in RESULTS.md but not in the findings is a summary leading its source. Your blueprint listed changes that may not rescue the experiment, a holding count, a trigger, a window: moved after the result, each is a new experiment and a trial. A run that cannot be believed is excluded by name with its reason, never quietly dropped. The deflated Sharpe is not computed by the stack, so the sign-off says whether you computed it; the example never did, and says so. The example’s count is cumulative across its four experiments.',
+  },
+  {
+    type: 'cards', label: 'Net, or not at all', kicker: 'ROBUSTNESS · COSTS AND CAPACITY',
+    title: 'Net, or not at all', deck: 'Session 05 priced the costs. Today you state them.',
+    cards: [
+      { t: 'Two rows', b: 'The blueprint’s commission, and a realistic one.' },
+      { t: 'Turnover', b: 'Times the book a year, one-way per rebalance.' },
+      { t: 'Capacity', b: 'The largest book a trade’s participation allows.', chip: '1% · 5% of 63-day value' },
+      { t: 'Not modelled', b: 'Market impact, borrow. Said out loud.', dark: true },
+    ],
+    callout: ['CAPACITY NOT MODELLED', 'is not met. Not “probably fine.”'],
+    notes: 'Results are accepted net, or not at all: commission on the unadjusted price, integer shares, a cash reserve. The example reports its blueprint’s commission setting and a realistic one side by side, with 5 basis points of slippage. Turnover first, because it tells the judge how much the costs matter: the example’s Experiment 1 turns over 1.99 times the book a year. Capacity is stated from the book as the largest book at which a trade takes no more than 1% or 5% of the name’s 63-day average traded value: a bound on participation, not a model of market impact. On a long/short book, borrow cost is a headline caveat, not a footnote.',
+  },
+
+  // ── 03 THE GATE
+  {
+    type: 'divider', label: 'Section 03', kicker: 'SECTION 03',
+    title: 'The gate',
+    deck: 'five criteria, all of them · the blocking items are the content',
+    notes: 'Section three. Paper_Trading/BITACORA.md is the gate, not a log: a contract that says what graduation means and what has to be true first. Strong backtest results are necessary and not sufficient.',
+  },
+  {
+    type: 'cards', label: 'Five rows. All of them', kicker: 'PAPER TRADING · THE GATE',
+    title: 'Five rows. All of them', deck: 'Evidenced from `FINDINGS_N.md` and `RESULTS.md`, or not met.',
+    cards: [
+      { t: 'Beats both', b: 'Benchmarks and control, risk-adjusted, same window.' },
+      { t: 'Alpha, both layers', b: 'Selection, a residual, the third pass.' },
+      { t: 'Survives', b: 'Perturbation passes; the count is published.' },
+      { t: 'Net and sized', b: 'Costs and capacity, stated.' },
+      { t: 'Sign-off', b: 'A person’s name and a date.', dark: true },
+    ],
+    callout: ['THE TRAP', 'A pass on Sharpe alone, while the control earns more a year.'],
+    notes: 'Read each row and its usual failure. One: every benchmark and the control, on the rule’s own rebalance dates; the single-metric pass is what it exists to catch. Two: selection in the Brinson-Fachler cut, a residual the factor model cannot explain, and a selection story that survives the third pass; expect a pass with a qualification. Three: a sweep read as a curve, and the count beside the winner. Four: costs modelled and capacity stated; capacity not modelled is not met. Five is a person’s signature, and it is never sought before one to four are evidenced.',
+  },
+  {
+    type: 'gate', label: 'The answer is no', kicker: 'WORKED GATE · LIQUID-GOLDEN-CROSS, EXPERIMENT 1',
+    title: 'The answer is no', deck: 'Its second design, row by row, from `FINDINGS_1.md`.',
+    rows: [
+      ['Beats both', 'FAILS', 'Sharpe ahead; 0.86 points a year behind its control.'],
+      ['Alpha, both layers', 'PARTLY', 'The control keeps more residual. Third pass not run.'],
+      ['Survives', 'PASSES', '12 of 15 cells. Count: 31. Not deflated.'],
+      ['Net and sized', 'MET', 'Two commission rows; capacity as a participation bound.'],
+      ['Sign-off', 'NOT SOUGHT', 'One and two block it.'],
+    ],
+    callout: ['FOUR EXPERIMENTS', 'Four noes. Each kill switch fired before the gate did.'],
+    notes: 'This is the example’s BITACORA.md, Experiment 1’s second design. Row one: Sharpe 0.8057 beats the index’s 0.7699 and the control’s 0.7748, but the rule earns 0.86 points a year less than its control, where its blueprint required 0.5 more. Row two: the factor model leaves 36.19 of 160.02 points unexplained, but the control keeps 40.99 without the cross, so the signal subtracts idiosyncratic return. Row three passes on its own rule, at a Sharpe margin of +0.031 with a CAGR margin below zero. Experiments 2, 3 and 4 failed too; 4 came closest, short by one margin, 0.0084 where 0.03 was required.',
+  },
+  {
+    type: 'cards', label: 'Paper is not a prize', kicker: 'IF IT PASSES · THE FREEZE',
+    title: 'Paper is not a prize', deck: 'After the signature, the rule stops moving.',
+    cards: [
+      { t: 'Promoted, not copied', b: 'Paper_Trading_N mirrors Experiment_N.', chip: 'promote.py N' },
+      { t: 'Frozen once', b: 'Every file hashed, never refrozen.', chip: 'FREEZE.json' },
+      { t: 'Registered first', b: 'Bands, kill switch, review dates, before day one.', chip: 'BITACORA.md' },
+      { t: 'Re-fits nothing', b: 'Read for behaviour, never a good month.', chip: 'daily_update.py', dark: true },
+    ],
+    callout: ['THE EXCEPTION', 'The example tracks Experiment 4 on paper: a candidate, by name, never graduated.'],
+    notes: 'For the book that passes, the order is fixed: sign-off, then the rule written into paper_trading_N.py and committed, then promote.py N on a clean tree, which copies every file the book needs and writes FREEZE.json with the commit, the date and every hash. A new freeze is a new book with its own number. daily_update.py runs after the close and re-fits nothing: a run that tunes anything is a backtest wearing a costume. Months on paper cannot show skill; the record is read for turnover, holdings, exposure and costs against the bands. A strategy’s first graduation is its 1.0.0, reproduced from a clean clone.',
+  },
+  {
+    type: 'live', label: 'Run the gate on yours', kicker: 'LIVE · THE GATE',
+    title: 'Run the gate on yours', deck: 'Five rows, evidenced or not met. You write the verdict.',
+    code: ['Using paper-trading-gate, lay out the five criteria for Experiment 1 against FINDINGS_1.md and RESULTS.md: each evidenced, with the number quoted and its file, or not met. Write nothing.'],
+    behind: 'Behind the line: the skill never declares graduation, never computes a number, and leaves `BITACORA.md` to you.',
+    cards: [
+      { t: 'You write', b: 'Current status: which rows block, and why.', chip: 'BITACORA.md' },
+      { t: 'The numbers', b: 'Quoted from the findings. A missing one is a re-run.' },
+      { t: 'The version', b: 'A first graduation is 1.0.0, from a clean clone.', accent: true },
+    ],
+    callout: ['THEN', 'Commit the status. A no is a result.'],
+    notes: 'One line in the box, so it reads the same in Claude and in Codex. Then open Paper_Trading/BITACORA.md and replace Nothing has graduated, nothing has been tested with your own section: which experiment, which variant, which criteria it clears, and above all which it does not and why. The example’s verdict table is the shape to copy: criterion, verdict, evidence. If a row cannot be evidenced from FINDINGS_1.md or RESULTS.md, write not met, not probably. Nobody in this room signs row five today.',
+  },
+
+  // ── 04 DEFEND IT
+  {
+    type: 'divider', label: 'Section 04', kicker: 'SECTION 04',
+    title: 'Defend it',
+    deck: 'performance without explanation is no conviction · nine rows, none for return',
+    notes: 'Section four. Good research is not enough: most teams fail not because the idea is bad but because the process is unclear, the assumptions hidden and the results unexplained. A strategy must be understandable, defensible and reproducible, and you have ten minutes to show all three.',
+  },
+  {
+    type: 'cards', label: 'The curve is not the pitch', kicker: 'THE PITCH · THE COMMON MISTAKE',
+    title: 'The curve is not the pitch', deck: '“Look, it works” convinces nobody who has seen a backtest.',
+    cards: [
+      { t: 'Mechanism', b: 'Why the return should exist, in a sentence.' },
+      { t: 'Assumptions', b: 'Lag, costs, universe, exits: on the slide.' },
+      { t: 'Risks', b: 'What kills it, and the line you wrote first.' },
+      { t: 'Drivers', b: 'Factor or selection: both layers.', dark: true },
+    ],
+    callout: ['THE LINE', 'If you don’t decompose returns, you don’t know what you own.'],
+    notes: 'The most common mistake is showing only performance. Backtests do not fail loudly, they fail silently, and small changes make huge differences, so the judge’s first question is about the plumbing, not the curve. Prefer the feature anyone can explain in a sentence. Your kill switch belongs on a slide, because you wrote it before the run. And the drivers are what attribution gave you: allocators are not buying returns, they are buying proof you know where the returns come from.',
+  },
+  {
+    type: 'cards', label: 'Five questions. Ten minutes', kicker: 'THE PITCH · THE STRUCTURE',
+    title: 'Five questions. Ten minutes', deck: 'One question a slide, each answered from a file.',
+    cards: [
+      { t: 'What, and why', b: 'The claim and its source of return.', chip: 'OBJECTIVE.md' },
+      { t: 'How tested', b: 'Universe, data, the analyzer’s numbers.', chip: 'RESULTS.md' },
+      { t: 'How it allocates', b: 'Selection, sizing, timing, control.', chip: 'BLUEPRINT_1.md' },
+      { t: 'Did it work', b: 'Net, against index and control.', chip: 'FINDINGS_1.md' },
+      { t: 'Why', b: 'Both layers, then the gate.', chip: 'BITACORA.md', dark: true },
+    ],
+    callout: ['OPEN WITH', 'The project in three sentences, from `RESULTS.md`.'],
+    notes: 'Same five questions as the old challenge deck, now each tied to the file that answers it. RESULTS.md opens with The project in three sentences: does the book work, with its headline numbers; what attribution says about where the return comes from; which lever earned its place and which was rejected. Slide four shows the control row beside the benchmark row, never the book alone. Slide five ends on the gate table, blocking rows included. Two minutes a question, and questions after.',
+  },
+  {
+    type: 'matrix', label: 'Nine rows. None for return', kicker: 'THE SCORECARD · 3 × 3',
+    title: 'Nine rows. None for return', deck: 'Each row 0, 33, 66 or 100. Equal weight: 11.1% each.',
+    columns: [
+      ['Strategy definition', [['Hypothesis & source of returns', 'OBJECTIVE.md'], ['Research foundation', 'Bibliotheca/'], ['Scientific process', 'git log']]],
+      ['Feature engineering', [['Data quality & integrity', 'Universe/'], ['Feature design & relevance', 'the analyzer'], ['Signal construction', 'c_* columns']]],
+      ['Strategy design', [['Portfolio construction logic', 'BLUEPRINT_1.md'], ['Backtesting & robustness', 'FINDINGS_1.md'], ['Attribution & understanding', 'both layers']]],
+    ],
+    callout: ['100 MEANS', 'The evidence is a file a judge can open.'],
+    notes: 'The scorecard is the old challenge template, unchanged: three dimensions, three rows each, equal weight, scored 0, 33, 66 or 100. 0 is not there, 33 is basic or with major gaps, 66 is clear and reasonable, 100 is rigorous, reproducible and documented. There is no row for performance: a book that loses to its control can score 100 on backtesting and robustness if the loss is measured, counted and explained. Under each row is the file a judge opens to check it. The edge is not in the style, it is in the process, and this is how the process is scored.',
+  },
+  {
+    type: 'cards', label: 'Ask it before they do', kicker: 'LIVE · IN PAIRS',
+    title: 'Ask it before they do', deck: 'Six questions every judge asks. Two minutes each, then swap.',
+    cols: 3,
+    cards: [
+      { t: 'What is your control?', b: 'One ingredient out, same dates.' },
+      { t: 'How many did you try?', b: 'N, beside the winner.' },
+      { t: 'Net of what?', b: 'Commission, slippage, two rows.' },
+      { t: 'Which factor is it?', b: 'The residual, after both layers.' },
+      { t: 'Who is missing?', b: 'The delisted, kept in the universe.' },
+      { t: 'What would kill it?', b: 'The kill switch, written first.', dark: true },
+    ],
+    callout: ['THE STANDARD', 'Answer with a file, not a feeling.'],
+    notes: 'Pair up with someone outside your strategy; one asks, one answers, then swap. Each question maps to one of the five ways a backtest lies or to the bar a new signal must clear: control, overfitting, costs, attribution, survivorship, pre-registration. The asker scores the answer 0, 33, 66 or 100 against the scorecard row it belongs to. If the answer is I would have to check, write the file down: that is your homework list. Can you defend your strategy under questioning? That is the whole presentation.',
+  },
+  {
+    type: 'live', label: 'Outline it from your files', kicker: 'LIVE · WITH THE RESEARCHER',
+    title: 'Outline it from your files', deck: 'Your deck, drafted in chat. The numbers stay quoted.',
+    code: ['From OBJECTIVE.md, BLUEPRINT_1.md, FINDINGS_1.md, RESULTS.md and Paper_Trading/BITACORA.md, outline a ten-minute presentation in chat: one slide per question, each number quoted with its file. Compute none.'],
+    behind: 'Behind the line: an outline, not a file in the repository. Your slides live outside it.',
+    cards: [
+      { t: 'The numbers', b: 'Quoted, with their file. None computed.' },
+      { t: 'The charts', b: 'From the engine’s report. Never committed.' },
+      { t: 'The no', b: 'A falsified prediction gets its own slide.', accent: true },
+    ],
+    callout: ['THEN', 'Score yourself on the nine rows, before a judge does.'],
+    notes: 'The outline is a draft for you to rewrite in your own words; the researcher writes nothing in the repository for this. Check every number it quotes against the file it names: a number with no file is one to delete, not one to keep. Charts come from the engine’s Excel report or your notebook, and never enter git: no charts, workbooks or PDFs are committed. Report the rejected result as loudly as the promising one: a falsified prediction stops the next person repeating it, and judges trust a deck that says no to itself.',
+  },
+  {
+    type: 'stop', label: 'Stop here', kicker: 'YOUR TURN · THE STOP',
+    title: 'Stop here, on purpose', deck: 'Left: on disk before you leave. Right: not done, on purpose.',
+    left: [
+      'A `JOURNAL_1.md` entry — the challenge, on your go',
+      '`FINDINGS_1.md` — corrected by you, from a re-run',
+      'The trial count — in the findings, compiled in `RESULTS.md`',
+      '`OBJECTIVE.md` — each tested claim’s status moved',
+      '`BITACORA.md` — Current status: the blocking rows',
+      '`RESULTS.md` — the project in three sentences',
+      'Your outline — five questions, every number sourced',
+    ],
+    right: [
+      'Graduation — a signature, after five rows',
+      'A freeze — only after the signature',
+      'Experiment 2 — from What is open, ranked',
+      'Production — outside the repo',
+    ],
+    why: 'A strategy that says no to itself, in writing, is one a judge can trust.',
+    notes: 'Before you leave, everything on the left exists on your machine and is committed. FINDINGS_1.md is corrected only where the challenge found a real discrepancy, and only from a re-run: never reword a verdict. If your book failed its kill switch, the gate section says so and nothing is frozen. Your next experiment starts from What is open, ranked, in FINDINGS_1.md and RESULTS.md, with its own blueprint, not from today’s mood.',
+  },
+  {
+    type: 'cards', label: 'To do', kicker: 'BEFORE PRESENTATION DAY',
+    title: 'To do', deck: 'Ten minutes, from a clean clone.',
+    cards: [
+      { t: 'Your deck', b: 'Five questions, ten minutes.' },
+      { t: 'Your scorecard', b: 'Nine rows, scored, each with its file.' },
+      { t: 'A clean clone', b: 'Every figure, reproduced.', chip: 'git clone' },
+      { t: 'Your next blueprint', b: 'One lead, from What is open.', chip: 'BLUEPRINT_2.md', dark: true },
+    ],
+    callout: ['BRING', 'Your laptop, the repository, and the hash of the commit you present.'],
+    notes: 'Clone your repository into a new folder, set up Config/.env, and re-run from the Curator to FINDINGS_1.md: if a figure moves, find out why before you present, and record it in JOURNAL_1.md. Score yourself honestly on the nine rows; the judges will compare. Your next blueprint is drafted, not run: /blueprint 2 once its benchmark entry exists. Present from the commit whose hash you bring, so every number on your slides can be found again.',
+  },
+  {
+    type: 'refs', label: 'Reading list', kicker: 'REFERENCES · SESSION 06',
+    title: 'The reading list', deck: 'Six leads, none read yet. Read two; start with Harvey & Liu: a haircut for every Sharpe you present.',
+    groups: [
+      ['THE COUNT · WHY THE BEST OF N LIES', [
+        ['WHITE', '2000', 'A Reality Check for Data Snooping', 'the trial count'],
+        ['BAILEY & LÓPEZ DE PRADO', '2014', 'The Deflated Sharpe Ratio: Correcting for Selection Bias, Backtest Overfitting, and Non-Normality', 'the deflated figure'],
+        ['HARVEY & LIU', '2015', 'Backtesting', 'the haircut'],
+      ]],
+      ['THE PROOF · WHAT A BACKTEST CAN CARRY', [
+        ['LO', '2002', 'The Statistics of Sharpe Ratios', null],
+        ['BAILEY, BORWEIN, LÓPEZ DE PRADO & ZHU', '2014', 'Pseudo-Mathematics and Financial Charlatanism', null],
+        ['BAILEY, BORWEIN, LÓPEZ DE PRADO & ZHU', '2017', 'The Probability of Backtest Overfitting', null],
+      ]],
+    ],
+    callout: ['ALREADY ON YOUR LIST', 'Arnott, Harvey & Markowitz, session 03: the protocol you have now run once.'],
+    notes: 'Same rule as every week: read two, compile them, cite them. Harvey and Liu give you the haircut to apply to a Sharpe ratio found after many trials; Bailey and López de Prado give the deflated figure the gate asks whether you computed. White’s reality check is the test behind Sullivan, Timmermann and White, already in the example’s Bibliotheca. The Probability of Backtest Overfitting circulated as a working paper years before its 2017 journal year: cite 2017. If your count is large, one of these papers is the slide a judge will ask for.',
+  },
+  {
+    type: 'closing', label: 'Close', kicker: 'INVESTMENT BOOTCAMP',
+    title1: 'Now', title2: 'defend it.', deck: 'The gate says what blocks it. The pitch says why.',
+    panels: [
+      ['THE GATE', 'BITACORA.md', 'The blocking rows, in writing.'],
+      ['THE PITCH', 'Five questions · nine rows', 'Every number with its file.'],
+      ['BRING', null, 'A clean clone and a commit hash.'],
+    ],
+    next: [['Next', 'PRESENTATION DAY'], ['Topic', 'YOUR STRATEGY, DEFENDED'], ['You leave with', 'A SCORE ON NINE ROWS, AND YOUR NEXT BLUEPRINT.']],
+    notes: 'Every serious investment process is discretionary at design and systematic at scale: you designed the idea, the process tested it. The future of investing is not choosing a side between quant and fundamental; it is building systems where ideas are tested, results are understood and decisions are made with discipline. On presentation day you show the run, the challenge and the gate, and a no defended well scores higher than a yes nobody can explain. Bring a clean clone and the hash of the commit you present.',
+  },
+  {
+    type: 'disclaimer', label: 'Disclaimers', footer: 'Session 06 · Final Strategy Prep & Presentation',
+    notes: 'The same disclaimer as every session. Every number today came from your files or the example’s, quoted with its source.',
+  },
+];
