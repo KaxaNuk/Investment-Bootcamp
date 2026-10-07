@@ -1,6 +1,6 @@
 <!-- title: S03 · Feature Engineering: the Feature Lab -->
 <!-- Edit the slides here, then: node design/deck.js bundle design/s03_slides.html "S03-Feature-Engineering/S03 Feature Engineering.html" -->
-<section data-label="Cover" data-screen-label="01" data-speaker-notes="Welcome back. Session 03 is where the argument from session 02 becomes columns in a file. Two halves: build the researcher that remembers what you read, then build the features it justifies.">
+<section data-label="Cover" data-screen-label="01" data-speaker-notes="Welcome back. Session 03 is the Feature Lab: the argument from session 02 becomes one column in a file, screened by its information coefficient on a point-in-time universe before any book exists. Sections one and two recap the researcher from S00 and the strategy from S01, for anyone who missed them; section three is the data; section four is the lens for the feature.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 0; right: 0; width: 558px; height: 1080px; background: #E84328;"></div>
     <div style="position: absolute; top: 0; right: 558px; width: 144px; height: 522px; background: #121110;"></div>
@@ -15,22 +15,22 @@
     </div>
     <div style="position: absolute; left: 78px; bottom: 84px; width: 990px; display: flex; gap: 51px; align-items: flex-start;">
       <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 111px; line-height: 0.8; color: #E84328; letter-spacing: -0.05em;">03</div>
-      <div style="font-size: 26px; line-height: 1.5; font-weight: 500; padding-top: 9px;">A researcher of your own, a strategy of your own, and the data it needs — on disk before you leave.</div>
+      <div style="font-size: 26px; line-height: 1.5; font-weight: 500; padding-top: 9px;">The Feature Lab. One feature, screened on a point-in-time universe, before any book exists.</div>
     </div>
     <div style="position: absolute; right: 78px; top: 210px; width: 402px; color: #FFF4F1;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.72;">Contents</div>
       <div style="display: flex; flex-direction: column; margin-top: 24px;">
         <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35);">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7; width: 33px;">01</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">Build your own researcher</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">Your researcher · recap</div>
         </div>
         <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35);">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7; width: 33px;">02</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">Your strategy</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">Your strategy · recap</div>
         </div>
         <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35);">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7; width: 33px;">03</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">Curator, live — then stop</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.1; letter-spacing: -0.02em; text-transform: uppercase;">From universe to data</div>
         </div>
         <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35); border-bottom: 2px solid rgba(255,244,241,0.35);">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7; width: 33px;">04</div>
@@ -70,7 +70,7 @@
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 54px; display: flex; gap: 24px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em; flex: none;">The rule from session 02</div>
-      <div style="font-size: 26px; color: #56534E;">A paper you did not read is a claim you cannot cite. Mark the board; the unread ones go into your researcher this week.</div>
+      <div style="font-size: 26px; color: #56534E;">A paper you did not read is a claim you cannot cite. Mark the board; the unread ones go into your notes with read this week.</div>
     </div>
   </div>
 </section>
@@ -83,7 +83,7 @@
     </div>
 
     <h1 style="position: absolute; left: 78px; top: 144px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 84px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">What did it change<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 156px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Three questions, answered out loud. Write your answer down — it becomes the first claim in your <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">OBJECTIVE.md</span> this afternoon.</div>
+    <div style="position: absolute; right: 78px; top: 156px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Three questions, answered out loud. Write your answer down: it sharpens a claim in your <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">OBJECTIVE.md</span>.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 330px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;">
       <div style="background: #E4E1DA; color: #121110; padding: 39px 36px 42px; min-height: 420px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 51px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">01</div>
@@ -98,29 +98,29 @@
       <div style="background: #121110; color: #F2F0EB; padding: 39px 36px 42px; min-height: 420px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 51px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">03</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 36px; line-height: 1.05; margin-top: 18px; letter-spacing: -0.02em; text-transform: uppercase;">What would you test first?</div>
-        <div style="font-size: 26px; line-height: 1.4; margin-top: 18px; color: #C9C6BF;">The smallest experiment that could kill your idea. That is the signal you are looking for in the example this week.</div>
+        <div style="font-size: 26px; line-height: 1.4; margin-top: 18px; color: #C9C6BF;">The smallest experiment that could kill your idea. That is the feature you screen today.</div>
       </div>
     </div>
   </div>
 </section>
 
-<section data-label="This session" data-screen-label="04" data-speaker-notes="The line of the session. Nothing today is theory for its own sake: by the end everyone has a named researcher, a scaffolded strategy and the curated data for the cohort universe. We stop at the security master because portfolios are session 04.">
+<section data-label="This session" data-screen-label="04" data-speaker-notes="The line of the session. Nothing today is theory for its own sake: by the end everyone has a point-in-time universe from KN-TU30, its data curated to 2024-12-31, and one feature screened, kept or dropped, and counted. We stop before any book because the blueprint comes first, in session 04.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
     <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">This session</div>
     <div style="position: absolute; left: 78px; top: 258px; width: 1620px;">
-      <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">Install, name, scaffold, <span style="color: #121110;">download.</span></h1>
-      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Hands-on, start to finish: a researcher of your own, a strategy of your own, and its data on disk — then we stop, on purpose, at the security master.</div>
+      <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">Universe, data, <span style="color: #121110;">one feature.</span></h1>
+      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Hands-on, start to finish: a point-in-time universe, its data on disk, one feature screened — then we stop, on purpose, before any book.</div>
     </div>
     <div style="position: absolute; right: 78px; bottom: 84px; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7;">04</div>
   </div>
 </section>
 
-<section data-label="Section 01" data-screen-label="05" data-speaker-notes="Section one. Before we write a single column, we build the thing that remembers why we wrote it.">
+<section data-label="Section 01" data-screen-label="05" data-speaker-notes="Section one is a recap of S00: the researcher remembers why a column exists. If everyone’s doctor and interview are done, take these slides fast.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
-    <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 01</div>
+    <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 01 · Recap · S00</div>
     <div style="position: absolute; left: 78px; top: 246px; width: 1620px;">
       <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">Build your own researcher</h1>
-      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Paste one line → name it → the interview → feed it the ten works from session 02</div>
+      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Paste one line → name it → the interview → feed it the ten works</div>
     </div>
     <div style="position: absolute; right: 78px; bottom: 84px; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7;">05</div>
   </div>
@@ -129,7 +129,7 @@
 <section data-label="One per person" data-screen-label="06" data-speaker-notes="The single most misunderstood point. One researcher per person, many strategies. Your library travels with you; the strategy repo stays with the strategy. It never writes into a strategy uninvited.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · the shape</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S00 · your researcher</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">06</div>
     </div>
     <h1 style="position: absolute; left: 78px; top: 150px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 93px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase; max-width: 17ch;">One per person, not per strategy<span style="color: #E84328;">.</span></h1>
@@ -138,7 +138,7 @@
       <div style="background: #121110; color: #F2F0EB; padding: 36px 39px 39px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Yours, one of them</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 51px; line-height: 1; margin-top: 18px; letter-spacing: -0.03em; text-transform: uppercase;">The researcher</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B; margin-top: 15px;">Sources/ · Knowledge/ · Philosophy/ · Projects/</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B; margin-top: 15px;">Sources/ · Knowledge/ · Philosophy/ · Studies/</div>
         <div style="font-size: 25px; line-height: 1.4; color: #C9C6BF; margin-top: 21px; padding-top: 18px; border-top: 2px solid #3A3833;">Reads every strategy's <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Bibliotheca/</span>, drafts its claims and hypotheses, and never writes into one uninvited.</div>
       </div>
       <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px;">
@@ -155,7 +155,7 @@
         <div style="background: #E4E1DA; padding: 27px 27px 30px;">
           <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #56534E; letter-spacing: 0.14em;">Strategy C</div>
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The one you wrote last week</div>
-          <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Your objective from session 02 lives here.</div>
+          <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Your objective from session 01 lives here.</div>
         </div>
       </div>
     </div>
@@ -166,10 +166,10 @@
   </div>
 </section>
 
-<section data-label="The architecture" data-screen-label="07" data-speaker-notes="Directionality is the rule that keeps it honest: Sources to Knowledge to Projects, one direction only. Philosophy is a side channel — cited, never generated from, so your judgement stays yours. Nothing in Sources is ever pushed anywhere public; the .gitignore keeps PDFs out by default.">
+<section data-label="The architecture" data-screen-label="07" data-speaker-notes="Directionality is the rule that keeps it honest: Sources to Knowledge to Studies, one direction only. Philosophy is a side channel — cited, never generated from, so your judgement stays yours. Nothing in Sources is ever pushed anywhere public; the .gitignore keeps PDFs out by default.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · the folders</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S00 · the folders</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">07</div>
     </div>
     <h1 style="position: absolute; left: 78px; top: 144px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 84px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase; max-width: 15ch;">Four folders, one direction<span style="color: #E84328;">.</span></h1>
@@ -186,9 +186,9 @@
         <div style="font-size: 25px; line-height: 1.4; margin-top: 12px; color: #3A3833;">One note per chapter read, and a wiki page per idea. <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">INDEX.md</span> is read first, always; <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">LOG.md</span> is append-only.</div>
       </div>
       <div style="background: #E4E1DA; padding: 30px 30px 33px; min-height: 330px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 27px; color: #E84328;">Projects/</div>
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">What you asked for</div>
-        <div style="font-size: 25px; line-height: 1.4; margin-top: 12px; color: #3A3833;">Source notes, objective and blueprint drafts, lessons. You copy them into the strategy yourself.</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 27px; color: #E84328;">Studies/</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">What you worked out</div>
+        <div style="font-size: 25px; line-height: 1.4; margin-top: 12px; color: #3A3833;">An idea, a plan or a decision, from your library. Strategy work lands in the strategy itself.</div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; top: 714px; background: #121110; color: #F2F0EB; padding: 33px 39px 36px; display: grid; grid-template-columns: 1fr 1.4fr; gap: 39px; align-items: center;">
@@ -200,24 +200,24 @@
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 42px; display: flex; gap: 24px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Directionality</div>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 26px; color: #56534E;">Sources/ → Knowledge/ → Projects/</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 26px; color: #56534E;">Sources/ → Knowledge/ → Studies/</div>
     </div>
   </div>
 </section>
 
-<section data-label="Step 1 · install" data-screen-label="08" data-speaker-notes="Do this live, on the projector, with everyone pasting alongside. The assistant installs the APM tool with uv, then the one KaxaNuk package globally for the user. Two failure modes: uv missing, and staying in the same session afterwards. Ten minutes, including the reopen.">
+<section data-label="Step 1 · install" data-screen-label="08" data-speaker-notes="Recap of S00: skip it if your doctor is green. The assistant installs the APM tool, pinned to 0.29.0, with uv, then the one KaxaNuk package for your user, for whichever assistant you use. Two failure modes: uv missing, and staying in the same session afterwards.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #121110; font-family: 'Archivo', system-ui, sans-serif; color: #F2F0EB;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Your researcher · step 01</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Recap · S00 · step 01</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #56534E;">08</div>
     </div>
 
     <h1 style="position: absolute; left: 78px; top: 150px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 93px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase; max-width: 14ch;">Paste one line<span style="color: #E84328;">.</span></h1>
     <div style="position: absolute; right: 78px; top: 168px; width: 540px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #C9C6BF;">It reads the repository's setup notes and does the rest. It asks you for one thing: the name — and the name is the folder.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 384px; background: #201F1D; padding: 39px 48px 42px;">
-      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Paste this into Claude or Codex</div>
+      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Paste this into your assistant</div>
       <div style="font-family: 'JetBrains Mono', monospace; font-size: 31px; line-height: 1.5; color: #F2F0EB; margin-top: 21px; word-break: break-all;">Please help me install this repo: <span style="color: #E84328;">https://github.com/KaxaNuk/KaxaNuk-Researcher</span></div>
-      <div style="font-size: 25px; line-height: 1.45; color: #A5A29B; margin-top: 21px; padding-top: 18px; border-top: 2px solid #3A3833;">Behind the line: <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">uv tool install apm-cli</span>, then <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">apm install -g KaxaNuk/KaxaNuk-Researcher --target claude</span>. One package, installed once for your user — it carries the researcher, every Lab skill, the strategy template and the worked example. Every folder you open afterwards has them.</div>
+      <div style="font-size: 25px; line-height: 1.45; color: #A5A29B; margin-top: 21px; padding-top: 18px; border-top: 2px solid #3A3833;">Behind the line: <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">uv tool install apm-cli==0.29.0</span>, then <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">uvx --from apm-cli==0.29.0 apm install -g KaxaNuk/KaxaNuk-Researcher --target &lt;your assistant&gt;</span>. One package, installed once for your user — it carries the researcher, every Lab skill, the strategy template and the worked example. Every folder you open afterwards has them.</div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; top: 744px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;">
       <div style="background: #201F1D; padding: 27px 30px 30px;">
@@ -228,7 +228,7 @@
       <div style="background: #201F1D; padding: 27px 30px 30px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; letter-spacing: -0.02em; text-transform: uppercase;">Nothing to clone</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #E84328; margin-top: 12px;">init-researcher · init-strategy · init-example</div>
-        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 9px;">Three skills that each make a folder. Today you run the first two.</div>
+        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 9px;">Three skills that each make a folder. You ran the first in S00, the second in S01.</div>
       </div>
       <div style="background: #E84328; color: #FFF4F1; padding: 27px 30px 30px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; letter-spacing: -0.02em; text-transform: uppercase;">One catch</div>
@@ -238,33 +238,33 @@
   </div>
 </section>
 
-<section data-label="Step 2 · init" data-screen-label="09" data-speaker-notes="Run the interview live and let them answer alongside. Fifteen minutes. Tell them the fourth answer is the one that matters — the non-negotiables are what makes it useful rather than agreeable.">
+<section data-label="Step 2 · init" data-screen-label="09" data-speaker-notes="Recap of S00. The interview takes about three minutes, in the learner’s language. Tell them the rules are the answer that matters: the non-negotiables are what makes it useful rather than agreeable. What their reading is for is asked by the first read, not here.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · step 02</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S00 · step 02</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">09</div>
     </div>
     <h1 style="position: absolute; left: 78px; top: 144px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 84px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">Run the interview<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 156px; width: 660px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Fifteen minutes, in the room, together. It writes <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">RESEARCHER.md</span>, scaffolds every folder that is missing, and writes the agent file.</div>
+    <div style="position: absolute; right: 78px; top: 156px; width: 660px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">About three minutes, in your language. It writes <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">RESEARCHER.md</span>, and the agent and skill that make your researcher present in every session.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 282px; background: #121110; color: #F2F0EB; padding: 30px 39px 33px; display: flex; gap: 33px; align-items: center;">
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 36px; color: #E84328; flex: none;">init-researcher</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 36px; color: #E84328; flex: none;">interview</div>
       <div style="font-size: 25px; line-height: 1.4; color: #C9C6BF;">Run it again with <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">force</span> to start over. You will want to, once you know what you actually wanted.</div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; top: 438px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 15px;">
       <div style="background: #E4E1DA; padding: 27px 27px 30px; min-height: 372px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">01</div>
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">Who it works for</div>
-        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Your name, what you invest, and the domains it should follow — coding, math, finance, macro.</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">Who you are</div>
+        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">What you do, what you are here for, and the domains it should follow — coding, math, finance.</div>
       </div>
       <div style="background: #E4E1DA; padding: 27px 27px 30px; min-height: 372px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">02</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">How it speaks</div>
-        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Terse or thorough. And where it may push back: on evidence, never on taste.</div>
+        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Terse or thorough, in your language. And where it may push back: on evidence, never on taste.</div>
       </div>
       <div style="background: #E4E1DA; padding: 27px 27px 30px; min-height: 372px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">03</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">What you read for</div>
-        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Four or five open questions — and, for each, what would change your mind. Every source is read against them, by number.</div>
+        <div style="font-size: 24px; line-height: 1.35; margin-top: 12px; color: #3A3833;">Asked by your first <span style="font-family: 'JetBrains Mono', monospace; font-size: 23px;">read</span>: which question a source serves. Every later source is read against them, by number.</div>
       </div>
       <div style="background: #121110; color: #F2F0EB; padding: 27px 27px 30px; min-height: 372px;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">04</div>
@@ -275,14 +275,14 @@
   </div>
 </section>
 
-<section data-label="RESEARCHER.md" data-screen-label="10" data-speaker-notes="Show the real file on screen. These four lines are from mine — read the non-negotiables out loud, because they are the bootcamp's rules written as an instruction to a machine.">
+<section data-label="RESEARCHER.md" data-screen-label="10" data-speaker-notes="Recap of S00. Show a sample RESEARCHER.md on screen and read the non-negotiables out loud: they are the Bootcamp’s rules, written as an instruction to a machine.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · the file it writes</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S00 · the file it writes</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">10</div>
     </div>
     <h1 style="position: absolute; left: 78px; top: 144px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 84px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">The non-negotiables<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 162px; width: 630px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Four lines from a real <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">RESEARCHER.md</span>. Write your own version of these before you write anything else.</div>
+    <div style="position: absolute; right: 78px; top: 162px; width: 630px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Four lines from a sample <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">RESEARCHER.md</span>. Write your own version of these before you write anything else.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 300px;">
       <div style="display: grid; grid-template-columns: 78px 1fr; gap: 33px; align-items: baseline; padding: 27px 0; border-top: 3px solid #121110;">
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 27px; color: #E84328;">01</div>
@@ -311,7 +311,7 @@
 <section data-label="Step 3 · feed it" data-screen-label="11" data-speaker-notes="This is the bridge back to session 02. The ten works on the two timelines are the argument of the whole field, in order. Drop the PDFs into Sources/Papers and run read one at a time — it proposes how to file each, you approve, it writes the note and the concept pages behind it. By the end you have a library that can answer why a feature exists.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · step 03</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S02 · step 03</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">11</div>
     </div>
     <h1 style="position: absolute; left: 78px; top: 132px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 78px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">Feed it session 02<span style="color: #E84328;">.</span></h1>
@@ -346,10 +346,10 @@
   </div>
 </section>
 
-<section data-label="The skills" data-screen-label="12" data-speaker-notes="Do not memorise the list. Point out the shape: three skills that make a folder, the ones you build and ask with, the ones that keep it honest. Everything runs from the one package, so a strategy installs nothing of its own. The bottom line is the whole afternoon.">
+<section data-label="The skills" data-screen-label="12" data-speaker-notes="Do not memorise the list. Point out the shape: three skills that make a folder, the ones you build and ask with, the ones that keep it honest. Everything runs from the one package, so a strategy installs nothing of its own. The bottom line is today’s order.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your researcher · what you can ask it</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S00 · what you can ask it</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">12</div>
     </div>
 
@@ -358,36 +358,36 @@
     <div style="position: absolute; left: 78px; right: 78px; top: 252px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px;">
       <div style="background: #E4E1DA; padding: 27px 30px 30px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Make a folder</div>
-        <div style="padding: 12px 0 9px; border-top: 2px solid #B6B2AA; margin-top: 12px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">init-researcher</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">The interview. Writes RESEARCHER.md and the agent, scaffolds the home.</div></div>
+        <div style="padding: 12px 0 9px; border-top: 2px solid #B6B2AA; margin-top: 12px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">init-researcher</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Makes your home, then the interview writes RESEARCHER.md and the agent.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">init-strategy</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">A new strategy from the template: eight steps as folders, empty bibliography.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">init-example</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">The same scaffold, filled in — a worked strategy to study. Homework.</div></div>
-        <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">update [check]</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Brings a new version, keeps your RESEARCHER.md, Philosophy and Knowledge.</div></div>
+        <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">update</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Brings a new version, keeps your RESEARCHER.md, Philosophy and Knowledge.</div></div>
       </div>
       <div style="background: #121110; color: #F2F0EB; padding: 27px 30px 30px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Build and ask</div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #56534E; margin-top: 12px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">read</div><div style="font-size: 24px; line-height: 1.3; color: #C9C6BF; margin-top: 5px;">Sources into Knowledge, a chapter at a time — you pick which chapters. In a strategy, into its Bibliotheca.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #3A3833;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">query &lt;question&gt;</div><div style="font-size: 24px; line-height: 1.3; color: #C9C6BF; margin-top: 5px;">Answers from the library. Every claim cited, gaps named. Fires on its own.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #3A3833;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">objective [strategy]</div><div style="font-size: 24px; line-height: 1.3; color: #C9C6BF; margin-top: 5px;">Drafts the main idea and its claims — before any paper, then again from the notes.</div></div>
-        <div style="padding: 12px 0 9px; border-top: 2px solid #3A3833;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">blueprint · brainstorm · challenge</div><div style="font-size: 24px; line-height: 1.3; color: #C9C6BF; margin-top: 5px;">Thesis and predictions; the next thing to try; a finished experiment checked against its own blueprint.</div></div>
+        <div style="padding: 12px 0 9px; border-top: 2px solid #3A3833;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">blueprint · challenge</div><div style="font-size: 24px; line-height: 1.3; color: #C9C6BF; margin-top: 5px;">Thesis and predictions, before the rule; then a finished experiment checked against its own blueprint.</div></div>
       </div>
       <div style="background: #E4E1DA; padding: 27px 30px 30px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Keep it honest</div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #B6B2AA; margin-top: 12px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">audit [deep]</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Read-only: links, duplicates, stale index, orphans. deep adds contradictions.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">refine &lt;path&gt;</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">A voice-preserving editor pass over your own writing. Diff first.</div></div>
-        <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">refresh-index</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Rebuilds the index from what is actually on disk.</div></div>
+        <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">next</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">Where you stand, and the one thing to do next.</div></div>
         <div style="padding: 12px 0 9px; border-top: 2px solid #CFCBC3;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">teach &lt;topic&gt;</div><div style="font-size: 24px; line-height: 1.3; color: #3A3833; margin-top: 5px;">A multi-session tutor, grounded in what you have read.</div></div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 48px; display: flex; gap: 24px; align-items: baseline;">
-      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Today, in this order</div>
-      <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #56534E;">init-researcher → init-strategy → objective → the universe → the Curator → universe.ipynb → stop</div>
+      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">S03, in this order</div>
+      <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #56534E;">the universe → the curator → universe.ipynb → the refinery → the analyzer → stop</div>
     </div>
   </div>
 </section>
 
-<section data-label="Section 02" data-screen-label="13" data-speaker-notes="Section two. The strategy is a second folder, built from the same package. Before writing anything into it, know the order the template expects.">
+<section data-label="Section 02" data-screen-label="13" data-speaker-notes="Section two is a recap of S01: the strategy is a second folder, built from the same package, and it has an order of work.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
-    <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 02</div>
+    <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 02 · Recap · S01</div>
     <div style="position: absolute; left: 78px; top: 246px; width: 1620px;">
       <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">Your strategy</h1>
       <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">init-strategy · the order of work · the prefix law</div>
@@ -396,10 +396,10 @@
   </div>
 </section>
 
-<section data-label="init-strategy" data-screen-label="14" data-speaker-notes="Run it live. Everyone names their strategy now — the name is the folder and the repository. Show the folder tree it produces and point at the empty OBJECTIVE.md: that is the next thing we fill. Then show the invite: open the assistant in the strategy, add the researcher folder.">
+<section data-label="init-strategy" data-screen-label="14" data-speaker-notes="Recap of S01. The name is the folder and the repository. Show the folder tree it produces and the OBJECTIVE.md they filled in S01. The researcher needs no invitation: its agent and skill are installed for the user, so it is there in every session.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #121110; font-family: 'Archivo', system-ui, sans-serif; color: #F2F0EB;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Your strategy · step 01</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Recap · S01 · your strategy</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #56534E;">14</div>
     </div>
 
@@ -417,88 +417,87 @@
       </div>
       <div style="background: #201F1D; padding: 30px 33px 33px; min-height: 330px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">02</div>
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">Invite the researcher</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #E84328; margin-top: 15px; overflow-wrap: anywhere;">claude --add-dir &lt;your researcher folder&gt;</div>
-        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 9px;">Its library comes with it; the skills are already there. Work lands in the strategy, nothing flows back home.</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The researcher comes along</div>
+        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">Its agent and skill are installed for your user, so it is in every session. Work lands in the strategy; nothing flows back home.</div>
       </div>
       <div style="background: #E84328; color: #FFF4F1; padding: 30px 33px 33px; min-height: 330px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #121110; letter-spacing: -0.04em;">03</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The example is the same shape</div>
-        <div style="font-size: 24px; line-height: 1.35; margin-top: 15px;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">init-example</span> builds a worked strategy beside yours. You will run it this week and read it for signals — not copy it.</div>
+        <div style="font-size: 24px; line-height: 1.35; margin-top: 15px;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">init-example</span> builds a worked strategy beside yours. You read it in S01; you do not run it, and you do not copy it.</div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 54px; display: flex; gap: 24px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em; flex: none;">Then, in a new session</div>
-      <div style="font-size: 26px; color: #C9C6BF;">Open the assistant in the strategy folder with the researcher added, and the first command it accepts is <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">objective</span>.</div>
+      <div style="font-size: 26px; color: #C9C6BF;">Open the assistant in the strategy folder, and the first command it accepts is <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">objective</span>.</div>
     </div>
   </div>
 </section>
 
-<section data-label="The order of work" data-screen-label="15" data-speaker-notes="The objective comes before any paper — that is the change from how most people work, and the researcher enforces it: read refuses a strategy whose OBJECTIVE.md has no claims. Items are not steps: item 3 is step 2 of the process. Today we do 1, 3 and the first half of 4; item 2 and the rest of 4 are the homework, 5 onward is session 04.">
+<section data-label="The order of work" data-screen-label="15" data-speaker-notes="Recap of S01. The objective comes before any paper, and the researcher enforces it: read refuses a strategy whose OBJECTIVE.md has no claims. The parts are lettered so they are never mistaken for the eight steps: the universe, C, is step 2; the cycle, G, is steps 4 to 6. C was your pre-work; today is D. E onward is session 04.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Your strategy · the order of work</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Recap · S01 · the order of work</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">15</div>
     </div>
 
     <h1 style="position: absolute; left: 78px; top: 132px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 78px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">Objective first<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 144px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Eight items, the template's order. A command asked for out of order names the item that comes first, and stops. Today is items 1, 3 and half of 4.</div>
+    <div style="position: absolute; right: 78px; top: 144px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Lettered A to H, never to be mistaken for the eight steps. C was your pre-work; today is D.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 246px;">
-      <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 9px 24px; background: #E84328; color: #FFF4F1; margin: 3px -24px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #FFF4F1;">1</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #FFF4F1;">The objective</div><div style="font-size: 24px; color: rgba(255,244,241,0.85); margin-top: 0; line-height: 1.2;">before any paper is read</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: rgba(255,244,241,0.85);">objective — claims from your own words, each untested, with the question that settles it</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: rgba(255,244,241,0.85); overflow-wrap: anywhere;">OBJECTIVE.md</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF4F1;">today</div>
+      <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">A</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">The objective</div><div style="font-size: 24px; color: #A5A29B; margin-top: 0; line-height: 1.2;">before any paper is read</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">objective — claims in your own words, each untested, with the question that settles it</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">OBJECTIVE.md</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">S01</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328;">2</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #121110;">Fine-tune the objective</div><div style="font-size: 24px; color: #3A3833; margin-top: 0; line-height: 1.2;">reading for each claim</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #3A3833;">read, one note per paper naming the claim it serves; then objective again</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #3A3833; overflow-wrap: anywhere;">Bibliotheca/</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #E84328;">homework</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">B</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">The reading</div><div style="font-size: 24px; color: #A5A29B; margin-top: 0; line-height: 1.2;">for each claim</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">read, one note per paper naming the claim it serves; then objective again</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">Bibliotheca/</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">S01–S02</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 9px 24px; background: #E84328; color: #FFF4F1; margin: 3px -24px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #FFF4F1;">3</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #FFF4F1;">The investable universe</div><div style="font-size: 24px; color: rgba(255,244,241,0.85); margin-top: 0; line-height: 1.2;">delisted names included</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: rgba(255,244,241,0.85);">the cohort universe — the KN US Equity Benchmark, one list for everyone</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #FFF4F1;">C</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #FFF4F1;">The universe</div><div style="font-size: 24px; color: rgba(255,244,241,0.85); margin-top: 0; line-height: 1.2;">delisted names included</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: rgba(255,244,241,0.85);">the KN-TU30 seed for your sleeve, replacements logged</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: rgba(255,244,241,0.85); overflow-wrap: anywhere;">Universe/…csv</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF4F1;">today</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF4F1;">before</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 9px 24px; background: #E84328; color: #FFF4F1; margin: 3px -24px;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #FFF4F1;">4</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #FFF4F1;">D</div>
         <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #FFF4F1;">The data</div><div style="font-size: 24px; color: rgba(255,244,241,0.85); margin-top: 0; line-height: 1.2;">curator · universe notebook · refinery · analyzer</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: rgba(255,244,241,0.85);">Curator and universe.ipynb today; Refinery and Analyzer on the example this week</div>
+        <div style="font-size: 24px; line-height: 1.3; color: rgba(255,244,241,0.85);">the curator and universe.ipynb as pre-work; refinery and analyzer today; measurements into RESULTS.md</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: rgba(255,244,241,0.85); overflow-wrap: anywhere;">Data/</div>
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #FFF4F1;">today</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328;">5</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #121110;">Benchmark, then blueprint</div><div style="font-size: 24px; color: #3A3833; margin-top: 0; line-height: 1.2;">before the rule</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #3A3833;">name the benchmark this week; blueprint and portfolio in session 04</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #3A3833; overflow-wrap: anywhere;">Experiments/Exp_1/</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #E84328;">session 04</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328;">E</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #121110;">The blueprint</div><div style="font-size: 24px; color: #3A3833; margin-top: 0; line-height: 1.2;">the benchmark first, then before the rule</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #3A3833;">the benchmark entry in JOURNAL_1.md since S01; BLUEPRINT_1.md pushed before the rule</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #3A3833; overflow-wrap: anywhere;">Experiments/ Experiment_1/</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #E84328;">S04</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">6</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">Broad reading, brainstorm</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">for what the blueprint left open</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">BRAINSTORMING_N.md</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">later</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328;">F</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #121110;">The broad reading</div><div style="font-size: 24px; color: #3A3833; margin-top: 0; line-height: 1.2;">what the blueprint left open</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #3A3833;">read the blueprint’s leads</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #3A3833; overflow-wrap: anywhere;">BIBLIOGRAPHY.md</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #E84328;">S04</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">7</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">The cycle</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">portfolio · backtest · attribution</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">the experiment notebook</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">later</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">G</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">The cycle</div><div style="font-size: 24px; color: #A5A29B; margin-top: 0; line-height: 1.2;">portfolio · backtest · attribution</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">the experiment notebook, until Verify passes</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">experiment_1.ipynb</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">S04–S05</div>
       </div>
       <div style="display: grid; grid-template-columns: 54px 480px 1fr 300px 150px; gap: 24px; align-items: baseline; padding: 7px 0; border-bottom: 2px solid #CFCBC3;">
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">8</div>
-        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">Results</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">kept or rejected</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #A5A29B;">H</div>
+        <div><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 26px; text-transform: uppercase; letter-spacing: -0.02em; color: #56534E;">The results</div><div style="font-size: 24px; color: #A5A29B; margin-top: 0; line-height: 1.2;">kept or rejected</div></div>
+        <div style="font-size: 24px; line-height: 1.3; color: #A5A29B;">every finished cycle, with the claim it moved</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #A5A29B; overflow-wrap: anywhere;">RESULTS.md</div>
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">later</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: #A5A29B;">S06</div>
       </div>
     </div>
   </div>
@@ -540,18 +539,18 @@
   </div>
 </div></section>
 
-<section data-label="Section 03" data-screen-label="17" data-speaker-notes="Section three, the live half. Everyone runs it alongside. Three stops, in order, and we do not go past the third today.">
+<section data-label="Section 03" data-screen-label="17" data-speaker-notes="Section three: what your pre-work produced, and how far to trust it before a feature is built on it.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
     <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 03</div>
     <div style="position: absolute; left: 78px; top: 246px; width: 1620px;">
-      <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">From objective to data</h1>
-      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">the Curator, live · stop at the security master · trust, then build</div>
+      <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">From universe to data</h1>
+      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">the curator as pre-work · the security master · trust, then build</div>
     </div>
     <div style="position: absolute; right: 78px; bottom: 84px; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7;">17</div>
   </div>
 </section>
 
-<section data-label="Data Curator" data-screen-label="18" data-speaker-notes="For those who got it running in session 01, this is the recap. For those who did not, this is the slide to photograph. The configuration is no longer a spreadsheet: the universe CSV and the strategy's own parameters drive the run, and the assistant writes them for you.">
+<section data-label="Data Curator" data-screen-label="18" data-speaker-notes="For those who ran it in S00, this is the recap. For those who did not, this is the slide to photograph. The configuration is no longer a spreadsheet: the universe CSV and the strategy's own parameters drive the run, and the assistant writes them for you.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
       <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Module 01 · Data Curator</div>
@@ -584,56 +583,56 @@
   </div>
 </section>
 
-<section data-label="Install &amp; run" data-screen-label="19" data-speaker-notes="Run it live, everyone alongside, FMP keys ready before the session. The failure modes are the Python version, the key, and a universe CSV with the wrong identifier column — in that order. Walk the room during the download. When the notebook has written the security master, we stop: everything after it is homework or session 04.">
+<section data-label="Install &amp; run" data-screen-label="19" data-speaker-notes="This is pre-work, in this order: seed Investable_Universe.csv from KN-TU30 with the universe-point-in-time skill, run the curator to 2024-12-31, the end of the in-sample period, then universe.ipynb. In the room, check that everyone’s ran. The failure modes are the Python version and a universe CSV with the wrong identifier column.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #121110; font-family: 'Archivo', system-ui, sans-serif; color: #F2F0EB;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Live · from the strategy root</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #A5A29B;">Pre-work · from the strategy root</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #56534E;">19</div>
     </div>
 
     <h1 style="position: absolute; left: 78px; top: 138px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 78px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">Four commands<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 150px; width: 630px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #C9C6BF;">All from the strategy folder. Environment, key, configuration, run — then the notebook.</div>
+    <div style="position: absolute; right: 78px; top: 150px; width: 630px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #C9C6BF;">Pre-work, from the strategy folder. Environment, key, configuration, run.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 252px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px;">
       <div style="background: #201F1D; color: #F2F0EB; padding: 30px 30px 33px; min-height: 468px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">01</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">Environment</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all; color: #F2F0EB;">uv sync</div>
-        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">Installs the Data Curator and the FMP extension the template declares. One command, one lock file.</div>
-        <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #3A3833; font-size: 24px; line-height: 1.3; color: #56534E;">The Python version is the first thing that bites. 3.13.</div>
+        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">Installs the Data Curator the template declares. One command, one lock file.</div>
+        <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #3A3833; font-size: 24px; line-height: 1.3; color: #56534E;">Python 3.13, as everywhere in the program.</div>
       </div>
       <div style="background: #201F1D; color: #F2F0EB; padding: 30px 30px 33px; min-height: 468px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">02</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The key</div>
         <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all; color: #F2F0EB;">cp Config/.env.template Config/.env</div>
-        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">Open it and paste your Financial Modeling Prep key. Nothing else goes in there.</div>
+        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">The starter curator uses Yahoo, with no key. A key of your own, such as FMP, is optional and goes only here.</div>
         <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #3A3833; font-size: 24px; line-height: 1.3; color: #E84328;">Never print a value from .env — an exposed key is rotated, not edited out.</div>
       </div>
       <div style="background: #201F1D; color: #F2F0EB; padding: 30px 30px 33px; min-height: 468px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">03</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The configuration</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all; color: #F2F0EB;">Universe/Investable_Universe.csv · Data/Curator/</div>
-        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">The universe CSV supplies the identifiers; the date range, provider <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #E4E1DA;">fmp</span> and the output columns live in the strategy's own parameters. Ask the assistant to write them from your objective — as in the <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #E4E1DA;">liquid-golden-cross</span> example.</div>
-        <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #3A3833; font-size: 24px; line-height: 1.3; color: #56534E;">Start with the cohort universe and ten years. Widen later.</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all; color: #F2F0EB;">Universe/Investable_Universe.csv · Data/curator.py</div>
+        <div style="font-size: 24px; line-height: 1.35; color: #A5A29B; margin-top: 15px;">The seed supplies the identifiers; the driver fixes the date window and the output columns. Ask the assistant to write them from your objective — as in the <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #E4E1DA;">liquid-golden-cross</span> example.</div>
+        <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid #3A3833; font-size: 24px; line-height: 1.3; color: #56534E;">KN-TU30 from 2005, to 2024-12-31: the in-sample end.</div>
       </div>
       <div style="background: #E84328; color: #FFF4F1; padding: 30px 30px 33px; min-height: 468px; display: flex; flex-direction: column;">
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1; color: #121110; letter-spacing: -0.04em;">04</div>
         <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 12px; letter-spacing: -0.02em; text-transform: uppercase;">The run</div>
-        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all;">kaxanuk.data_curator run</div>
+        <div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; line-height: 1.5; margin-top: 18px; word-break: break-all;">uv run python Data/curator.py</div>
         <div style="font-size: 24px; line-height: 1.35; color: rgba(255,244,241,0.9); margin-top: 15px;">One structured file per identifier, aligned on one calendar, in <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Data/Curator/Time_Series/</span>.</div>
         <div style="margin-top: auto; padding-top: 15px; border-top: 2px solid rgba(255,244,241,0.4); font-size: 24px; line-height: 1.3; color: #FFF4F1;">Nothing under Data/ is committed. A regenerable file is not a backed-up file.</div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 60px; background: #201F1D; padding: 27px 33px; display: flex; gap: 27px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em; flex: none;">Then, fifth</div>
-      <div style="font-size: 26px; line-height: 1.35; color: #C9C6BF;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">universe.ipynb</span> — profiles what the Curator downloaded and writes the security master the Refinery will join. Run it, look at the coverage, and stop.</div>
+      <div style="font-size: 26px; line-height: 1.35; color: #C9C6BF;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px; color: #F2F0EB;">universe.ipynb</span> — profiles what the Curator downloaded and writes the security master the refinery will join. Run it, look at the coverage: the room starts from here.</div>
     </div>
   </div>
 </section>
 
-<section data-label="Stop here" data-screen-label="20" data-speaker-notes="Read the left column as a checklist, hands up on each. Anyone missing an item pairs up before leaving. The right column is the promise for next time — and the reason the homework is to run the example, not to build a portfolio.">
+<section data-label="Stop here" data-screen-label="20" data-speaker-notes="Read the left column as a checklist, hands up on each. Anyone missing an item pairs up before leaving. The right column is the promise for next time, and the reason the homework is a blueprint draft, not a portfolio.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
-      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Live · the stop</div>
+      <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">The stop</div>
       <div style="margin-left: auto; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #A5A29B;">20</div>
     </div>
 
@@ -643,21 +642,21 @@
       <div style="background: #E4E1DA; padding: 33px 36px 36px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">On disk when you leave</div>
         <div style="margin-top: 15px; border-top: 2px solid #B6B2AA; padding-top: 6px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">A researcher with a name and a <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">RESEARCHER.md</span> you wrote</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">A strategy folder, pushed to your own private repository</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">OBJECTIVE.md</span> — a first pass of claims, each marked untested</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Universe/Investable_Universe.csv</span> — the cohort universe</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Data/Curator/Time_Series/</span> — one file per identifier, ten years</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The security master, written by <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">universe.ipynb</span></div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Universe/</span> — the KN-TU30 seed and <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">Selection_Log.csv</span></div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">custom_calculations.py</span> — your <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">c_*</span> feature, with tests</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The analyzer’s IC and ICIR at two horizons, summarised</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">RESULTS.md</span> — keep or drop, under “Before any experiment”</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">JOURNAL_1.md</span> — the threshold and the sign, pushed first</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">TRIALS.csv</span> — one row for every feature screened</div></div>
         </div>
       </div>
       <div style="background: #121110; color: #F2F0EB; padding: 33px 36px 36px;">
         <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Not today</div>
         <div style="margin-top: 15px; border-top: 2px solid #3A3833; padding-top: 6px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The Refinery — you will run it on the example this week</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The Analyzer — the gate every signal passes before session 04</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The benchmark choice — homework, in words, in <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">BRAINSTORMING_1.md</span></div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The blueprint, the portfolio, the backtest — session 04</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">Any book — the blueprint comes first, in session 04</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">Any performance number — the engine, in session 05</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">A second feature — every one screened is counted</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 10px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 26px; line-height: 1.35;">The holdout — 2025 onward stays sealed</div></div>
         </div>
         <div style="margin-top: 27px; padding-top: 18px; border-top: 2px solid #3A3833; font-size: 25px; line-height: 1.4; color: #C9C6BF;">A pipeline you ran once, end to end, on data you understand beats a portfolio you cannot explain. That is why we stop.</div>
       </div>
@@ -709,7 +708,7 @@
   </div>
 </section>
 
-<section data-label="Section 04" data-screen-label="22" data-speaker-notes="Section four, short. The homework is to run the example and read it for signals — these two slides are the lens to read it with.">
+<section data-label="Section 04" data-screen-label="22" data-speaker-notes="Section four, short. These two slides are the lens for the one feature you screen today, and for reading the worked example’s blueprint.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
     <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Section 04</div>
     <div style="position: absolute; left: 78px; top: 246px; width: 1620px;">
@@ -731,7 +730,7 @@
     <div style="position: absolute; left: 78px; right: 78px; top: 246px; bottom: 48px; display: flex; flex-direction: column; gap: 21px;">
       <div style="flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px;">
       <div style="background: #E4E1DA; padding: 27px 33px 30px;">
-        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Alpha signals</div>
+        <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em;">Return signals</div>
         <div style="margin-top: 15px; border-top: 2px solid #B6B2AA;">
           <div style="padding: 10px 0; border-bottom: 2px solid #CFCBC3;"><span style="font-size: 26px; font-weight: 600;">Earnings surprise</span><span style="font-size: 25px; color: #56534E;"> — abnormal returns following an unexpected result, and the drift after it.</span></div>
           <div style="padding: 10px 0; border-bottom: 2px solid #CFCBC3;"><span style="font-size: 26px; font-weight: 600;">Short-term reversal</span><span style="font-size: 25px; color: #56534E;"> — mean reversion after an extreme short-horizon move.</span></div>
@@ -777,7 +776,7 @@
       <div style="background: #201F1D; padding: 30px 33px 33px; min-height: 282px;"><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Selection on <span style="color: #E84328;">current_*</span></div><div style="font-size: 25px; line-height: 1.35; margin-top: 12px; color: #C9C6BF;">Filtering history by today's classification. Survivorship with a respectable column name.</div></div>
       <div style="background: #201F1D; padding: 30px 33px 33px; min-height: 282px;"><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Undeclared sweeps</div><div style="font-size: 25px; line-height: 1.35; margin-top: 12px; color: #C9C6BF;">Forty lookbacks tried, one reported. The p-value you quote is for the one test you pretended to run.</div></div>
       <div style="background: #201F1D; padding: 30px 33px 33px; min-height: 282px;"><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Uncosted turnover</div><div style="font-size: 25px; line-height: 1.35; margin-top: 12px; color: #C9C6BF;">A signal that rebalances daily on illiquid names is a spread-payment schedule, not a strategy.</div></div>
-      <div style="background: #E84328; color: #FFF4F1; padding: 30px 33px 33px; min-height: 282px;"><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Borrowed alpha</div><div style="font-size: 25px; line-height: 1.35; margin-top: 12px;">It works, and it is sector beta. Real, tradeable, and not worth a fee. Attribution settles this in session 05.</div></div>
+      <div style="background: #E84328; color: #FFF4F1; padding: 30px 33px 33px; min-height: 282px;"><div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Borrowed beta</div><div style="font-size: 25px; line-height: 1.35; margin-top: 12px;">It works, and it is sector beta. Real, and not a return of your own. Attribution settles this in session 05.</div></div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 48px; display: flex; gap: 24px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em; flex: none;">Ask your researcher</div>
@@ -786,18 +785,18 @@
   </div>
 </section>
 
-<section data-label="Next session" data-screen-label="25" data-speaker-notes="Set up session four. Portfolio construction only makes sense once there is a benchmark to beat and signals to try — both are the homework.">
+<section data-label="Next session" data-screen-label="25" data-speaker-notes="Set up session four. It opens with your blueprint draft and its critic; the blueprint is pushed before the rule cell exists, and no performance number is read until session 05.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #E84328; font-family: 'Archivo', system-ui, sans-serif; color: #FFF4F1;">
     <div style="position: absolute; top: 69px; left: 78px; font-size: 24px; font-weight: 600; text-transform: uppercase; color: #FFF4F1; letter-spacing: 0.2em; opacity: 0.75;">Up next</div>
     <div style="position: absolute; left: 78px; top: 258px; width: 1620px;">
       <h1 style="margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 138px; line-height: 0.9; letter-spacing: -0.045em; text-transform: uppercase;">Next: <span style="color: #121110;">portfolio construction.</span></h1>
-      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Session 04 turns your signals into historical portfolios that have to beat the benchmark you name this week. It starts from your <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">OBJECTIVE.md</span>.</div>
+      <div style="margin-top: 60px; font-size: 38px; line-height: 1.35; font-weight: 500; color: #121110;">Session 04 pushes your blueprint before the rule, then builds an equal-weight book that passes its invariants. It starts from your <span style="font-family: 'JetBrains Mono', monospace; font-size: 25px;">RESULTS.md</span>.</div>
     </div>
     <div style="position: absolute; right: 78px; bottom: 84px; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; opacity: 0.7;">25</div>
   </div>
 </section>
 
-<section data-label="To do" data-screen-label="26" data-speaker-notes="Four deliverables. The example is the first because it is the fastest way to see what a finished strategy looks like — the signals in it are ideas to test, not to copy. Three and four are what session 04 cannot start without: a benchmark in words and two or three signals with a cited note each.">
+<section data-label="To do" data-screen-label="26" data-speaker-notes="Three deliverables and one thing not to do; session 04 opens with these cards. The screen is finished and counted. The example’s blueprint is read, not run: it shows what a prediction citing a note looks like. Your own blueprint is drafted with /blueprint 1 and not pushed: in S04 you answer the critic and push it before the rule. The demo account waits: its 14 days start in S04.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
       <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">Before session 04 · Portfolio Construction</div>
@@ -805,68 +804,65 @@
     </div>
 
     <h1 style="position: absolute; left: 78px; top: 138px; margin: 0; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 84px; line-height: 0.94; letter-spacing: -0.04em; text-transform: uppercase;">To do<span style="color: #E84328;">.</span></h1>
-    <div style="position: absolute; right: 78px; top: 156px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Four deliverables, all committed to your strategy repository. Session 04 cannot start without the last two.</div>
+    <div style="position: absolute; right: 78px; top: 156px; width: 690px; font-size: 26px; line-height: 1.5; font-weight: 500; color: #3A3833;">Three deliverables and one thing not to do. Session 04 opens with your blueprint draft.</div>
     <div style="position: absolute; left: 78px; right: 78px; top: 270px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 15px;">
       <div style="background: #E4E1DA; color: #121110; padding: 30px 33px 33px; display: flex; flex-direction: column;">
         <div style="display: flex; gap: 18px; align-items: baseline;">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 45px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">01</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Run the example</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Finish the screen</div>
         </div>
-        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;">Study it for ideas, not for answers.</div>
+        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;">Keep or drop, written down.</div>
         <div style="margin-top: 15px; border-top: 2px solid #B6B2AA; padding-top: 3px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">init-example</span>, beside your strategy</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Curator → <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">universe.ipynb</span> → Refinery → Analyzer, end to end</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Read its <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">OBJECTIVE.md</span> and blueprint: which signals, and why</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Write down the two you would steal, and the one you would not</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">The measurements in <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">RESULTS.md</span>, under “Before any experiment”</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Every feature you screened, a <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">TRIALS.csv</span> row</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Which number the seeded leak inflated, in <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">JOURNAL_1.md</span></div></div>
         </div>
       </div>
       <div style="background: #E4E1DA; color: #121110; padding: 30px 33px 33px; display: flex; flex-direction: column;">
         <div style="display: flex; gap: 18px; align-items: baseline;">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 45px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">02</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Your claims</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Read the example’s blueprint</div>
         </div>
-        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;">The objective, fine-tuned by reading.</div>
+        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;">Read it; do not run it.</div>
         <div style="margin-top: 15px; border-top: 2px solid #B6B2AA; padding-top: 3px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">objective</span> — a first pass from your own words</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">read</span> at least two of the ten works into your researcher</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">objective</span> again — the evidence rewritten from the notes</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Each claim numbered, present tense, with what would kill it</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">init-example</span>, beside your strategy, as in S01</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Each prediction, and the note or measurement it cites</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Its control: what differs from the rule, in one thing</div></div>
         </div>
       </div>
       <div style="background: #E4E1DA; color: #121110; padding: 30px 33px 33px; display: flex; flex-direction: column;">
         <div style="display: flex; gap: 18px; align-items: baseline;">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 45px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">03</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Your benchmark</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Draft your blueprint</div>
         </div>
-        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;">What "beat" means, in one sentence.</div>
+        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #3A3833;"><span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">/blueprint 1</span>, drafted, not pushed.</div>
         <div style="margin-top: 15px; border-top: 2px solid #B6B2AA; padding-top: 3px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">An index, an ETF or an equal-weight book of the universe</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Why that one, given your objective</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">The first entry of <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">BRAINSTORMING_1.md</span> — Experiment 1 <em>is</em> the benchmark</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">It needs only your <span style="font-family: 'JetBrains Mono', monospace; font-size: 24px;">RESULTS.md</span> and your notes</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Every prediction cites a note or an analyzer measurement</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">A control that differs from the rule in one thing</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">In S04 you answer the critic, then push it before the rule</div></div>
         </div>
       </div>
       <div style="background: #121110; color: #F2F0EB; padding: 30px 33px 33px; display: flex; flex-direction: column;">
         <div style="display: flex; gap: 18px; align-items: baseline;">
           <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 45px; line-height: 1; color: #E84328; letter-spacing: -0.04em;">04</div>
-          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Two or three signals</div>
+          <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; letter-spacing: -0.02em; text-transform: uppercase;">Do not activate the demo</div>
         </div>
-        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #C9C6BF;">Candidates, not ten. The ones your claims imply.</div>
+        <div style="font-size: 24px; line-height: 1.4; margin-top: 12px; color: #C9C6BF;">The Lab demo waits for session 04.</div>
         <div style="margin-top: 15px; border-top: 2px solid #3A3833; padding-top: 3px;">
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Each one named, and the claim it serves by number</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Each one citing the note it came from</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Its availability lag stated, in words</div></div>
-          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">One sentence on which of the six lies it is exposed to</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Requested in S00, not activated</div></div>
+          <div style="display: flex; gap: 15px; align-items: baseline; padding: 8px 0;"><div style="width: 12px; height: 12px; background: #E84328; flex: none;"></div><div style="font-size: 24px; line-height: 1.35;">Its 14 days start in S04 and must cover S04 to S06</div></div>
         </div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 54px; display: flex; gap: 24px; align-items: baseline;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #E84328; letter-spacing: 0.16em; flex: none;">Where it goes</div>
-      <div style="font-size: 26px; color: #56534E;">Claims, benchmark and signals into your strategy repository. The researcher stays on your own machine — your library is private to you.</div>
+      <div style="font-size: 26px; color: #56534E;">Results, journal, trials and the blueprint draft into your strategy repository. The researcher stays on your own machine — your library is private to you.</div>
     </div>
   </div>
 </section>
 
-<section data-label="Reading list" data-screen-label="27" data-speaker-notes="Six for this session. The first three are the discipline of feature engineering; the last three are the craft. Compile whichever you read — that is the point of having built the researcher today.">
+<section data-label="Reading list" data-screen-label="27" data-speaker-notes="Six for this session. The first three are the discipline of feature engineering; the last three are the craft. Read whichever you choose into your notes with read: that is what your researcher, from S00, is for.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #F2F0EB; font-family: 'Archivo', system-ui, sans-serif; color: #121110;">
     <div style="position: absolute; top: 69px; left: 78px; right: 78px; display: flex; align-items: center; gap: 24px;">
       <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: #56534E;">References · session 03</div>
@@ -897,14 +893,14 @@
         <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2021</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Advanced Portfolio Management</div></div>
       </div>
       <div style="border-top: 2px solid #CFCBC3; padding: 15px 0 9px;">
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; text-transform: uppercase; letter-spacing: -0.02em;">Grinold &amp; Kahn · Dixon</div>
-        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">1995</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Active Portfolio Management</div></div>
-        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2020</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Machine Learning in Finance: From Theory to Practice</div></div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; text-transform: uppercase; letter-spacing: -0.02em;">Grinold &amp; Kahn · Jansen</div>
+        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2000</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Active Portfolio Management, 2nd ed.: Information Analysis</div></div>
+        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2020</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Machine Learning for Algorithmic Trading, 2nd ed.: Financial Feature Engineering</div></div>
       </div>
       <div style="border-top: 2px solid #CFCBC3; padding: 15px 0 9px;">
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; text-transform: uppercase; letter-spacing: -0.02em;">Viafore</div>
-        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2021</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Robust Python</div></div>
-        <div style="font-size: 24px; line-height: 1.3; color: #56534E; margin-top: 9px;">For the custom calculations you are about to write and then rely on for two years.</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 28px; text-transform: uppercase; letter-spacing: -0.02em;">KaxaNuk · Viafore</div>
+        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2026</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Data Curator, README</div></div>
+        <div style="display: flex; gap: 18px; align-items: baseline; margin-top: 9px;"><div style="font-family: 'JetBrains Mono', monospace; font-size: 25px; color: #E84328; flex: none;">2021</div><div style="font-size: 25px; line-height: 1.3; color: #3A3833;">Robust Python, for the custom calculations you will rely on</div></div>
       </div>
     </div>
     <div style="position: absolute; left: 78px; right: 78px; bottom: 48px; display: flex; gap: 24px; align-items: baseline;">
@@ -914,7 +910,7 @@
   </div>
 </section>
 
-<section data-label="Close" data-screen-label="28" data-speaker-notes="Close on the two folders and the address, then set up session 04: portfolio construction, from the signals and the benchmark they bring.">
+<section data-label="Close" data-screen-label="28" data-speaker-notes="Close on the two folders and the address, then set up session 04: the blueprint before the rule, from the RESULTS.md they bring.">
   <div style="position: absolute; inset: 0; overflow: hidden; background: #121110; font-family: 'Archivo', system-ui, sans-serif; color: #F2F0EB;">
     <div style="position: absolute; top: 0; right: 0; width: 558px; height: 1080px; background: #E84328;"></div>
     <div style="position: absolute; top: 69px; left: 78px; display: flex; align-items: center; gap: 24px;">
@@ -948,11 +944,11 @@
       </div>
       <div>
         <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.72;">Topic</div>
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1.05; margin-top: 9px; letter-spacing: -0.02em;">PORTFOLIO CONSTRUCTION</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 42px; line-height: 1.05; margin-top: 9px; letter-spacing: -0.02em; font-size: 32px;">PORTFOLIO CONSTRUCTION: BLUEPRINT BEFORE THE RULE</div>
       </div>
       <div>
         <div style="font-size: 24px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; opacity: 0.72;">You leave with</div>
-        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 9px; letter-spacing: -0.02em;">HISTORICAL PORTFOLIOS FROM YOUR SIGNALS, MEASURED AGAINST YOUR BENCHMARK.</div>
+        <div style="font-family: 'Archivo Black', system-ui, sans-serif; font-size: 30px; line-height: 1.05; margin-top: 9px; letter-spacing: -0.02em;">BLUEPRINT_1.MD PUSHED FIRST, AND AN EQUAL-WEIGHT BOOK THAT PASSES ITS INVARIANTS.</div>
       </div>
     </div>
     <div style="position: absolute; right: 78px; top: 69px; font-family: 'Archivo Black', system-ui, sans-serif; font-size: 24px; color: #FFF4F1; opacity: 0.7;">28</div>
@@ -970,7 +966,7 @@
     <div style="position: absolute; left: 78px; bottom: 84px; display: flex; align-items: center; gap: 24px;">
       <img src="1ed1baf3-b691-4e40-8cbc-5318e0848c8f" alt="KaxaNuk" style="height: 54px; width: auto; display: block;">
       <div style="width: 51px; height: 4px; background: #E84328;"></div>
-      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #56534E; letter-spacing: 0.16em;">Session 03 · Feature Engineering</div>
+      <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #56534E; letter-spacing: 0.16em;">Session 03 · Feature Engineering: the Feature Lab</div>
     </div>
   </div>
 </section>

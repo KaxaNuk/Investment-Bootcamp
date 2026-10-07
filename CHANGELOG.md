@@ -31,6 +31,14 @@ bundled HTML.**
   - Uses the README's seven questions and a kill switch with a comparator.
   - Corrects five citations: the Dow editorials (dropped), Damodaran 1996, Khandani and Lo 2011,
     and the full titles of McLean and Pontiff and of Jensen, Kelly and Pedersen.
+- **S03 deck.** Is now the Feature Lab:
+  - "Alpha signals" are return signals.
+  - The researcher and strategy slides are recaps of S00 and S01, with the current install (APM
+    0.29.0, any assistant), interview, home folders and commands.
+  - The order of work is lettered A to H.
+  - The data is pre-work on KN-TU30 to 2024-12-31, with Yahoo and no key.
+  - The stop and the to-do follow the README: the screen counted, the blueprint drafted, the demo
+    not yet activated.
 
 ### Fixed
 
