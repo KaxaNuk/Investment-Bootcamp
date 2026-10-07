@@ -4,6 +4,7 @@
 //   node design/render.js design/s05_content.js "S04-Portfolio-Construction/S04 Portfolio Construction.html" "S05-Backtest-and-Attribution/S05 Backtest and Attribution.html"
 const fs = require('fs');
 const path = require('path');
+const { withTitle } = require('./deck.js');
 
 const [, , contentPath, shellPath, outPath] = process.argv;
 const deck = require(path.resolve(contentPath));
@@ -287,8 +288,9 @@ const slides = deck.slides.map((s, i) => {
   if (!kinds[s.kind]) throw new Error('unknown kind ' + s.kind);
   return kinds[s.kind](s);
 }).join('\n\n');
-const newTpl = tpl.slice(0, start) + slides + tpl.slice(end);
+const newTpl = withTitle(tpl.slice(0, start) + slides + tpl.slice(end), deck.title);
 shell[tplIdx] = JSON.stringify(newTpl).replace(/<\//g, '<\\u002F');
-let out = shell.join('\n').replace(/font-size="130" fill="#121110">S0\d</, `font-size="130" fill="#121110">${deck.thumb}<`);
+let out = shell.join('\n').replace(/font-size="130" fill="#121110">S0\d</, `font-size="130" fill="#121110">${deck.thumb}<`)
+  .replace(/<title>[^<]*<\/title>/, `<title>${esc(deck.title)}</title>`);
 fs.writeFileSync(outPath, out);
 console.log('slides:', deck.slides.length, 'bytes:', out.length);

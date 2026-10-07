@@ -3,11 +3,14 @@
 const fs = require('fs');
 const path = require('path');
 const slides = require('./s06_slides.js');
+const { withTitle } = require('./deck.js');
 
 const repo = process.argv[2] || path.resolve(__dirname, '..');
 const SRC = path.join(repo, 'S04-Portfolio-Construction', 'S04 Portfolio Construction.html');
 const OUT_HTML = path.join(repo, 'S06-Final-Strategy-Prep-and-Presentation', 'S06 Final Strategy Prep & Presentation.html');
 const OUT_MD = path.join(repo, 'design', 'S06 Final Strategy Prep & Presentation - copy.md');
+const OPEN_QUESTIONS = path.join(__dirname, 's06_open_questions.md');
+const TITLE = 'S06 · Final Strategy Prep & Presentation';
 const LOGO = '1ed1baf3-b691-4e40-8cbc-5318e0848c8f';
 
 const INK = '#121110', PAPER = '#F2F0EB', RED = '#E84328', CARD = '#E4E1DA', DARKCARD = '#201F1D';
@@ -293,10 +296,11 @@ const end = bundle.indexOf('</script>', start);
 const template = JSON.parse(bundle.slice(start, end));
 const a = template.indexOf('<section');
 const b = template.lastIndexOf('</section>') + '</section>'.length;
-const newTemplate = template.slice(0, a) + sections + template.slice(b);
+const newTemplate = withTitle(template.slice(0, a) + sections + template.slice(b), TITLE);
 const encoded = JSON.stringify(newTemplate).replace(/<\//g, '<\\u002F');
 let out = bundle.slice(0, start) + '\n' + encoded + '\n  ' + bundle.slice(end);
-out = out.replace('font-size="130" fill="#121110">S04</text>', 'font-size="130" fill="#121110">S06</text>');
+out = out.replace('font-size="130" fill="#121110">S04</text>', 'font-size="130" fill="#121110">S06</text>')
+  .replace(/<title>[^<]*<\/title>/, `<title>${esc(TITLE)}</title>`);
 fs.writeFileSync(OUT_HTML, out);
 
 // ── Markdown copy, in the S04 copy's format.
@@ -339,6 +343,7 @@ slides.forEach((s, i) => {
   if (s.why) md.push('', `**WHY WE STOP** — ${s.why}`);
   md.push('', '<details><summary>Speaker notes</summary>', '', s.notes, '', '</details>', '');
 });
-md.push(fs.readFileSync(path.join(__dirname, 's06_open_questions.md'), 'utf8'));
+// the open questions are authoring notes, kept out of the public tree
+if (fs.existsSync(OPEN_QUESTIONS)) md.push(fs.readFileSync(OPEN_QUESTIONS, 'utf8'));
 fs.writeFileSync(OUT_MD, md.join('\n'));
 console.log('slides', slides.length, 'max words', Math.max(...slides.map(words)), slides.map((s, i) => `${i + 1}:${words(s)}`).join(' '));

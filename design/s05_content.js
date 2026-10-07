@@ -1,6 +1,7 @@
 // S05 — Backtest & Attribution · slide content. Rendered by render.js in the S04 design.
 module.exports = {
   thumb: 'S05',
+  title: 'S05 · Backtest and Attribution',
   slides: [
     // ───────────── Opening
     {

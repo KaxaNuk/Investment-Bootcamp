@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.2.0 (2026-10-07)
+
+**Every deck now has an editable source in `design/`: change the source and rebuild, never the
+bundled HTML.**
+
+### Added
+
+- `design/deck.js`, which extracts the slides of a bundled deck into `design/sNN_slides.html` and
+  bundles them back, renumbering the slides. S01 to S04 had no source; S05 and S06 keep theirs
+  (`s05_content.js`, `s06_slides.js`).
+- `design/check.js`, a lint of the six decks against `AGENTS.md` and the syllabus: banned words,
+  "alpha" outside a regression intercept, retired files and folders, placeholders, and slide
+  numbers.
+
+### Fixed
+
+- Every deck's browser tab showed nothing or "Bundled Page"; it now shows the session name.
+- `design/build_s06.js` stopped with an error on a clean clone, because it read a gitignored
+  authoring note; it now skips the note when it is absent.
+
 ## 0.1.0 (2026-10-07)
 
 **Each session now lives in its own folder, `S00-Onboarding-and-Self-Check/` to
