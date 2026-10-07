@@ -24,20 +24,20 @@ Session 06, the last one in the room: today nothing new is built. You challenge 
 
 ### 02 · WHO PRICED THEM.
 
-*cards* · kicker: **SESSION 05 · HOMEWORK** · 52 words
+*cards* · kicker: **SESSION 05 · HOMEWORK** · 61 words
 
-Show the file, not the curve.
+Session 05’s to-do, card for card. Show the file, not the curve.
 
 - **01 YOUR BOOK, NET**: Priced by the engine, costs on. `FINDINGS_1.md`
-- **02 YOUR CONTROL**: One ingredient out, same dates.
-- **03 BOTH LAYERS**: Brinson-Fachler, then the factor model.
-- **04 YOUR COUNT**: Every variant you ranked.
+- **02 YOUR CONTROL**: One ingredient out, same dates. `Portfolio/`
+- **03 BOTH LAYERS**: Brinson-Fachler, then the factor model. `Attribution/`
+- **04 YOUR COUNT**: Every variant you ranked. `RESULTS.md`
 
 **THE RULE TODAY** — A number not in `FINDINGS_1.md` is not in the room.
 
 <details><summary>Speaker notes</summary>
 
-Hands up, card by card, with the file open. The book row and the control row must sit on the same rebalance dates; a control that chose its own dates differs in two things, and the gap is two effects read as one. Attribution: who ran both layers, and who ran the third pass, Brinson-Fachler again on the residual? Almost nobody; neither did the example, and the gate will say so. Last: who can say their trial count without looking? If you cannot, it is not published yet, and that is the first thing you fix today.
+Hands up, card by card, with the file open. The book row and the control row must sit on the same rebalance dates; a control that chose its own dates differs in two things, and the gap is two effects read as one. Attribution: who ran both layers with the coverage line beside them, and the arms of section 6? Who did session 05’s if-you-can, the third pass, Brinson-Fachler again on the residual? Almost nobody; neither did the example, and the gate will say so. No factor files on your laptop means the first cut only: say so, and criterion 2 reads not met. Last: who can say their trial count without looking? If you cannot, it is not published yet, and that is the first thing you fix today.
 
 </details>
 
@@ -105,7 +105,7 @@ Four of challenge’s ten checks, the four you can do by hand. A falsifier with 
 
 ### 06 · LET THE RESEARCHER DISAGREE.
 
-*live* · kicker: **LIVE · THE CHALLENGE** · 66 words
+*live* · kicker: **LIVE · THE CHALLENGE** · 68 words
 
 `challenge` reads your files and reports in chat.
 
@@ -118,15 +118,15 @@ Codex: follow ~/.apm/apm_modules/KaxaNuk/KaxaNuk-Researcher/.apm/prompts/challen
 
 Behind the line: it reads `BLUEPRINT_1.md`, `FINDINGS_1.md`, `JOURNAL_1.md`, `RESULTS.md`, `OBJECTIVE.md` and every cited note, in that order.
 
-- **01 IT WRITES**: One `JOURNAL_1.md` entry, on your go.
-- **02 IT NEVER**: Edits your files, computes a number, declares graduation.
+- **01 FIRST, YOUR VERDICTS**: Each prediction’s row in `FINDINGS_1.md`, by you.
+- **02 IT WRITES**: One `JOURNAL_1.md` entry, on your go. Nothing else.
 - **03 YOU FIX**: The findings, from a re-run. Never a reword.
 
 **THEN** — A falsified claim moves in `OBJECTIVE.md`, through `objective`.
 
 <details><summary>Speaker notes</summary>
 
-Run it in your strategy folder, researcher added; it refuses in liquid-golden-cross, and it refuses while FINDINGS_1.md reports nothing, because challenging a run in progress invites findings written to match. Read the report out loud to your neighbour: what held, what failed and by which falsifier, what the findings do not say. It also checks the trial count, the notes behind each prediction, and whether two published numbers reconcile; on a disagreement it asks for a re-run and never supplies the value. It compares the package version you challenge with against the one that drafted the blueprint: a mismatch is disclosed, not a failure. Say yes to the journal entry; FINDINGS_1.md and RESULTS.md are yours to correct.
+Session 05 filled FINDINGS_1.md with evidence and left each prediction’s verdict for today: write those rows first, confirmed or falsified, with the number, then run it. It never edits your files, computes a number or declares graduation. Run it in your strategy folder, researcher added; it refuses in liquid-golden-cross, and it refuses while FINDINGS_1.md reports nothing, because challenging a run in progress invites findings written to match. Read the report out loud to your neighbour: what held, what failed and by which falsifier, what the findings do not say. It also checks the trial count, the notes behind each prediction, and whether two published numbers reconcile; on a disagreement it asks for a re-run and never supplies the value. It compares the package version you challenge with against the one that drafted the blueprint: a mismatch is disclosed, not a failure. Say yes to the journal entry; FINDINGS_1.md and RESULTS.md are yours to correct.
 
 </details>
 
@@ -150,9 +150,9 @@ Section two: robustness is survival. A real strategy survives parameter changes,
 
 ### 08 · A CURVE, NOT A CELL.
 
-*cards* · kicker: **ROBUSTNESS · PERTURBATION** · 69 words
+*cards* · kicker: **ROBUSTNESS · PERTURBATION** · 73 words
 
-Move what the blueprint declared. Read the shape.
+Session 05 priced the grid and the sub-periods. Today, read the shape.
 
 - **01 THE GRID**: The settings it named; the cells that keep the sign. `12 of 15`
 - **02 SUB-PERIODS**: Ahead of the control in how many of three?
@@ -163,17 +163,17 @@ Move what the blueprint declared. Read the shape.
 
 <details><summary>Speaker notes</summary>
 
-The grid is the one your blueprint declared, not one you choose now: the example’s Experiment 1 asked for twelve cells of fifteen to keep the sign of its Sharpe margin, and got twelve. A parameter degrading monotonically across three settings is information; a variant beating its control by 0.001 Sharpe is not. Read every cell against the control on both Sharpe and CAGR: a Sharpe edge with a CAGR deficit is the example’s exact failure. Never choose a parameter on the metric it is judged by. Last, wipe the working copy and re-run: the example did it for every experiment and printed the same figures.
+Nothing new is priced today: the grid and the sub-periods are the rows session 05 priced in section 4, the example’s 2017–19, 2020–22 and 2023–26, and a cell priced now, after the result, is a trial. The grid is the one your blueprint declared: the example’s Experiment 1 asked for twelve cells of fifteen to keep the sign of its Sharpe margin, and got twelve. A parameter degrading monotonically across three settings is information; a variant beating its control by 0.001 Sharpe is not. Read every cell against the control on both Sharpe and CAGR: a Sharpe edge with a CAGR deficit is the example’s exact failure. Never choose a parameter on the metric it is judged by. Last, wipe the working copy and re-run: the example did it for every experiment and printed the same figures.
 
 </details>
 
 ### 09 · PUBLISH N.
 
-*cards* · kicker: **ROBUSTNESS · THE TRIAL COUNT** · 74 words
+*cards* · kicker: **ROBUSTNESS · THE TRIAL COUNT** · 75 words
 
 The best Sharpe of N trials is the largest of N draws.
 
-- **01 WHAT COUNTS**: Every variant ranked, every feature screened.
+- **01 WHAT COUNTS**: Every variant ranked, every feature screened, K.
 - **02 EXCLUDED, BY NAME**: A dropped run keeps its name and its reason. `RESULTS.md`
 - **03 A RESCUE IS A TRIAL**: A no-rescue lever moved after the result: a new experiment.
 - **04 DEFLATED, OR SAY SO**: Publishing N is the minimum.
@@ -182,26 +182,26 @@ The best Sharpe of N trials is the largest of N draws.
 
 <details><summary>Speaker notes</summary>
 
-A reader cannot discount a best-of-N result without knowing N, so the count goes in FINDINGS_1.md under The trial count, and RESULTS.md compiles it; one in RESULTS.md but not in the findings is a summary leading its source. Your blueprint listed changes that may not rescue the experiment, a holding count, a trigger, a window: moved after the result, each is a new experiment and a trial. A run that cannot be believed is excluded by name with its reason, never quietly dropped. The deflated Sharpe is not computed by the stack, so the sign-off says whether you computed it; the example never did, and says so. The example’s count is cumulative across its four experiments.
+K, session 05’s random draws, counts too, published with its percentile, never the best draw. A reader cannot discount a best-of-N result without knowing N, so the count goes in FINDINGS_1.md under The trial count, and RESULTS.md compiles it; one in RESULTS.md but not in the findings is a summary leading its source. Your blueprint listed changes that may not rescue the experiment, a holding count, a trigger, a window: moved after the result, each is a new experiment and a trial. A run that cannot be believed is excluded by name with its reason, never quietly dropped. The deflated Sharpe is not computed by the stack, so the sign-off says whether you computed it; the example never did, and says so. The example’s count is cumulative across its four experiments.
 
 </details>
 
 ### 10 · NET, OR NOT AT ALL.
 
-*cards* · kicker: **ROBUSTNESS · COSTS AND CAPACITY** · 63 words
+*cards* · kicker: **ROBUSTNESS · COSTS AND CAPACITY** · 66 words
 
 Session 05 priced the costs. Today you state them.
 
 - **01 TWO ROWS**: The blueprint’s commission, and a realistic one.
 - **02 TURNOVER**: Times the book a year, one-way per rebalance.
 - **03 CAPACITY**: The largest book a trade’s participation allows. `1% · 5% of 63-day value`
-- **04 NOT MODELLED**: Market impact, borrow. Said out loud.
+- **04 NOT MODELLED**: Whatever your run left out, borrow first. Out loud.
 
 **CAPACITY NOT MODELLED** — is not met. Not “probably fine.”
 
 <details><summary>Speaker notes</summary>
 
-Results are accepted net, or not at all: commission on the unadjusted price, integer shares, a cash reserve. The example reports its blueprint’s commission setting and a realistic one side by side, with 5 basis points of slippage. Turnover first, because it tells the judge how much the costs matter: the example’s Experiment 1 turns over 1.99 times the book a year. Capacity is stated from the book as the largest book at which a trade takes no more than 1% or 5% of the name’s 63-day average traded value: a bound on participation, not a model of market impact. On a long/short book, borrow cost is a headline caveat, not a footnote.
+Results are accepted net, or not at all: commission on the unadjusted price, integer shares, a cash reserve. The example reports its blueprint’s commission setting and a realistic one side by side, with 5 basis points of slippage. Turnover first, because it tells the judge how much the costs matter: the example’s Experiment 1 turns over 1.99 times the book a year. Capacity is stated from the book as the largest book at which a trade takes no more than 1% or 5% of the name’s 63-day average traded value: a bound on participation, not a model of market impact. Session 05’s Lab run could carry the Spread + impact preset; your code run charged commission and slippage: say which run carried what. On a long/short book, borrow cost is a headline caveat, not a footnote.
 
 </details>
 
@@ -527,7 +527,7 @@ The same disclaimer as every session. Every number today came from your files or
 
 ## Open questions
 
-1. **Session 05 is not on disk yet.** S04 hands the backtest, costs and attribution to S05, *Backtest & Attribution*, and this deck assumes S05 ends with `FINDINGS_1.md` filled: the book priced net against the benchmark and the control on the same dates, both attribution layers, and the trial count (slide 2's four cards). Once S05's to-do slide exists, make slide 2 match it word for word, and move anything S05 already teaches out of slides 8–10 (perturbation, trial count, costs and capacity), which here are framed as *stating* what S05 priced.
+1. **Aligned with S05** (`design/S05 Backtest and Attribution - copy.md`, 2026-10-07). Slide 2 is S05's to-do, chips included; slide 6 adds the per-prediction verdicts S05 leaves for today; slides 8–10 read what S05 priced (sub-periods, the grid, two cost rows, K random draws) and price nothing new. Still open from S05: its open question 4, the factor files. Without them students reach S06 with the first cut only, and criterion 2 reads not met (slide 2's notes say so).
 2. **Is S06 the last session, and when is presentation day?** Slides 23 and 25 point to a *presentation day* after this session, with no date: the old deck closed on *Let's code! Research Evaluation Framework* and the KN Hack Research Challenge 2026 repository (github.com/KN-Hack/Research-Challenge-2026), which this deck no longer names. Give the date and the format (minutes per team, who judges), or say whether presentations happen inside S06 itself; then the To do and the closing panel change.
 3. **The scorecard (slide 19)** keeps the old template exactly: three dimensions, nine rows at 11.11%, scores 0/33/66/100. The file under each row is new; confirm the pairing (for example *Scientific process → git log*, *Signal construction → c_\* columns*). Should students get the scoring workbook itself as a handout? The old one was an image in the PDF; it is not in this repository.
 4. **The old deck's judging criteria** (Innovation, Risk management, Technical rigor, Clarity, Practicality, Performance, Robustness) are not on any slide: the scorecard replaces them, and slide 19 says there is no row for return. If the challenge judges still score Performance, that line is wrong and needs saying.

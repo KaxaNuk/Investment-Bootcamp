@@ -10,15 +10,15 @@ module.exports = [
   },
   {
     type: 'cards', label: 'Who priced them', kicker: 'SESSION 05 · HOMEWORK',
-    title: 'Who priced them', deck: 'Show the file, not the curve.',
+    title: 'Who priced them', deck: 'Session 05’s to-do, card for card. Show the file, not the curve.',
     cards: [
       { t: 'Your book, net', b: 'Priced by the engine, costs on.', chip: 'FINDINGS_1.md' },
-      { t: 'Your control', b: 'One ingredient out, same dates.' },
-      { t: 'Both layers', b: 'Brinson-Fachler, then the factor model.' },
-      { t: 'Your count', b: 'Every variant you ranked.', dark: true },
+      { t: 'Your control', b: 'One ingredient out, same dates.', chip: 'Portfolio/' },
+      { t: 'Both layers', b: 'Brinson-Fachler, then the factor model.', chip: 'Attribution/' },
+      { t: 'Your count', b: 'Every variant you ranked.', chip: 'RESULTS.md', dark: true },
     ],
     callout: ['THE RULE TODAY', 'A number not in `FINDINGS_1.md` is not in the room.'],
-    notes: 'Hands up, card by card, with the file open. The book row and the control row must sit on the same rebalance dates; a control that chose its own dates differs in two things, and the gap is two effects read as one. Attribution: who ran both layers, and who ran the third pass, Brinson-Fachler again on the residual? Almost nobody; neither did the example, and the gate will say so. Last: who can say their trial count without looking? If you cannot, it is not published yet, and that is the first thing you fix today.',
+    notes: 'Hands up, card by card, with the file open. The book row and the control row must sit on the same rebalance dates; a control that chose its own dates differs in two things, and the gap is two effects read as one. Attribution: who ran both layers with the coverage line beside them, and the arms of section 6? Who did session 05’s if-you-can, the third pass, Brinson-Fachler again on the residual? Almost nobody; neither did the example, and the gate will say so. No factor files on your laptop means the first cut only: say so, and criterion 2 reads not met. Last: who can say their trial count without looking? If you cannot, it is not published yet, and that is the first thing you fix today.',
   },
   {
     type: 'statement', label: 'This session', kicker: 'THIS SESSION',
@@ -58,12 +58,12 @@ module.exports = [
     code: ['/challenge 1', { codex: 'follow ~/.apm/apm_modules/KaxaNuk/KaxaNuk-Researcher/.apm/prompts/challenge.prompt.md for experiment 1' }],
     behind: 'Behind the line: it reads `BLUEPRINT_1.md`, `FINDINGS_1.md`, `JOURNAL_1.md`, `RESULTS.md`, `OBJECTIVE.md` and every cited note, in that order.',
     cards: [
-      { t: 'It writes', b: 'One `JOURNAL_1.md` entry, on your go.' },
-      { t: 'It never', b: 'Edits your files, computes a number, declares graduation.' },
+      { t: 'First, your verdicts', b: 'Each prediction’s row in `FINDINGS_1.md`, by you.' },
+      { t: 'It writes', b: 'One `JOURNAL_1.md` entry, on your go. Nothing else.' },
       { t: 'You fix', b: 'The findings, from a re-run. Never a reword.', accent: true },
     ],
     callout: ['THEN', 'A falsified claim moves in `OBJECTIVE.md`, through `objective`.'],
-    notes: 'Run it in your strategy folder, researcher added; it refuses in liquid-golden-cross, and it refuses while FINDINGS_1.md reports nothing, because challenging a run in progress invites findings written to match. Read the report out loud to your neighbour: what held, what failed and by which falsifier, what the findings do not say. It also checks the trial count, the notes behind each prediction, and whether two published numbers reconcile; on a disagreement it asks for a re-run and never supplies the value. It compares the package version you challenge with against the one that drafted the blueprint: a mismatch is disclosed, not a failure. Say yes to the journal entry; FINDINGS_1.md and RESULTS.md are yours to correct.',
+    notes: 'Session 05 filled FINDINGS_1.md with evidence and left each prediction’s verdict for today: write those rows first, confirmed or falsified, with the number, then run it. It never edits your files, computes a number or declares graduation. Run it in your strategy folder, researcher added; it refuses in liquid-golden-cross, and it refuses while FINDINGS_1.md reports nothing, because challenging a run in progress invites findings written to match. Read the report out loud to your neighbour: what held, what failed and by which falsifier, what the findings do not say. It also checks the trial count, the notes behind each prediction, and whether two published numbers reconcile; on a disagreement it asks for a re-run and never supplies the value. It compares the package version you challenge with against the one that drafted the blueprint: a mismatch is disclosed, not a failure. Say yes to the journal entry; FINDINGS_1.md and RESULTS.md are yours to correct.',
   },
 
   // ── 02 TRY TO BREAK IT
@@ -75,7 +75,7 @@ module.exports = [
   },
   {
     type: 'cards', label: 'A curve, not a cell', kicker: 'ROBUSTNESS · PERTURBATION',
-    title: 'A curve, not a cell', deck: 'Move what the blueprint declared. Read the shape.',
+    title: 'A curve, not a cell', deck: 'Session 05 priced the grid and the sub-periods. Today, read the shape.',
     cards: [
       { t: 'The grid', b: 'The settings it named; the cells that keep the sign.', chip: '12 of 15' },
       { t: 'Sub-periods', b: 'Ahead of the control in how many of three?' },
@@ -83,19 +83,19 @@ module.exports = [
       { t: 'A wiped copy', b: 'Same figures from a clean clone.', dark: true },
     ],
     callout: ['THE TEST', 'A setting that carries the result is a setting, not a strategy.'],
-    notes: 'The grid is the one your blueprint declared, not one you choose now: the example’s Experiment 1 asked for twelve cells of fifteen to keep the sign of its Sharpe margin, and got twelve. A parameter degrading monotonically across three settings is information; a variant beating its control by 0.001 Sharpe is not. Read every cell against the control on both Sharpe and CAGR: a Sharpe edge with a CAGR deficit is the example’s exact failure. Never choose a parameter on the metric it is judged by. Last, wipe the working copy and re-run: the example did it for every experiment and printed the same figures.',
+    notes: 'Nothing new is priced today: the grid and the sub-periods are the rows session 05 priced in section 4, the example’s 2017–19, 2020–22 and 2023–26, and a cell priced now, after the result, is a trial. The grid is the one your blueprint declared: the example’s Experiment 1 asked for twelve cells of fifteen to keep the sign of its Sharpe margin, and got twelve. A parameter degrading monotonically across three settings is information; a variant beating its control by 0.001 Sharpe is not. Read every cell against the control on both Sharpe and CAGR: a Sharpe edge with a CAGR deficit is the example’s exact failure. Never choose a parameter on the metric it is judged by. Last, wipe the working copy and re-run: the example did it for every experiment and printed the same figures.',
   },
   {
     type: 'cards', label: 'Publish N', kicker: 'ROBUSTNESS · THE TRIAL COUNT',
     title: 'Publish N', deck: 'The best Sharpe of N trials is the largest of N draws.',
     cards: [
-      { t: 'What counts', b: 'Every variant ranked, every feature screened.' },
+      { t: 'What counts', b: 'Every variant ranked, every feature screened, K.' },
       { t: 'Excluded, by name', b: 'A dropped run keeps its name and its reason.', chip: 'RESULTS.md' },
       { t: 'A rescue is a trial', b: 'A no-rescue lever moved after the result: a new experiment.' },
       { t: 'Deflated, or say so', b: 'Publishing N is the minimum.', dark: true },
     ],
     callout: ['THE EXAMPLE', '31 · 43 · 54 · 68: liquid-golden-cross’s count, published at each experiment.'],
-    notes: 'A reader cannot discount a best-of-N result without knowing N, so the count goes in FINDINGS_1.md under The trial count, and RESULTS.md compiles it; one in RESULTS.md but not in the findings is a summary leading its source. Your blueprint listed changes that may not rescue the experiment, a holding count, a trigger, a window: moved after the result, each is a new experiment and a trial. A run that cannot be believed is excluded by name with its reason, never quietly dropped. The deflated Sharpe is not computed by the stack, so the sign-off says whether you computed it; the example never did, and says so. The example’s count is cumulative across its four experiments.',
+    notes: 'K, session 05’s random draws, counts too, published with its percentile, never the best draw. A reader cannot discount a best-of-N result without knowing N, so the count goes in FINDINGS_1.md under The trial count, and RESULTS.md compiles it; one in RESULTS.md but not in the findings is a summary leading its source. Your blueprint listed changes that may not rescue the experiment, a holding count, a trigger, a window: moved after the result, each is a new experiment and a trial. A run that cannot be believed is excluded by name with its reason, never quietly dropped. The deflated Sharpe is not computed by the stack, so the sign-off says whether you computed it; the example never did, and says so. The example’s count is cumulative across its four experiments.',
   },
   {
     type: 'cards', label: 'Net, or not at all', kicker: 'ROBUSTNESS · COSTS AND CAPACITY',
@@ -104,10 +104,10 @@ module.exports = [
       { t: 'Two rows', b: 'The blueprint’s commission, and a realistic one.' },
       { t: 'Turnover', b: 'Times the book a year, one-way per rebalance.' },
       { t: 'Capacity', b: 'The largest book a trade’s participation allows.', chip: '1% · 5% of 63-day value' },
-      { t: 'Not modelled', b: 'Market impact, borrow. Said out loud.', dark: true },
+      { t: 'Not modelled', b: 'Whatever your run left out, borrow first. Out loud.', dark: true },
     ],
     callout: ['CAPACITY NOT MODELLED', 'is not met. Not “probably fine.”'],
-    notes: 'Results are accepted net, or not at all: commission on the unadjusted price, integer shares, a cash reserve. The example reports its blueprint’s commission setting and a realistic one side by side, with 5 basis points of slippage. Turnover first, because it tells the judge how much the costs matter: the example’s Experiment 1 turns over 1.99 times the book a year. Capacity is stated from the book as the largest book at which a trade takes no more than 1% or 5% of the name’s 63-day average traded value: a bound on participation, not a model of market impact. On a long/short book, borrow cost is a headline caveat, not a footnote.',
+    notes: 'Results are accepted net, or not at all: commission on the unadjusted price, integer shares, a cash reserve. The example reports its blueprint’s commission setting and a realistic one side by side, with 5 basis points of slippage. Turnover first, because it tells the judge how much the costs matter: the example’s Experiment 1 turns over 1.99 times the book a year. Capacity is stated from the book as the largest book at which a trade takes no more than 1% or 5% of the name’s 63-day average traded value: a bound on participation, not a model of market impact. Session 05’s Lab run could carry the Spread + impact preset; your code run charged commission and slippage: say which run carried what. On a long/short book, borrow cost is a headline caveat, not a footnote.',
   },
 
   // ── 03 THE GATE
