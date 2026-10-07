@@ -5,8 +5,8 @@ const path = require('path');
 const slides = require('./s06_slides.js');
 
 const repo = process.argv[2] || path.resolve(__dirname, '..');
-const SRC = path.join(repo, 'S04 Portfolio Construction.html');
-const OUT_HTML = path.join(repo, 'S06 Final Strategy Prep & Presentation.html');
+const SRC = path.join(repo, 'S04-Portfolio-Construction', 'S04 Portfolio Construction.html');
+const OUT_HTML = path.join(repo, 'S06-Final-Strategy-Prep-and-Presentation', 'S06 Final Strategy Prep & Presentation.html');
 const OUT_MD = path.join(repo, 'design', 'S06 Final Strategy Prep & Presentation - copy.md');
 const LOGO = '1ed1baf3-b691-4e40-8cbc-5318e0848c8f';
 

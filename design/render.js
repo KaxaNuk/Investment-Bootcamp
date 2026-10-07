@@ -1,7 +1,7 @@
 // Renders a deck in the S04 design from a content module, and rebundles it into the S04 HTML shell
 // (fonts, logo and deck-stage are taken from the shell; only the slides are replaced).
 // usage, from the repo root:
-//   node design/render.js design/s05_content.js "S04 Portfolio Construction.html" "S05 Backtest and Attribution.html"
+//   node design/render.js design/s05_content.js "S04-Portfolio-Construction/S04 Portfolio Construction.html" "S05-Backtest-and-Attribution/S05 Backtest and Attribution.html"
 const fs = require('fs');
 const path = require('path');
 

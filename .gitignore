@@ -216,3 +216,15 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# IDE
+.idea/
+
+# Authoring notes kept on the author's disk, out of the public tree
+design/* - copy.md
+design/*open_questions*.md
+
+# Local secrets and outputs
+.env
+Config/.env
+Output/
