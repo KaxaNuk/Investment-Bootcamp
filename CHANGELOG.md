@@ -85,6 +85,10 @@ source in `design/`: change the source and rebuild, never the bundled HTML.**
 - Every deck's browser tab showed nothing or "Bundled Page"; it now shows the session name.
 - `design/build_s06.js` stopped with an error on a clean clone, because it read a gitignored
   authoring note; it now skips the note when it is absent.
+- On a Windows checkout, line endings turned into carriage returns inside a rebuilt deck; the
+  build scripts now read every file as LF, so a clean clone rebuilds the decks unchanged.
+- `design/check.js` checks the pillar links when the three pillar repositories sit beside this one,
+  and says so when they do not, instead of failing.
 
 ## 0.1.0 (2026-10-07)
 

@@ -4,7 +4,7 @@
 //   node design/render.js design/s05_content.js "S04-Portfolio-Construction/S04 Portfolio Construction.html" "S05-Backtest-and-Attribution/S05 Backtest and Attribution.html"
 const fs = require('fs');
 const path = require('path');
-const { withTitle } = require('./deck.js');
+const { readText, withTitle } = require('./deck.js');
 
 const [, , contentPath, shellPath, outPath] = process.argv;
 const deck = require(path.resolve(contentPath));
@@ -281,7 +281,7 @@ ${side}
 };
 
 // ---- assemble
-const shell = fs.readFileSync(shellPath, 'utf8').split('\n');
+const shell = readText(shellPath).split('\n');
 const tplIdx = shell.findIndex(l => l.startsWith('"<!DOCTYPE html>'));
 const tpl = JSON.parse(shell[tplIdx]);
 const start = tpl.indexOf('<section');

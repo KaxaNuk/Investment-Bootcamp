@@ -3,7 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const slides = require('./s06_slides.js');
-const { withTitle } = require('./deck.js');
+const { readText, withTitle } = require('./deck.js');
 
 const repo = process.argv[2] || path.resolve(__dirname, '..');
 const SRC = path.join(repo, 'S04-Portfolio-Construction', 'S04 Portfolio Construction.html');
@@ -293,7 +293,7 @@ const DISCLAIMER = 'The content of this document is strictly informative and doe
 
 // ── HTML: swap the S04 template's sections for S06's, keep everything else in the bundle.
 const sections = slides.map((s, i) => R[s.type](s, i + 1)).join('\n');
-const bundle = fs.readFileSync(SRC, 'utf8');
+const bundle = readText(SRC);
 const key = '<script type="__bundler/template">';
 const start = bundle.indexOf(key) + key.length;
 const end = bundle.indexOf('</script>', start);

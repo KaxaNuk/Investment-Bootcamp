@@ -10,12 +10,14 @@ const fs = require('fs');
 const path = require('path');
 
 const TEMPLATE_START = '"<!DOCTYPE html>';
+// a Windows checkout may turn LF into CRLF; the bundles and slides are LF in the repository
+const readText = file => fs.readFileSync(file, 'utf8').replace(/\r\n/g, '\n');
 const TITLE_RE = /^<!-- title: (.*?) -->/;
 // the slide's own number: 24px Archivo Black, in the header or a corner
 const NUMBER_RE = /(<div style="[^"]*Archivo Black[^"]*font-size: 24px;[^"]*">)(\d\d)(<\/div>)/g;
 
 function readBundle(bundlePath) {
-  const lines = fs.readFileSync(bundlePath, 'utf8').split('\n');
+  const lines = readText(bundlePath).split('\n');
   const index = lines.findIndex(line => line.startsWith(TEMPLATE_START));
   if (index < 0) throw new Error(`no template line in ${bundlePath}`);
   return { lines, index, template: JSON.parse(lines[index]) };
@@ -77,7 +79,7 @@ function extract(bundlePath, slidesPath) {
 }
 
 function bundle(slidesPath, bundlePath) {
-  const source = fs.readFileSync(slidesPath, 'utf8');
+  const source = readText(slidesPath);
   const title = (source.match(TITLE_RE) || [])[1];
   if (!title) throw new Error(`${slidesPath} must start with <!-- title: ... -->`);
   const slides = source.slice(source.indexOf('<section'), source.lastIndexOf('</section>') + '</section>'.length);
@@ -89,7 +91,7 @@ function bundle(slidesPath, bundlePath) {
   console.log('bundled', sections.length, 'slides,', html.length, 'bytes, into', bundlePath);
 }
 
-module.exports = { readBundle, slideRegion, withTitle, writeBundle };
+module.exports = { readText, readBundle, slideRegion, withTitle, writeBundle };
 
 if (require.main === module) {
   const [command, from, to] = process.argv.slice(2);

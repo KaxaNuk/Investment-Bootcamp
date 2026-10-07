@@ -45,6 +45,7 @@ function slideText(section) {
 }
 
 const findings = [];
+const skipped = new Set();
 for (const deck of DECKS) {
   const id = deck.slice(0, 3);
   const html = fs.readFileSync(path.join(repo, deck), 'utf8');
@@ -71,11 +72,14 @@ for (const deck of DECKS) {
       const context = text.slice(Math.max(0, m.index - 50), m.index + 50);
       if (!ALPHA_ALLOWED.test(context)) findings.push(`${where}: "alpha" not as an intercept: "…${context}…"`);
     }
+    // the pillar folders are checked when the pillar repositories sit beside this one
     for (const [, workshop, folder] of section.matchAll(PILLAR_RE)) {
+      if (!fs.existsSync(path.join(repo, '..', workshop))) { skipped.add(workshop); continue; }
       if (!fs.existsSync(path.join(repo, '..', workshop, folder))) findings.push(`${where}: no folder ${workshop}/${folder}`);
     }
   });
 }
+if (skipped.size) console.log(`pillar links not checked: ${[...skipped].join(', ')} not found beside this repository`);
 findings.forEach(f => console.log(f));
 console.log(findings.length ? `${findings.length} findings` : 'clean');
 process.exit(findings.length ? 1 : 0);
