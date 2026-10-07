@@ -94,8 +94,11 @@ session whose part you could not do with the AI off; the deck shows the same map
 ## Deck
 
 - [S05 Backtest and Attribution.html](S05%20Backtest%20and%20Attribution.html)
+- [S05 Backtest and Attribution.pdf](S05%20Backtest%20and%20Attribution.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s05_content.js`;
+`design/check.js` lints it. A rewrite still adds the cost-drag prediction and `run_manifest.csv`
+worked through, and the AI-off and AI-on blocks of each session.
 
 [Bootcamp S04]: ../S04-Portfolio-Construction/
 [Bootcamp S06]: ../S06-Final-Strategy-Prep-and-Presentation/

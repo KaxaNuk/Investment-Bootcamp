@@ -67,7 +67,8 @@ S00 to S03 and the equal-weight book in S04 run free. No pillar session needs th
 | [S06 · Final Strategy Prep & Presentation](S06-Final-Strategy-Prep-and-Presentation/) | B2 From Book to Verdict | the challenge, N, a deflated Sharpe, the gate verdict, a rehearsed talk | Lab demo or reference outputs |
 
 Each session's outcomes and prerequisites are in [`SYLLABUS.md`](SYLLABUS.md); its own `README.md`
-adds the lab, the AI mode and the readings.
+adds the lab, the AI mode and the readings. Its section *Reinforce in the pillars*, also a slide in
+its deck, lists the coding, markets and math sessions to go back to.
 
 ## How to take it
 
@@ -103,8 +104,9 @@ The presentation is a separate day after S06: a cohort demo day, or KN Hack for 
 
 ## Licences
 
-Text is [CC BY 4.0](LICENSE). Code is [MIT](LICENSE-CODE). The decks in the session folders predate
-this syllabus and will be rewritten to match it.
+Text is [CC BY 4.0](LICENSE). Code is [MIT](LICENSE-CODE). The decks in the session folders were
+cleaned and aligned with this syllabus on 2026-10-07; each session's `README.md` lists what a rewrite
+still adds.
 
 ## Disclaimer
 

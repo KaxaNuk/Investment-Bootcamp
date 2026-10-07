@@ -95,8 +95,11 @@ session whose part you could not do with the AI off; the deck shows the same map
 ## Deck
 
 - [S06 Final Strategy Prep & Presentation.html](S06%20Final%20Strategy%20Prep%20%26%20Presentation.html)
+- [S06 Final Strategy Prep & Presentation.pdf](S06%20Final%20Strategy%20Prep%20%26%20Presentation.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s06_slides.js`;
+`design/check.js` lints it. A rewrite still adds the AI judges' panel, and the AI-off and AI-on
+blocks of each session.
 
 [Bootcamp S05]: ../S05-Backtest-and-Attribution/
 [CF S01]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S01-Terminal-Environment-and-Git/

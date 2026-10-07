@@ -1,7 +1,8 @@
 # Investment Bootcamp: Syllabus
 
 Status: the syllabus and the outcomes are set. Walkthroughs, notebooks and new decks are in
-production; the decks in the session folders predate this syllabus.
+production; the decks in the session folders are aligned with this syllabus, and each session's
+`README.md` lists what a rewrite still adds.
 
 Seven sessions in three modules. S00 routes you through the pillars; S01 to S06 take one idea from a
 written claim to a verdict. The program guide, [`PROGRAM.md`](PROGRAM.md), covers the shared

@@ -82,7 +82,10 @@ session whose part you could not do with the AI off; the deck shows the same map
 - [S01 Kick-off and Process.html](S01%20Kick-off%20and%20Process.html)
 - [S01 Kick-off and Process.pdf](S01%20Kick-off%20and%20Process.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s01_slides.html`;
+`design/check.js` lints it. A rewrite still adds the reading of the worked example, `init-strategy`,
+`/objective` and the benchmark entry worked through in the room, and the AI-off and AI-on blocks of
+each session.
 
 [Bootcamp S00]: ../S00-Onboarding-and-Self-Check/
 [Bootcamp S02]: ../S02-Investment-Research/

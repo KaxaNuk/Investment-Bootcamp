@@ -85,7 +85,8 @@ S04-S06 fall inside one trial window; otherwise the cohort uses reference engine
 ## Hard prerequisites of the Bootcamp
 
 A hard prerequisite is a session without which the lab cannot run. Each Bootcamp session's
-`README.md` also lists its soft prerequisites.
+`README.md` also lists its soft prerequisites. Its section *Reinforce in the pillars*, also a slide
+in its deck, lists every pillar session behind it: required, helpful, or one that goes further.
 
 | Bootcamp session | Hard prerequisites |
 | --- | --- |

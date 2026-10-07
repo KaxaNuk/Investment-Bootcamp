@@ -95,7 +95,9 @@ session whose part you could not do with the AI off; the deck shows the same map
 - [S03 Feature Engineering.html](S03%20Feature%20Engineering.html)
 - [S03 Feature Engineering.pdf](S03%20Feature%20Engineering.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s03_slides.html`;
+`design/check.js` lints it. A rewrite still adds the KN-TU30 seed, the IC and ICIR run on your own
+feature, and the seeded same-day leak, and the AI-off and AI-on blocks of each session.
 
 [Bootcamp S02]: ../S02-Investment-Research/
 [Bootcamp S04]: ../S04-Portfolio-Construction/

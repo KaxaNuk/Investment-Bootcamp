@@ -95,8 +95,11 @@ session whose part you could not do with the AI off; the deck shows the same map
 ## Deck
 
 - [S04 Portfolio Construction.html](S04%20Portfolio%20Construction.html)
+- [S04 Portfolio Construction.pdf](S04%20Portfolio%20Construction.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s04_slides.html`;
+`design/check.js` lints it. A rewrite still adds the equal-weight TU22-EW answer key and the seeded
+survivors-only book, and the AI-off and AI-on blocks of each session.
 
 [Bootcamp S03]: ../S03-Feature-Engineering/
 [Bootcamp S05]: ../S05-Backtest-and-Attribution/

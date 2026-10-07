@@ -15,6 +15,8 @@ source in `design/`: change the source and rebuild, never the bundled HTML.**
   - "Go further" closes the eight links the pillars made to the Bootcamp with no link back.
 - **A section of the same name in every session README, S00 to S06.**
 - **`design/pillars.js`**, the one map both come from.
+- PDFs of the S04, S05 and S06 decks, printed like the others: one page per slide, with clickable
+  pillar links.
 - `design/deck.js`, which extracts the slides of a bundled deck into `design/sNN_slides.html` and
   bundles them back, renumbering the slides. S01 to S04 had no source; S05 and S06 keep theirs
   (`s05_content.js`, `s06_slides.js`).
@@ -72,6 +74,11 @@ source in `design/`: change the source and rebuild, never the bundled HTML.**
     labelled teaching computation.
   - No new engine runs are asked for, paper trading is after the course, and the stop and to-do
     follow the README: the holdout record, `CLEAN_CLONE.log` and a tag.
+- **Documents.**
+  - The S01, S02 and S03 PDFs are reprinted from the cleaned decks.
+  - Each session's "Deck" section lists both files and what a rewrite still adds, in place of "the
+    deck predates this syllabus".
+  - `README.md`, `SYLLABUS.md` and `PROGRAM.md` say the same and point to the new sections.
 
 ### Fixed
 

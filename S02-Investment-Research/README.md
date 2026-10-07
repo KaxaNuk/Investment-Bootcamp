@@ -92,7 +92,9 @@ session whose part you could not do with the AI off; the deck shows the same map
 - [S02 Investment Research.html](S02%20Investment%20Research.html)
 - [S02 Investment Research.pdf](S02%20Investment%20Research.pdf)
 
-The deck predates this syllabus and will be rewritten to match it.
+Cleaned and aligned with this syllabus on 2026-10-07, and built from `design/s02_slides.html`;
+`design/check.js` lints it. A rewrite still adds the seeded duration-tilt case and the AI investment
+committee, and the AI-off and AI-on blocks of each session.
 
 [Bootcamp S01]: ../S01-Kick-off-and-Process/
 [Bootcamp S03]: ../S03-Feature-Engineering/
