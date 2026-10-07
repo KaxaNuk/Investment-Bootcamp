@@ -56,6 +56,14 @@ bundled HTML.**
   - Makes the counterfactual arms and the holdout run homework inside the demo window.
   - Marks the factor layer "not assessed" on the public path.
   - Every paste box now says "your assistant".
+- **S06 deck.**
+  - Its cover says "Final Strategy Prep & Presentation".
+  - The gate reads met, not met or not assessed, with criterion 2 "not assessed" on the public path.
+  - The deflated Sharpe is computed with the AI off and labelled derived.
+  - Criterion 3 rests on the sub-periods, the cost rows and the timing shift, with a grid only as a
+    labelled teaching computation.
+  - No new engine runs are asked for, paper trading is after the course, and the stop and to-do
+    follow the README: the holdout record, `CLEAN_CLONE.log` and a tag.
 
 ### Fixed
 

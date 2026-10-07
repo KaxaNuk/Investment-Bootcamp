@@ -101,8 +101,8 @@ const R = {
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: #56534E; letter-spacing: 0.16em;">Investment Bootcamp</div>
     </div>
     <div style="position: absolute; left: 78px; top: 222px; width: 1140px;">
-      <h1 style="margin: 0; ${HEAD} font-size: 112px; line-height: 0.86; letter-spacing: -0.045em; text-transform: uppercase;">${esc(s.title1)}</h1>
-      <h1 style="margin: 9px 0 0; ${HEAD} font-size: 104px; line-height: 0.86; letter-spacing: -0.045em; text-transform: uppercase;"><span style="color: ${RED};">${esc(s.title2)}</span></h1>
+      <h1 style="margin: 0; ${HEAD} font-size: ${s.size1 || 112}px; line-height: 0.86; letter-spacing: -0.045em; text-transform: uppercase;">${esc(s.title1)}</h1>
+      <h1 style="margin: 9px 0 0; ${HEAD} font-size: ${s.size2 || 104}px; line-height: 0.86; letter-spacing: -0.045em; text-transform: uppercase;"><span style="color: ${RED};">${esc(s.title2)}</span></h1>
     </div>
     <div style="position: absolute; left: 78px; bottom: 84px; width: 1030px; display: flex; gap: 51px; align-items: flex-start;">
       <div style="${HEAD} font-size: 111px; line-height: 0.8; color: ${RED}; letter-spacing: -0.05em;">${s.numeral}</div>
@@ -151,7 +151,7 @@ const R = {
 
   live(s, n) {
     const lines = s.code.map((l) => typeof l === 'string' ? `<div>${wbr(l)}</div>` : `<div><span style="color: ${RED};">Codex: </span>${wbr(l.codex)}</div>`).join('');
-    const title = s.code.length > 1 ? 'PASTE THIS INTO CLAUDE OR CODEX' : 'PASTE THIS INTO CLAUDE OR CODEX';
+    const title = 'PASTE THIS INTO YOUR ASSISTANT';
     return open(s, n, INK, PAPER) + header(s, n, true) + `
     <div style="background: ${DARKCARD}; padding: 30px 42px 33px; margin-top: 36px; flex: none;">
       <div style="font-size: 24px; font-weight: 600; text-transform: uppercase; color: ${RED}; letter-spacing: 0.16em;">${title}</div>
@@ -161,10 +161,10 @@ const R = {
   },
 
   gate(s, n) {
+    // the gate's three verdicts: met, not met, not assessed
     const tag = (v) => {
-      const st = v === 'FAILS' ? `background: ${RED}; color: #FFF4F1;`
-        : v === 'PARTLY' ? `border: 3px solid ${RED}; color: ${RED};`
-        : v === 'NOT SOUGHT' ? 'background: #CFCBC3; color: #3A3833;'
+      const st = v === 'NOT MET' ? `background: ${RED}; color: #FFF4F1;`
+        : v === 'NOT ASSESSED' ? 'background: #CFCBC3; color: #3A3833;'
         : `background: ${INK}; color: ${PAPER};`;
       return `<div style="${st} ${HEAD} font-size: 26px; letter-spacing: 0.02em; padding: 12px 18px; text-align: center; width: 270px; flex: none; white-space: nowrap;">${v}</div>`;
     };
