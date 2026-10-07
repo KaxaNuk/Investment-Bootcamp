@@ -116,6 +116,9 @@ ${tr}
 }
 
 const kinds = {
+  pillars(s) {
+    return require('./pillars.js').slide(s.session, s.n);
+  },
   cover(s) {
     const items = s.contents.map((c, i) => `        <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35);${i === s.contents.length - 1 ? ' border-bottom: 2px solid rgba(255,244,241,0.35);' : ''}">
           <div style="${BLACK} font-size: 24px; opacity: 0.7; width: 33px;">${String(i + 1).padStart(2, '0')}</div>

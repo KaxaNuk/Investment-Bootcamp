@@ -70,6 +70,16 @@ page. Your AI assistant is your own cost.
 - [CF S01], [CF S04], [FM S01], [MF S01]
 - [Bootcamp S01]
 
+## Reinforce in the pillars
+
+`ROUTE.md`, written by the self-check, is your map through the pillars. If the doctor is red, or you
+want to start a pillar from its first session:
+
+- **Coding Foundations.** [CF S01] git, uv, Python and your assistant, for a red doctor item;
+  [CF S04] APM and the KaxaNuk Researcher, for a red doctor item.
+- **Financial Markets.** [FM S01] where the markets pillar starts.
+- **Mathematical Finance.** [MF S01] where the math pillar starts.
+
 ## Deck
 
 None yet. S00 is new in this edition.

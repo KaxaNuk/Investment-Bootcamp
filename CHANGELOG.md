@@ -2,11 +2,19 @@
 
 ## 0.2.0 (2026-10-07)
 
-**Every deck now has an editable source in `design/`: change the source and rebuild, never the
-bundled HTML.**
+**Every session now points back to the pillar sessions behind it, and every deck has an editable
+source in `design/`: change the source and rebuild, never the bundled HTML.**
 
 ### Added
 
+- **A "Reinforce in the pillars" slide in every deck, after its to-do.**
+  - It lists the Coding Foundations, Financial Markets and Mathematical Finance sessions behind the
+    session.
+  - Each entry says what to revisit there, is marked required, helpful or go further, and links to
+    the session on GitHub.
+  - "Go further" closes the eight links the pillars made to the Bootcamp with no link back.
+- **A section of the same name in every session README, S00 to S06.**
+- **`design/pillars.js`**, the one map both come from.
 - `design/deck.js`, which extracts the slides of a bundled deck into `design/sNN_slides.html` and
   bundles them back, renumbering the slides. S01 to S04 had no source; S05 and S06 keep theirs
   (`s05_content.js`, `s06_slides.js`).

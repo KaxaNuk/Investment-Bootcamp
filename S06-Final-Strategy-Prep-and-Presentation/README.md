@@ -79,6 +79,19 @@ The KaxaNuk Researcher: `challenge`, `paper-trading-gate`, `alpha-decomposition`
 - Paper trading of your own strategy (step 7), outside the course
 - A second experiment, `BLUEPRINT_2.md`
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Required: [CF S01] a clean clone. Helpful: [CF S11] changelog, Semantic
+  Versioning, tags; [CF S12] CI, a release, a clean clone.
+- **Financial Markets.** Required: [FM S12] the five gate criteria. Helpful: [FM S08] decay after
+  publication.
+- **Mathematical Finance.** Required: [MF S04] Sharpe statistics; [MF S12] the deflated Sharpe, N,
+  the holdout. Helpful: [MF S02] skewness and kurtosis in the deflated Sharpe; [MF S03] random-draw
+  percentiles; [MF S07] the timing-shift arm.
+
 ## Deck
 
 - [S06 Final Strategy Prep & Presentation.html](S06%20Final%20Strategy%20Prep%20%26%20Presentation.html)

@@ -76,6 +76,21 @@ of the public path.
 
 - [Bootcamp S06]
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Helpful: [CF S10] guarded imports of licensed libraries. Go further:
+  [CF S11] reviewing the agent’s draft against the checklist.
+- **Financial Markets.** Required: [FM S07] costs with units, commission on unadjusted shares;
+  [FM S12] engine metrics and Brinson-Fachler. Helpful: [FM S02] total returns and the unadjusted
+  price; [FM S10] beta; [FM S11] the factor layer. Go further: [FM S09] setting the cash reserve
+  before the first run.
+- **Mathematical Finance.** Required: [MF S01] annualisation, Sharpe, the CAGR of a short window.
+  Helpful: [MF S02] tails, VaR, CVaR; [MF S06] regression, for the Ken French diagnostic. Go
+  further: [MF S08] reading a factor layer.
+
 ## Deck
 
 - [S05 Backtest and Attribution.html](S05%20Backtest%20and%20Attribution.html)
@@ -85,14 +100,17 @@ The deck predates this syllabus and will be rewritten to match it.
 [Bootcamp S04]: ../S04-Portfolio-Construction/
 [Bootcamp S06]: ../S06-Final-Strategy-Prep-and-Presentation/
 [CF S10]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S10-Architecture-of-a-KaxaNuk-Library/
+[CF S11]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S11-House-Rules-and-Code-Review/
 [FM S02]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S02-Prices-Total-Returns-and-Time-Value/
 [FM S07]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S07-Liquidity-Trading-Costs-and-Capacity/
+[FM S09]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S09-Risk-Diversification-and-the-Long-Only-Book/
 [FM S10]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S10-CAPM-Beta-and-the-Market/
 [FM S11]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S11-Factor-Models-Risk-Factors-and-Return-Signals/
 [FM S12]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S12-Capstone-Performance-Attribution-and-Track-Records/
 [MF S01]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S01-Return-Arithmetic/
 [MF S02]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S02-Distributions-Tails-and-Drawdowns/
 [MF S06]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S06-Regression-and-Its-Failures/
+[MF S08]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S08-Cross-Sectional-Signals-IC-and-Fama-MacBeth/
 
 ---
 

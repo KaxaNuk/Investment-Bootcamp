@@ -75,6 +75,18 @@ papers; Ken French data, optional.
 
 - [Bootcamp S03], [Bootcamp S04]
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Required: [CF S04] the agent loop: plan, go, review, commit.
+- **Financial Markets.** Helpful: [FM S02] CPI release dates; [FM S03] duration, for the seeded
+  case; [FM S08] efficiency, decay, fabricated citations; the history in six acts; [FM S11] a risk
+  factor or a return signal.
+- **Mathematical Finance.** Helpful: [MF S04] t-statistics, p-values, multiple comparisons; [MF S06]
+  reading a regression table.
+
 ## Deck
 
 - [S02 Investment Research.html](S02%20Investment%20Research.html)

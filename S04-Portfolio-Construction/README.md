@@ -77,6 +77,21 @@ as a reference output.
 
 - [Bootcamp S05]
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Required: [CF S08] weight files, the invariants, Verify. Helpful: [CF S06]
+  the prior close: `index < date`; [CF S09] the spec before the code. Go further: [CF S11] reviewing
+  the diff against the checklist; [CF S12] `book_check` becomes the Verify cell.
+- **Financial Markets.** Required: [FM S09] long-only mechanics, two kinds of cash, effective N.
+  Helpful: [FM S03] SHY as priced cash; [FM S07] turnover. Go further: [FM S06] TU22-EW as the
+  control book.
+- **Mathematical Finance.** Required: [MF S12] the trial budget and the statistics section. Helpful:
+  [MF S05] covariance and estimation error; [MF S09] the clustering behind HRP; [MF S10] sizing
+  methods and `sizing.py`.
+
 ## Deck
 
 - [S04 Portfolio Construction.html](S04%20Portfolio%20Construction.html)
@@ -88,7 +103,10 @@ The deck predates this syllabus and will be rewritten to match it.
 [CF S06]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S06-Time-Without-Look-Ahead/
 [CF S08]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S08-Weight-Files-and-Invariants/
 [CF S09]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S09-Design-Before-You-Prompt/
+[CF S11]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S11-House-Rules-and-Code-Review/
+[CF S12]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S12-Capstone-Ship-a-Tested-Release/
 [FM S03]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S03-Rates-Bonds-and-the-Yield-Curve/
+[FM S06]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S06-Indices-Benchmarks-ETFs-and-Survivorship/
 [FM S07]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S07-Liquidity-Trading-Costs-and-Capacity/
 [FM S09]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S09-Risk-Diversification-and-the-Long-Only-Book/
 [MF S05]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S05-Linear-Algebra-and-Covariance/

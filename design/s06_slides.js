@@ -273,6 +273,7 @@ module.exports = [
     callout: ['BRING', 'Your laptop, the repository, and the hash of the commit you present.'],
     notes: 'Clone your repository into a new folder, set up Config/.env, and re-run the free stages: curator, universe, refinery, analyzer, the equal-weight book and its invariants; the engine figures come from your session 05 files. If a figure moves, find out why before you present, and record it in JOURNAL_1.md. Score yourself honestly on the nine rows; the judges will compare. Your next blueprint is drafted, not run: /blueprint 2 once its benchmark entry exists. Present from the commit whose hash you bring, so every number on your slides can be found again.',
   },
+  { type: 'pillars', label: 'Reinforce in the pillars', session: 'S06' },
   {
     type: 'refs', label: 'Reading list', kicker: 'REFERENCES · SESSION 06',
     title: 'The reading list', deck: 'Six leads, none read yet. Read two; start with Harvey & Liu: a haircut for every Sharpe you present.',

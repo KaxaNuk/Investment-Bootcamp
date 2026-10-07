@@ -337,6 +337,7 @@ module.exports = {
       calloutLabel: 'IF YOU CAN', callout: 'The third pass: Brinson-Fachler on the residual. Almost nobody does; the gate asks.',
       notes: "These four cards are session 06's opening slide, word for word: it starts with hands up and the file open. The homework runs stay inside the demo window and the budget: at most 5 more books, the holdout opened once, after its prediction is pushed. The third pass: build the residual series from the factor model's output and run the first cut on it in the notebook, saying in FINDINGS_1.md that it was done that way. If your trend rule was blind to the model, the exclusion-filter result goes in the findings in those terms. Read two of the leads, and say your trial count without looking.",
     },
+    { kind: 'pillars', session: 'S05' },
     {
       kind: 'refs', kicker: 'REFERENCES · SESSION 05', title: 'THE READING LIST.', label: 'Reading list',
       deck: 'Six leads. Read two; start with Brinson & Fachler: the first cut, from its source.',

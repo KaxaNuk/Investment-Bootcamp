@@ -85,6 +85,10 @@ function cardGrid(cards, opts) {
 }
 
 const R = {
+  pillars(s, n) {
+    return require('./pillars.js').slide(s.session, num(n));
+  },
+
   cover(s, n) {
     const contents = s.contents.map((c, i) => `
         <div style="display: flex; gap: 21px; align-items: baseline; padding: 21px 0; border-top: 2px solid rgba(255,244,241,0.35);${i === s.contents.length - 1 ? ' border-bottom: 2px solid rgba(255,244,241,0.35);' : ''}">
@@ -320,6 +324,10 @@ slides.forEach((s, i) => {
   if (sectionNames[n]) md.push('', '---', '', `## ${sectionNames[n]}`, '');
   if (s.type === 'stop' && !md.includes('## Close')) { /* stays in section 04 */ }
   if (s.type === 'cards' && s.label === 'To do') md.push('', '---', '', '## Close', '');
+  if (s.type === 'pillars') {
+    md.push(`### ${num(n)} · BACK TO THE PILLARS.`, '', `*pillars* · from \`design/pillars.js\``, '', require('./pillars.js').markdown(s.session).text.split('\n').slice(2).join('\n'), '');
+    return;
+  }
   const title = s.titleDark ? (s.title + s.titleDark).toUpperCase() : s.title ? s.title.toUpperCase() + (s.type === 'divider' ? '' : '.') : s.type === 'cover' ? `${s.title1} ${s.title2}`.toUpperCase() : s.type === 'closing' ? `${s.title1} ${s.title2}`.toUpperCase() : 'DISCLAIMERS';
   md.push(`### ${num(n)} · ${title}`, '');
   md.push(`*${s.type}* · kicker: **${s.kicker || 'DISCLAIMERS'}** · ${words(s)} words`, '');

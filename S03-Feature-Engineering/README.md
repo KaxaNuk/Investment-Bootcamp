@@ -73,6 +73,23 @@ residual volatility to SPY as `r_*` columns. Skills: `universe-point-in-time`,
 
 - [Bootcamp S04], [Bootcamp S06]
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Required: [CF S05] Jupyter, modules, stripped outputs, `DatetimeIndex`;
+  [CF S06] shift, warm-up nulls, `index < date`, per-date ranks; [CF S07] `c_*` features with
+  `DataColumn`. Go further: [CF S03] tests as tables, the platform door; [CF S12] your tested `c_*`
+  candidate.
+- **Financial Markets.** Required: [FM S06] survivorship, point-in-time membership. Helpful:
+  [FM S01] the security master; [FM S02] adjusted and unadjusted prices; [FM S05] only for a
+  fundamentals feature; [FM S07] the traded-value proxy; [FM S09] correlation, for the
+  diversification check. Go further: [FM S11] classifying your candidate feature.
+- **Mathematical Finance.** Required: [MF S08] MAD z-scores, ranks, IC, ICIR, the fundamental law.
+  Helpful: [MF S05] correlation, for the diversification check; [MF S07] look-ahead as causality. Go
+  further: [MF S11] a machine-learning feature, without leakage.
+
 ## Deck
 
 - [S03 Feature Engineering.html](S03%20Feature%20Engineering.html)
@@ -83,6 +100,7 @@ The deck predates this syllabus and will be rewritten to match it.
 [Bootcamp S02]: ../S02-Investment-Research/
 [Bootcamp S04]: ../S04-Portfolio-Construction/
 [Bootcamp S06]: ../S06-Final-Strategy-Prep-and-Presentation/
+[CF S03]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S03-Functions-Types-and-Tests/
 [CF S05]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S05-NumPy-pandas-and-Notebooks/
 [CF S06]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S06-Time-Without-Look-Ahead/
 [CF S07]: https://github.com/KaxaNuk/Coding-Foundations/tree/main/S07-Features-as-Data-Curator-Functions/
@@ -93,9 +111,11 @@ The deck predates this syllabus and will be rewritten to match it.
 [FM S06]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S06-Indices-Benchmarks-ETFs-and-Survivorship/
 [FM S07]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S07-Liquidity-Trading-Costs-and-Capacity/
 [FM S09]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S09-Risk-Diversification-and-the-Long-Only-Book/
+[FM S11]: https://github.com/KaxaNuk/Financial-Markets/tree/main/S11-Factor-Models-Risk-Factors-and-Return-Signals/
 [MF S05]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S05-Linear-Algebra-and-Covariance/
 [MF S07]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S07-Time-Series-and-Trend-Signals/
 [MF S08]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S08-Cross-Sectional-Signals-IC-and-Fama-MacBeth/
+[MF S11]: https://github.com/KaxaNuk/Mathematical-Finance/tree/main/S11-Supervised-Learning-Without-Leakage/
 
 ---
 

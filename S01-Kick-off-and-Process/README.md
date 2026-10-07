@@ -66,6 +66,17 @@ Free. The KaxaNuk Researcher (`init-example`, `init-strategy`, `objective`, `nex
 
 - [Bootcamp S02], [Bootcamp S03]
 
+## Reinforce in the pillars
+
+The pillar sessions behind this one, by pillar. Go back to a required session first, and to any
+session whose part you could not do with the AI off; the deck shows the same map after its to-do.
+
+- **Coding Foundations.** Required: [CF S01] git, a clean clone, uv and its lock file, `.env` never
+  printed; [CF S04] the KaxaNuk Researcher: plan, go, review, commit.
+- **Financial Markets.** Helpful: [FM S01] the security master, dated and current sector; [FM S06]
+  the benchmark, chosen first; [FM S12] reading the worked example’s CAGR and Sharpe.
+- **Mathematical Finance.** Helpful: [MF S01] reading the worked example’s CAGR and Sharpe.
+
 ## Deck
 
 - [S01 Kick-off and Process.html](S01%20Kick-off%20and%20Process.html)
