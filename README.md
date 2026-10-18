@@ -535,107 +535,167 @@ pillars:
     public: false
 pillar_sessions:
   CF S01:
-    folder: S01-Terminal-Environment-and-Git
-    title: Terminal, Environment and Git
+    folder: S01-Python-Ecosystem
+    title: 'Python Ecosystem: Your Workbench'
+  CF S02:
+    folder: S02-Data-Structures
+    title: 'Data Structures: Prices in Python'
   CF S03:
-    folder: S03-Functions-Types-and-Tests
-    title: Functions, Types and Tests
+    folder: S03-Core-Libraries
+    title: 'Core Libraries: NumPy, pandas and matplotlib'
   CF S04:
-    folder: S04-The-Agent-Loop
-    title: 'The Agent Loop: Plan, Go, Review, Commit'
+    folder: S04-Coding-Structures
+    title: 'Coding Structures: Decisions and Loops'
   CF S05:
-    folder: S05-NumPy-pandas-and-Notebooks
-    title: NumPy, pandas and Notebooks
+    folder: S05-Functions
+    title: 'Functions: Contracts and Tests as Tables'
   CF S06:
-    folder: S06-Time-Without-Look-Ahead
-    title: Time Without Look-Ahead
+    folder: S06-Classes
+    title: 'Classes: Objects for Prices and Books'
   CF S07:
-    folder: S07-Features-as-Data-Curator-Functions
-    title: Features as Data Curator Functions
+    folder: S07-Modules
+    title: 'Modules: Packages, Imports and the Agent Loop'
   CF S08:
-    folder: S08-Weight-Files-and-Invariants
-    title: Weight Files and Invariants
+    folder: S08-Data-Management
+    title: 'Data Management: Files, Panels and Provenance'
   CF S09:
-    folder: S09-Design-Before-You-Prompt
-    title: Design Before You Prompt
+    folder: S09-Data-Cleaning
+    title: 'Data Cleaning: Gaps, Splits and Bad Values'
   CF S10:
-    folder: S10-Architecture-of-a-KaxaNuk-Library
-    title: Architecture of a KaxaNuk Library
+    folder: S10-Data-Visualization
+    title: 'Data Visualization: Charts That Tell the Truth'
   CF S11:
-    folder: S11-House-Rules-and-Code-Review
-    title: House Rules and Code Review
+    folder: S11-PowerPoint-and-Python
+    title: 'PowerPoint + Python: Slides From Your Files'
   CF S12:
-    folder: S12-Capstone-Ship-a-Tested-Release
-    title: 'Capstone: Ship a Tested Release'
+    folder: S12-Excel-and-Python
+    title: 'Excel + Python: Read, Write, Never Recompute'
+  CF S13:
+    folder: S13-Web-Scraping
+    title: 'Web Scraping: Pages, APIs and Their Rules'
+  CF S15:
+    folder: S15-Time-Series
+    title: 'Time Series: Dates, Lags and Windows'
+  CF S16:
+    folder: S16-Feature-Engineering
+    title: 'Feature Engineering: Data Curator Functions'
+  CF S17:
+    folder: S17-Data-Curation
+    title: 'Data Curation: Configure, Run and Check'
+  CF S18:
+    folder: S18-Dashboard-Sketches
+    title: 'Dashboard Sketches: One Question per View'
+  CF S19:
+    folder: S19-Streamlit
+    title: 'Streamlit: A Dashboard From Your Files'
+  CF S21:
+    folder: S21-Design-Document
+    title: 'Design Document: Design Before You Prompt'
+  CF S22:
+    folder: S22-Software-Architecture
+    title: 'Software Architecture: Layers and Protocols'
+  CF S23:
+    folder: S23-Quality-Assurance
+    title: 'Quality Assurance: Tests, Review and CI'
+  CF S24:
+    folder: S24-Documentation
+    title: 'Documentation: READMEs, Docstrings, Releases'
   FM S01:
-    folder: S01-Ecosystem-and-Security-Master
-    title: The Ecosystem and the Security Master
+    folder: S01-Intro-to-Investment-Research
+    title: Intro to Investment Research
   FM S02:
-    folder: S02-Prices-Total-Returns-and-Time-Value
-    title: Prices, Total Returns and Time Value
-  FM S03:
-    folder: S03-Rates-Bonds-and-the-Yield-Curve
-    title: Rates, Bonds and the Yield Curve
+    folder: S02-Financial-Markets-Ecosystem
+    title: Financial Markets Ecosystem
+  FM S02x:
+    folder: S02-Financial-Markets-Ecosystem
+    title: Trading Costs, Liquidity and Capacity
+  FM S04:
+    folder: S04-Financial-Statistics-and-Tail-Risk
+    title: Financial Statistics and Tail Risk
   FM S05:
-    folder: S05-Statements-Valuation-and-the-Three-Dates
-    title: Statements, Valuation and the Three Dates
+    folder: S05-Introduction-to-Portfolio-Theory
+    title: Introduction to Portfolio Theory
   FM S06:
-    folder: S06-Indices-Benchmarks-ETFs-and-Survivorship
-    title: Indices, Benchmarks, ETFs and Survivorship
+    folder: S06-Efficient-Frontier-and-Sharpe-Ratio
+    title: Efficient Frontier and Sharpe Ratio
   FM S07:
-    folder: S07-Liquidity-Trading-Costs-and-Capacity
-    title: Liquidity, Trading Costs and Capacity
+    folder: S07-Single-Factor-Model-CAPM
+    title: 'Single Factor Model: CAPM'
   FM S08:
-    folder: S08-Efficiency-Anomalies-and-Decay
-    title: Efficiency, Anomalies and Decay
+    folder: S08-Risk-and-Return-Decomposition
+    title: Risk and Return Decomposition
   FM S09:
-    folder: S09-Risk-Diversification-and-the-Long-Only-Book
-    title: Risk, Diversification and the Long-Only Book
+    folder: S09-Multi-Factor-Models
+    title: Multi-Factor Models
+  FM S09x:
+    folder: S09-Multi-Factor-Models
+    title: The Paper-Trading Gate
   FM S10:
-    folder: S10-CAPM-Beta-and-the-Market
-    title: CAPM, Beta and the Market
-  FM S11:
-    folder: S11-Factor-Models-Risk-Factors-and-Return-Signals
-    title: 'Factor Models: Risk Factors and Return Signals'
-  FM S12:
-    folder: S12-Capstone-Performance-Attribution-and-Track-Records
-    title: 'Capstone: Performance, Attribution and Track Records'
+    folder: S10-Bond-Valuation-I
+    title: Bond Valuation I
+  FM S13x:
+    folder: S13-Equity-I
+    title: Statements and the Three Dates
+  FM S18:
+    folder: S18-Indices-and-ETFs
+    title: Indices and ETFs
+  FM S18x:
+    folder: S18-Indices-and-ETFs
+    title: Survivorship and Point-in-Time Membership
   MF S01:
-    folder: S01-Return-Arithmetic
-    title: Return Arithmetic
+    folder: S01-Analysis-and-Calculus
+    title: Analysis and Calculus
   MF S02:
-    folder: S02-Distributions-Tails-and-Drawdowns
-    title: Distributions, Tails and Drawdowns
-  MF S03:
-    folder: S03-Simulation-Bootstrap-and-the-Null
-    title: Simulation, the Bootstrap and the Null
+    folder: S02-Vector-Calculus-and-Geometry
+    title: Vector Calculus and Geometry
   MF S04:
-    folder: S04-Estimation-Inference-and-Multiple-Comparisons
-    title: Estimation, Inference and Multiple Comparisons
+    folder: S04-Linear-Algebra
+    title: Linear Algebra
   MF S05:
-    folder: S05-Linear-Algebra-and-Covariance
-    title: Linear Algebra and Covariance
+    folder: S05-Linear-Algebra-and-Sensitivity-Analysis
+    title: Linear Algebra and Sensitivity Analysis
   MF S06:
-    folder: S06-Regression-and-Its-Failures
-    title: Regression and Its Failures
+    folder: S06-Optimisation
+    title: Optimisation
   MF S07:
-    folder: S07-Time-Series-and-Trend-Signals
-    title: Time Series and Trend Signals
+    folder: S07-Probability
+    title: Probability
   MF S08:
-    folder: S08-Cross-Sectional-Signals-IC-and-Fama-MacBeth
-    title: 'Cross-Sectional Signals: IC, Breadth and Fama-MacBeth'
+    folder: S08-Statistics
+    title: Statistics
   MF S09:
-    folder: S09-PCA-Clusters-and-Regimes
-    title: 'Unsupervised Learning: PCA, Clusters and Regimes'
+    folder: S09-Data-Pre-processing
+    title: Data Pre-processing
   MF S10:
-    folder: S10-Portfolio-Optimisation-and-Estimation-Error
-    title: Portfolio Optimisation and Estimation Error
+    folder: S10-Validation-and-Backtest-Overfitting
+    title: Validation and Backtest Overfitting
   MF S11:
-    folder: S11-Supervised-Learning-Without-Leakage
-    title: Supervised Learning Without Leakage
+    folder: S11-Regression
+    title: Regression
   MF S12:
-    folder: S12-Capstone-Overfitting-Deflated-Sharpe-and-the-Holdout
-    title: 'Capstone: Overfitting, the Deflated Sharpe and the Holdout'
+    folder: S12-Factor-Models-Regressions
+    title: Factor Models Regressions
+  MF S13:
+    folder: S13-Classification
+    title: Classification
+  MF S14:
+    folder: S14-Classification-Ranking-Strategy
+    title: Classification Ranking Strategy
+  MF S16:
+    folder: S16-PCA-Example
+    title: PCA Example
+  MF S17:
+    folder: S17-Clustering
+    title: Clustering
+  MF S20:
+    folder: S20-Recurrent-Neural-Networks
+    title: Recurrent Neural Networks
+  MF S23:
+    folder: S23-Earnings-Transcripts-and-Large-Language-Models
+    title: Earnings Transcripts and Large Language Models
+  MF S24:
+    folder: S24-LLM-Agents-in-Research
+    title: LLM Agents in Research
 sessions:
 - id: S01
   folder: null
@@ -676,11 +736,13 @@ sessions:
     core: []
     helpful:
     - CF S01
-    - CF S04
+    - CF S02
+    - CF S07
     further:
-    - FM S08
     - FM S01
+    - FM S02
     - MF S01
+    - MF S24
   module: B0 Your Researcher
 - id: S02
   folder: null
@@ -723,19 +785,19 @@ sessions:
   pillars:
     core:
     - CF S01
-    - CF S04
-    - CF S05
-    - FM S06
+    - CF S03
+    - CF S07
+    - FM S18x
     helpful:
+    - CF S08
     - FM S01
     - FM S02
-    - FM S08
-    - FM S11
-    - MF S04
+    - FM S04
+    - FM S09
+    - MF S08
     further:
-    - FM S12
-    - MF S01
-    - MF S06
+    - FM S06
+    - MF S10
   module: B1 From Idea to Evidence
 - id: S03
   folder: null
@@ -778,23 +840,28 @@ sessions:
   - RESULTS.md
   pillars:
     core:
-    - CF S05
-    - CF S06
-    - CF S07
-    - MF S08
+    - CF S15
+    - CF S16
+    - CF S17
+    - MF S14
     helpful:
-    - FM S02
-    - FM S05
-    - FM S07
-    - FM S09
-    - MF S01
-    - MF S05
-    - MF S07
-    further:
     - CF S03
-    - CF S12
-    - FM S11
-    - MF S11
+    - CF S09
+    - FM S02x
+    - FM S04
+    - FM S13x
+    - MF S01
+    - MF S04
+    - MF S08
+    - MF S09
+    further:
+    - CF S05
+    - CF S13
+    - CF S23
+    - FM S09
+    - MF S10
+    - MF S13
+    - MF S23
   module: B1 From Idea to Evidence
 - id: S04
   folder: null
@@ -834,21 +901,27 @@ sessions:
   - RESULTS.md
   pillars:
     core:
-    - MF S12
-    - CF S08
-    - FM S09
-    helpful:
     - CF S06
-    - CF S09
-    - FM S03
-    - FM S06
-    - FM S07
-    - MF S05
-    - MF S09
+    - FM S05
     - MF S10
+    helpful:
+    - CF S04
+    - CF S08
+    - CF S15
+    - CF S21
+    - FM S02
+    - FM S10
+    - FM S18
+    - MF S04
+    - MF S06
+    - MF S17
     further:
-    - CF S11
-    - CF S12
+    - CF S23
+    - CF S24
+    - FM S06
+    - MF S02
+    - MF S14
+    - MF S20
   module: B2 From Book to Verdict
 - id: S05
   folder: null
@@ -888,20 +961,25 @@ sessions:
   - RESULTS.md
   pillars:
     core:
-    - FM S07
-    - FM S12
+    - FM S02x
+    - FM S08
     - MF S01
     helpful:
+    - CF S05
     - CF S10
-    - FM S02
-    - FM S10
-    - FM S11
-    - MF S02
-    - MF S06
-    further:
-    - CF S11
+    - CF S12
+    - CF S22
+    - FM S04
+    - FM S06
+    - FM S07
     - FM S09
-    - MF S08
+    - MF S07
+    - MF S11
+    - MF S12
+    further:
+    - CF S23
+    - FM S05
+    - MF S16
   module: B2 From Book to Verdict
 - id: S06
   folder: null
@@ -939,18 +1017,20 @@ sessions:
   - Experiments/Experiment_1/BLUEPRINT_1.md
   pillars:
     core:
-    - CF S01
-    - FM S12
-    - MF S04
-    - MF S12
+    - CF S07
+    - FM S09x
+    - MF S08
+    - MF S10
     helpful:
     - CF S11
-    - CF S12
-    - FM S08
-    - MF S02
-    - MF S03
+    - CF S24
+    - FM S01
     - MF S07
-    further: []
+    - MF S24
+    further:
+    - CF S18
+    - CF S19
+    - MF S05
   module: B2 From Book to Verdict
 ```
 
