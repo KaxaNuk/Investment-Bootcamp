@@ -1,192 +1,208 @@
 # Investment Bootcamp
 
-**English** · [Español](https://github.com/KaxaNuk/Investment-Bootcamp/tree/spanish)
+[English](https://github.com/KaxaNuk/Investment-Bootcamp/tree/english) · **Español**
 
-Build one investment strategy and test the idea correctly, from a written claim to an honest
-verdict, with your own KaxaNuk Researcher beside you.
+**Traducción pendiente de revisión.** Este README traduce al español el README en inglés de la rama
+`english`, y ninguna persona la ha revisado todavía.
 
-The Bootcamp is the first of the KaxaNuk Training Workshops, open to everyone, and the one
-everyone takes first. A beginner comes away with a general idea of the whole research process and
-the tools. An advanced user learns KaxaNuk's tools and process in full.
+Construye una estrategia de inversión y prueba la idea correctamente, de una afirmación escrita a
+un veredicto honesto, con tu propio KaxaNuk Researcher a tu lado.
 
-KaxaNuk is an investment research and technology development firm. It builds the KaxaNuk
-Researcher, the Data Curator and the Strategy Template, which are open source, and the Investment
-Lab and the Analytics Factory, which are by subscription. The workshops teach all of them.
+El Bootcamp es el primero de los KaxaNuk Training Workshops, abierto a todos, y el que todos toman
+primero. Quien empieza se lleva una idea general de todo el proceso de investigación y de las
+herramientas. Quien ya sabe aprende a fondo las herramientas y el proceso de KaxaNuk.
 
-## Start here
+KaxaNuk es una firma de investigación de inversiones y desarrollo de tecnología. Construye el
+KaxaNuk Researcher, el Data Curator y la Strategy Template, que son de código abierto, y el
+Investment Lab y la Analytics Factory, por suscripción. Los talleres enseñan todos ellos.
 
-1. **Open [S01 · Create Your Researcher and Learn to Use the Lab](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf).** With the deck alone
-   you install your researcher, name it and train it with a first paper, meet the Investment Lab,
-   and see where each part of a strategy lives.
-2. **Ask your researcher to take you through the session.** It tutors you, in your language.
-3. **Take one session at a time, in order.** All six are ready; "What's new" says what changed and
-   when.
+## Empieza aquí
 
-Each session also runs live, online, in 90 minutes; S01 runs in person too. To share the course,
-share the link to this page.
+1. **Abre [S01 · Crea tu investigador y aprende a usar el Lab](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf).** Con la presentación sola
+   instalas tu investigador, le pones nombre y lo entrenas con un primer artículo, conoces el
+   Investment Lab y ves dónde vive cada parte de una estrategia.
+2. **Pídele a tu investigador que te lleve por la sesión.** Es tu tutor, en tu idioma.
+3. **Toma una sesión a la vez, en orden.** Las seis están listas; "Novedades" dice qué cambió y
+   cuándo.
 
-## The six sessions
+Cada sesión también se da en vivo, en línea, en 90 minutos; S01 también en persona. Para compartir
+el curso, comparte el enlace a esta página.
 
-| Session | KN Research Process | What you leave with |
+## Las seis sesiones
+
+| Sesión | KN Research Process | Lo que te llevas |
 | --- | --- | --- |
-| [S01 · Create Your Researcher and Learn to Use the Lab](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf) | before step 1 | your researcher, named; your first cited note; an idea to test; a strategy's map |
-| [S02 · Your Strategy's Objective and the Investable Universe](S02%20Your%20Strategy%27s%20Objective%20and%20the%20Investable%20Universe.pdf) | steps 1–2 · parts A, B, C | your repository, your `OBJECTIVE.md`, your point-in-time seed and your benchmark |
-| [S03 · Getting the Data and Feature Engineering](S03%20Getting%20the%20Data%20and%20Feature%20Engineering.pdf) | step 3 · part D | your data, your panel, and a signal analyzed, kept or dropped |
-| [S04 · Write Your Hypothesis and Build the Historical Portfolios](S04%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf) | step 4 · parts E, F, G | your blueprint, saved before the rule; your rule, its control and an alternative, as historical books |
-| [S05 · Simulate Your Books and Attribute Their Return](S05%20Simulate%20Your%20Books%20and%20Attribute%20Their%20Return.pdf) | steps 5–6 · part G | your track record net of costs, against the KN US Equity Core and SPY, and where every point came from |
-| [S06 · Ready for Paper Trading? Validate, Freeze and Present](S06%20Ready%20for%20Paper%20Trading%20-%20Validate%2C%20Freeze%20and%20Present.pdf) | step 7 · part H | your validation, your verdict on the five criteria, your frozen book if it passes, and your presentation |
+| [S01 · Crea tu investigador y aprende a usar el Lab](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf) | antes del paso 1 | tu investigador, con nombre; tu primera nota citada; una idea por probar; el mapa de una estrategia |
+| [S02 · El objetivo de tu estrategia y el universo invertible](S02%20El%20objetivo%20de%20tu%20estrategia%20y%20el%20universo%20invertible.pdf) | pasos 1–2 · partes A, B, C | tu repositorio, tu `OBJECTIVE.md`, tu semilla point-in-time y tu benchmark |
+| [S03 · Obtención de datos e ingeniería de variables](S03%20Obtenci%C3%B3n%20de%20datos%20e%20ingenier%C3%ADa%20de%20variables.pdf) | paso 3 · parte D | tus datos, tu panel, y una señal analizada, conservada o descartada |
+| [S04 · Escribe tu hipótesis y construye los portafolios históricos](S04%20Escribe%20tu%20hip%C3%B3tesis%20y%20construye%20los%20portafolios%20hist%C3%B3ricos.pdf) | paso 4 · partes E, F, G | tu blueprint, guardado antes de la regla; tu regla, su control y una alternativa, como portafolios históricos |
+| [S05 · Simula tus portafolios y atribuye su rendimiento](S05%20Simula%20tus%20portafolios%20y%20atribuye%20su%20rendimiento.pdf) | pasos 5–6 · parte G | tu historial neto de costos, contra el KN US Equity Core y SPY, y de dónde vino cada punto |
+| [S06 · ¿Lista para paper trading? Valida, congela y presenta](S06%20Lista%20para%20paper%20trading%20-%20Valida%2C%20congela%20y%20presenta.pdf) | paso 7 · parte H | tu validación, tu veredicto con los cinco criterios, tu portafolio congelado si pasa, y tu presentación |
 
-Step 8, production, is outside this course. The order of work is fixed: the claims before the
-papers and the benchmark before any result; a universe fixed at a point in time before any data; a
-signal analyzed before any book; the blueprint saved before the rule; results net of stated costs;
-an attribution; the holdout opened once; and a verdict, in writing, at the paper-trading gate. A
-rejected idea is reported as clearly as a kept one, and can earn full marks.
+El paso 8, producción, queda fuera de este curso. El orden del trabajo es fijo: las afirmaciones
+antes que los artículos y el benchmark antes que cualquier resultado; un universo fijado en un
+momento dado antes de cualquier dato; una señal analizada antes de cualquier portafolio; el
+blueprint guardado antes de la regla; resultados netos de costos declarados; una atribución; la
+muestra reservada abierta una vez; y un veredicto, por escrito, en el filtro de paper trading. Una
+idea rechazada se reporta con la misma claridad que una conservada, y puede obtener la calificación
+completa.
 
-## S01 · Create Your Researcher and Learn to Use the Lab
+## S01 · Crea tu investigador y aprende a usar el Lab
 
-**The deck:** [S01 Create Your Researcher and Learn to Use the Lab.pdf](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf), 26 slides, ending at its close and the disclaimer. What you look
-up rather than follow is in the handbook's reference pages.
+**La presentación:** [S01 Crea tu investigador y aprende a usar el Lab.pdf](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf), 26 diapositivas, que terminan en su cierre y el aviso
+legal. Lo que se consulta en lugar de seguirse está en las páginas de referencia del manual.
 
-- **Goal.** Install a research companion, train it with papers, meet the Investment Lab, and see
-  how a strategy is built, step by step, with your researcher beside you.
-- **The acts.** Install: from GitHub, in three steps. Train: papers in, skills to use them. Lab:
-  its tools, and simple ideas to test. Code: where each part of a strategy lives, on Golden-Flow.
-- **You leave with:** your researcher, named; your first cited note; an idea to test; a strategy's
-  map, from objective to attribution.
-- **Checkpoint, AI off:** what makes your researcher yours; how you train it; what the Lab does,
-  step by step; where each part of a strategy lives.
-- **Homework.** Read the debate, Harvey, Liu & Zhu (2016), then Jensen, Kelly & Pedersen (2023),
-  and ask for `teach` on each; open your researcher in any project; for S02, your idea in one line,
-  the benchmark it must beat, and Golden-Flow browsed with `init-example`.
-- **Prepares for:** S02, the objective. It also runs on its own, as a live install workshop.
+- **Objetivo.** Instala un compañero de investigación, entrénalo con artículos, conoce el
+  Investment Lab y mira cómo se construye una estrategia, paso a paso, con tu investigador a tu
+  lado.
+- **Los actos.** Instalar: desde GitHub, en tres pasos. Entrenar: entran artículos; skills para
+  usarlos. Lab: sus herramientas, e ideas simples por probar. Código: dónde vive cada parte de una
+  estrategia, en Golden-Flow.
+- **Te llevas:** tu investigador, con nombre; tu primera nota citada; una idea por probar; el mapa
+  de una estrategia, del objetivo a la atribución.
+- **Evaluación, IA apagada:** qué hace tuyo a tu investigador; cómo lo entrenas; qué hace el Lab,
+  paso a paso; dónde vive cada parte de una estrategia.
+- **Tarea.** Lee el debate, Harvey, Liu & Zhu (2016) y Jensen, Kelly & Pedersen (2023), y pide
+  `teach` sobre cada uno; abre tu investigador en cualquier proyecto; para S02, tu idea en una
+  línea, el benchmark que debe superar, y Golden-Flow explorado con `init-example`.
+- **Prepara para:** S02, el objetivo. También se da sola, como taller de instalación en vivo.
 
-## S02 · Your Strategy's Objective and the Investable Universe
+## S02 · El objetivo de tu estrategia y el universo invertible
 
-**The deck:** [S02 Your Strategy's Objective and the Investable Universe.pdf](S02%20Your%20Strategy%27s%20Objective%20and%20the%20Investable%20Universe.pdf), 21 slides, ending at its close and the disclaimer.
+**La presentación:** [S02 El objetivo de tu estrategia y el universo invertible.pdf](S02%20El%20objetivo%20de%20tu%20estrategia%20y%20el%20universo%20invertible.pdf), 21 diapositivas, que terminan en su cierre y el aviso
+legal.
 
-- **Goal.** Start your strategy, land its objective with your researcher, and build its
-  point-in-time universe, with Golden-Flow beside it. Steps 1 and 2, before any data.
-- **The acts.** Start: `init-strategy`, the two tracks, the example. Objective: your words, then
-  the claims; one source for and one against; the benchmark, chosen first. Universe: the members as
-  they were, the dead stocks counted, and the date from which it is usable.
-- **You leave with:** your repository, your `OBJECTIVE.md` and your seed.
-- **Checkpoint, AI off:** what `init-strategy` gives you and which track you take; what your
-  objective claims and what would settle it; why your universe keeps the dead stocks; against what
-  you measure it, and why first.
-- **Homework.** `read` one source per claim and one against, then `/objective` again; finish the
-  seed, the dead kept; choose your data provider and, if it needs one, its key in `Config/.env`;
-  ask `next`.
-- **Prepares for:** S03, your data.
+- **Objetivo.** Empieza tu estrategia, aterriza su objetivo con tu investigador y construye su
+  universo point-in-time, con Golden-Flow al lado. Los pasos 1 y 2, antes de cualquier dato.
+- **Los actos.** Empezar: `init-strategy`, las dos rutas, el ejemplo. Objetivo: tus palabras,
+  luego las afirmaciones; una fuente a favor y una en contra; el benchmark, elegido primero.
+  Universo: los miembros de entonces, las acciones muertas contadas, y la fecha desde la que es
+  utilizable.
+- **Te llevas:** tu repositorio, tu `OBJECTIVE.md` y tu semilla.
+- **Evaluación, IA apagada:** qué te da `init-strategy` y qué ruta tomas; qué afirma tu objetivo y
+  qué lo resolvería; por qué tu universo conserva las acciones muertas; contra qué lo mides, y por
+  qué lo elegiste antes.
+- **Tarea.** `read` una fuente por afirmación y una en contra, luego `/objective` otra vez; termina
+  la semilla, con las muertas; elige tu proveedor de datos y, si la pide, su clave en
+  `Config/.env`; pregunta `next`.
+- **Prepara para:** S03, tus datos.
 
-## S03 · Getting the Data and Feature Engineering
+## S03 · Obtención de datos e ingeniería de variables
 
-**The deck:** [S03 Getting the Data and Feature Engineering.pdf](S03%20Getting%20the%20Data%20and%20Feature%20Engineering.pdf), 21 slides, ending at its close and the disclaimer.
+**La presentación:** [S03 Obtención de datos e ingeniería de variables.pdf](S03%20Obtenci%C3%B3n%20de%20datos%20e%20ingenier%C3%ADa%20de%20variables.pdf), 21 diapositivas, que terminan en su cierre y el aviso
+legal.
 
-- **Goal.** From your provider to an analyzed signal: the Data Curator, the Data Refinery and the
-  Data Analyzer, with Golden-Flow beside you. Step 3 of the eight.
-- **The acts.** Get: your whole universe in one download, and your `c_*` features. Refine: your
-  universe date by date, ranks and z-scores across stocks, your weight as a share of traded value.
-  Analyze: your signal against buy and hold, and the same strategy with another signal.
-- **You leave with:** your data, your panel, and a signal kept or dropped.
-- **Checkpoint, AI off:** why one code serves any provider; when a feature is `c_*` and when
-  `r_*`; why a signal that makes less than holding can still be useful; why a signal is analyzed
-  alone, before the portfolio.
-- **Homework.** Your whole universe, the dead too, and its coverage; your `r_*` explored against
-  holding; keep or drop, in `RESULTS.md`; for S04, Golden-Flow's `BLUEPRINT_1.md`.
-- **Prepares for:** S04, your portfolio.
+- **Objetivo.** De tu proveedor a una señal analizada: el Data Curator, el Data Refinery y el Data
+  Analyzer, con Golden-Flow al lado. El paso 3 de los ocho.
+- **Los actos.** Obtener: todo tu universo en una descarga, y tus variables `c_*`. Refinar: tu
+  universo fecha por fecha, rangos y z-scores entre acciones, tu peso como participación del valor
+  operado. Analizar: tu señal contra comprar y mantener, y la misma estrategia con otra señal.
+- **Te llevas:** tus datos, tu panel, y una señal conservada o descartada.
+- **Evaluación, IA apagada:** por qué un solo código sirve para cualquier proveedor; cuándo una
+  variable es `c_*` y cuándo `r_*`; por qué una señal que rinde menos que mantener puede servir; por
+  qué se analiza una señal sola, antes del portafolio.
+- **Tarea.** Todo tu universo, también las muertas, y su cobertura; tu `r_*` explorada contra
+  mantener; conservar o descartar, en `RESULTS.md`; para S04, el `BLUEPRINT_1.md` de Golden-Flow.
+- **Prepara para:** S04, tu portafolio.
 
-## S04 · Write Your Hypothesis and Build the Historical Portfolios
+## S04 · Escribe tu hipótesis y construye los portafolios históricos
 
-**The deck:** [S04 Write Your Hypothesis and Build the Historical Portfolios.pdf](S04%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf), 23 slides, ending at its close and the disclaimer.
+**La presentación:** [S04 Escribe tu hipótesis y construye los portafolios históricos.pdf](S04%20Escribe%20tu%20hip%C3%B3tesis%20y%20construye%20los%20portafolios%20hist%C3%B3ricos.pdf), 23 diapositivas, que terminan en su cierre y el aviso
+legal.
 
-- **Goal.** From your S03 signals to experiment 1: your hypothesis in the blueprint, then your
-  historical books, with what was known each day.
-- **The acts.** Hypothesis: refutable, drafted, criticized and saved before the rule. Build:
-  selection, sizing and timing, from equal weight to fourteen methods, and how often to rebalance.
-  Realism: the signal at t − 1, no survivors, corporate events, the invariants and overfitting.
-- **You leave with:** your blueprint, your rule, and your books.
-- **Checkpoint, AI off:** why the hypothesis before the rule; why equal weight first; when you read
-  the signal and when you buy; what your book does with a stock another company buys.
-- **Homework.** Your rule, your control with one ingredient out, and an alternative, each passing
-  the five invariants with its turnover measured; N up to date; your two cost rows.
-- **Prepares for:** S05, the backtest.
+- **Objetivo.** De tus señales de S03 al experimento 1: tu hipótesis en el blueprint, luego tus
+  portafolios históricos, con lo que se sabía cada día.
+- **Los actos.** Hipótesis: refutable, redactada, criticada y guardada antes de la regla.
+  Construir: selección, tamaño y momento, del peso igual a catorce métodos, y cada cuánto
+  rebalancear. Realismo: la señal en t − 1, sin sobrevivientes, los eventos corporativos, las
+  invariantes y el sobreajuste.
+- **Te llevas:** tu blueprint, tu regla y tus portafolios.
+- **Evaluación, IA apagada:** por qué la hipótesis antes de la regla; por qué pesos iguales
+  primero; cuándo lees la señal y cuándo compras; qué hace tu portafolio con una acción que compra
+  otra empresa.
+- **Tarea.** Tu regla, tu control con un ingrediente fuera, y una alternativa, cada una pasando
+  las cinco invariantes y con su rotación medida; N al día; tus dos filas de costos.
+- **Prepara para:** S05, el backtest.
 
-## S05 · Simulate Your Books and Attribute Their Return
+## S05 · Simula tus portafolios y atribuye su rendimiento
 
-**The deck:** [S05 Simulate Your Books and Attribute Their Return.pdf](S05%20Simulate%20Your%20Books%20and%20Attribute%20Their%20Return.pdf), 21 slides, ending at its close and the disclaimer.
+**La presentación:** [S05 Simula tus portafolios y atribuye su rendimiento.pdf](S05%20Simula%20tus%20portafolios%20y%20atribuye%20su%20rendimiento.pdf), 21 diapositivas, que terminan en su cierre y el aviso
+legal.
 
-- **Goal.** From your S04 books to their track record net of costs, against the KN US Equity Core
-  benchmark and SPY, and where every point came from.
-- **The acts.** Simulate: the Backtest Engine step by step; commission, slippage and reserve; net,
-  or nothing. Compare: the KN US Equity Core and SPY; Sharpe, Sortino, drawdown, tracking error;
-  excess, active and Jensen's alpha. Attribute: the KN US Equity Factor Model; factors, sectors
-  and the idiosyncratic part; two variants, component by component.
-- **You leave with:** your track record, your table, and your attribution.
-- **Checkpoint, AI off:** why net, and what you check first; over what excess, active and Jensen's
-  alpha are measured; with which weight each day is attributed; why the factor model barely sees a
-  moving-average cross.
-- **Homework.** Your three books net, each run complete, against both benchmarks; the factor model
-  reconciled and Brinson-Fachler by sector; `FINDINGS_1.md` with your verdict, and N up to date.
-- **Prepares for:** S06, paper trading.
+- **Objetivo.** De tus portafolios de S04 a su historial neto de costos, contra el benchmark KN US
+  Equity Core y SPY, y de dónde vino cada punto.
+- **Los actos.** Simular: el Backtest Engine paso a paso; comisión, deslizamiento y reserva; neto,
+  o nada. Comparar: el KN US Equity Core y SPY; Sharpe, Sortino, caída máxima, tracking error;
+  exceso, activo y alfa de Jensen. Atribuir: el KN US Equity Factor Model; factores, sectores y la
+  parte idiosincrática; dos variantes, componente por componente.
+- **Te llevas:** tu historial, tu tabla y tu atribución.
+- **Evaluación, IA apagada:** por qué neto, y qué revisas primero; sobre qué se miden el exceso,
+  el activo y el alfa de Jensen; con qué peso se atribuye cada día; por qué el factor model casi no
+  ve un cruce de promedios.
+- **Tarea.** Tus tres portafolios netos, cada corrida completa, contra los dos benchmarks; el
+  factor model cuadrado y Brinson-Fachler por sector; `FINDINGS_1.md` con tu veredicto, y N al día.
+- **Prepara para:** S06, paper trading.
 
-## S06 · Ready for Paper Trading? Validate, Freeze and Present
+## S06 · ¿Lista para paper trading? Valida, congela y presenta
 
-**The deck:** [S06 Ready for Paper Trading - Validate, Freeze and Present.pdf](S06%20Ready%20for%20Paper%20Trading%20-%20Validate%2C%20Freeze%20and%20Present.pdf), 23 slides, ending at its close and the disclaimer.
+**La presentación:** [S06 Lista para paper trading - Valida, congela y presenta.pdf](S06%20Lista%20para%20paper%20trading%20-%20Valida%2C%20congela%20y%20presenta.pdf), 23 diapositivas, que terminan en su cierre y el aviso
+legal.
 
-- **Goal.** From S05's finding to the decision: nothing wrong, the gate's five criteria, the book
-  frozen to watch it out of sample, and the strategy presented to a committee.
-- **The acts.** Validate: what cannot fail; the blueprint judges the run; the holdout, once; a
-  curve of variants. Decide: five criteria, all of them; your book's verdict; the signature is a
-  person's. Freeze: the book as it is, a test day first, then every day after the close. Present:
-  the rubric's nine rows, a judge's questions answered with files, and ten minutes.
-- **You leave with:** your validation, your verdict, your frozen book if it passes, and your
-  presentation.
-- **Checkpoint, AI off:** what you check before deciding; why the five criteria, all of them; what
-  is frozen, and why never twice; what you watch out of sample, and what not.
-- **Homework.** Close part H: the list check by check, your holdout opened once, your curve of
-  variants with N; the five criteria with their evidence and `BITACORA.md` with your yes or your
-  no; ten minutes, rehearsed with your files.
-- **Prepares for:** presentation day, and the three pillars.
+- **Objetivo.** Del hallazgo de S05 a la decisión: sin errores, los cinco criterios del filtro, el
+  portafolio congelado para verlo fuera de muestra, y la estrategia presentada ante un comité.
+- **Los actos.** Validar: lo que no puede fallar; el blueprint juzga la corrida; la muestra
+  reservada, una vez; una curva de variantes. Decidir: cinco criterios, todos; el veredicto de tu
+  portafolio; la firma es de una persona. Congelar: el portafolio tal cual, un día de prueba antes,
+  luego cada día después del cierre. Presentar: las nueve filas de la rúbrica, las preguntas de un
+  juez respondidas con archivos, y diez minutos.
+- **Te llevas:** tu validación, tu veredicto, tu portafolio congelado si pasa, y tu presentación.
+- **Evaluación, IA apagada:** qué revisas antes de decidir; por qué los cinco criterios, todos;
+  qué se congela, y por qué nunca dos veces; qué miras fuera de muestra, y qué no.
+- **Tarea.** Cierra la parte H: la lista revisión por revisión, tu muestra reservada abierta una
+  vez, tu curva de variantes con N; los cinco criterios con su evidencia y `BITACORA.md` con tu sí o
+  tu no; diez minutos, ensayados con tus archivos.
+- **Prepara para:** el día de presentación, y los tres pilares.
 
-## How every session works
+## Cómo funciona cada sesión
 
-**Two tracks, one strategy.** Every session works two ways, and you can take either:
+**Dos rutas, una estrategia.** Cada sesión funciona de dos maneras, y puedes tomar cualquiera:
 
-- **No code:** you build the strategy by clicking through the KaxaNuk Investment Lab app, at
+- **Sin código:** construyes la estrategia con clics en la app del KaxaNuk Investment Lab, en
   [lab.kaxanuk.mx](https://lab.kaxanuk.mx).
-- **Code:** you build it in Python on the KaxaNuk Strategy Template, with your researcher's skill
-  for each step.
+- **Código:** la construyes en Python sobre la KaxaNuk Strategy Template, con la skill de tu
+  investigador para cada paso.
 
-Both tracks keep everything in one strategy repository, made with `init-strategy`, where your
-researcher writes your documents: the objective, the blueprint, the findings and the results. The
-same engines price and attribute both tracks' books, so a number means the same in both.
+Las dos rutas guardan todo en un repositorio de estrategia, hecho con `init-strategy`, donde tu
+investigador escribe tus documentos: el objetivo, el blueprint, los hallazgos y los resultados. Los
+mismos motores valúan y atribuyen los portafolios de las dos rutas, así que una cifra significa lo
+mismo en ambas.
 
-**The example, end to end: Golden-Flow.** A strategy worked through every step ships with the
-researcher; each session shows its step done there. Read it on
+**El ejemplo, de principio a fin: Golden-Flow.** Una estrategia resuelta en cada paso viene con el
+investigador; cada sesión muestra ahí su paso hecho. Léela en
 [GitHub](https://github.com/KaxaNuk/KaxaNuk-Researcher/tree/main/examples/strategy/golden-flow)
-with nothing installed. From S04, the sessions' figures come from one book on Sharadar prices of
-the KN US Equity Core, computed for the course and labelled as such.
+sin instalar nada. Desde S04, las cifras de las sesiones vienen de un portafolio sobre precios de
+Sharadar del KN US Equity Core, calculado para el curso y marcado así.
 
-**The 90 minutes,** live; the deck, read alone, follows the same blocks:
+**Los 90 minutos,** en vivo; la presentación, leída a solas, sigue los mismos bloques:
 
-| Time | Block | AI | What happens |
+| Hora | Bloque | IA | Qué pasa |
 | --- | --- | --- | --- |
-| 0:00 | Retrieval and first deliverable | | where the last session left you, and this session's map |
-| 0:05 | The idea | | the step, its methods and its traps, with real figures |
-| 0:35 | Do it, on both tracks | on | the step, live, in code and on the Lab |
-| 1:10 | Checkpoint | off | the session's ideas, in your words, by hand |
-| 1:20 | Homework and close | | what to finish, and what comes next |
+| 0:00 | Recuperación y primer entregable | | dónde te dejó la sesión anterior, y el mapa de esta |
+| 0:05 | La idea | | el paso, sus métodos y sus trampas, con cifras reales |
+| 0:35 | Hazlo, en las dos rutas | encendida | el paso, en vivo, en código y en el Lab |
+| 1:10 | Evaluación | apagada | las ideas de la sesión, con tus palabras, a mano |
+| 1:20 | Tarea y cierre | | qué terminar, y lo que sigue |
 
-**Your researcher, your tutor.** You install the KaxaNuk Researcher in S01, in your own language.
-From then on it is the first place to take a question, and it follows each session with you. It
-teaches the hard ideas (`teach <topic>`), answers from what you have read and cites it (`query`),
-and says what comes next (`next`). It tutors; it does not think for you. It asks for your
-prediction first, gives hints in levels, writes no code in a block marked AI off, never computes a
-performance number and never gives investment advice.
+**Tu investigador, tu tutor.** Instalas el KaxaNuk Researcher en S01, en tu propio idioma. Desde
+entonces es el primer lugar al que llevar una pregunta, y sigue cada sesión contigo. Enseña las
+ideas difíciles (`teach <tema>`), responde a partir de lo que has leído y lo cita (`query`), y
+dice qué sigue (`next`). Es tutor; no piensa por ti. Te pide primero tu predicción, da pistas por
+niveles, no escribe código en un bloque marcado IA apagada, nunca calcula una cifra de desempeño y
+nunca da consejos de inversión.
 
-**Why the AI is off when you are assessed.** Only what you can do and explain with the AI off is
-assessed. An assistant that does the thinking can replace the learning; one designed as a tutor
-can speed it up:
+**Por qué la IA está apagada cuando se te evalúa.** Solo se evalúa lo que puedes hacer y explicar
+con la IA apagada. Un asistente que piensa por ti puede sustituir el aprendizaje; uno diseñado como
+tutor puede acelerarlo:
 - Bastani et al. (2025), *Generative AI without guardrails can harm learning: Evidence from high
   school mathematics*, PNAS 122(26);
 - Kestin et al. (2025), *AI tutoring outperforms in-class active learning: an RCT introducing a
@@ -195,139 +211,151 @@ can speed it up:
 - Shen and Tamkin (2026), *How AI Impacts Skill Formation*, arXiv:2601.20245.
 
 <details>
-<summary>The KaxaNuk review checklist, for every diff an agent writes</summary>
+<summary>La lista de revisión de KaxaNuk, para cada diff que escribe un agente</summary>
 
-1. **Scope.** It implements a spec, claim, prediction or blueprint saved before it, and nothing
-   more.
-2. **Tests.** Yours, untouched by the agent, red before and green after. One assert per test.
-3. **Causality.** A value dated t uses data through t-1. Ranks are per date, never pooled.
-   Fundamentals and macro series are joined on the date they became available.
-4. **Universe.** Membership comes from the seed. Nothing is selected on `current_*` columns.
-   Replacements are logged.
-5. **Missing data.** Null is not zero. No silent `fillna(0)` or forward fill.
-6. **Die loud.** Errors raise with a message. No bare `except`, no silent skip.
-7. **Units.** Frequency, annualisation, percent or decimal, and costs stated.
-8. **House style.** ruff and the Bloom Code checker clean.
-9. **Numbers.** Every book figure traces to an engine file or the run manifest, or is labelled
-   "teaching computation" or "derived".
-10. **Trials and holdouts.** Every run is counted. Holdout dates stay untouched until the holdout
-    is opened.
-11. **Secrets and hygiene.** No key printed or committed. Notebook outputs stripped.
-12. **Citations.** Every reference resolves to a note. None comes from the model's memory.
-13. **Explain.** You can explain every changed line with the AI off (no-code track: every result
-    and every table), and the commit message says what moved and why.
+1. **Alcance.** Implementa una especificación, afirmación, predicción o blueprint guardado antes,
+   y nada más.
+2. **Pruebas.** Las tuyas, sin que el agente las toque, en rojo antes y en verde después. Un assert
+   por prueba.
+3. **Causalidad.** Un valor fechado en t usa datos hasta t-1. Los rangos son por fecha, nunca
+   mezclados. Los datos fundamentales y las series macro se unen en la fecha en que estuvieron
+   disponibles.
+4. **Universo.** La membresía viene de la semilla. Nada se selecciona por columnas `current_*`. Los
+   reemplazos se registran.
+5. **Datos faltantes.** Nulo no es cero. Ningún `fillna(0)` ni relleno hacia adelante en silencio.
+6. **Falla en voz alta.** Los errores se lanzan con un mensaje. Ningún `except` desnudo, ningún
+   salto en silencio.
+7. **Unidades.** Frecuencia, anualización, porcentaje o decimal, y costos declarados.
+8. **Estilo de la casa.** ruff y el verificador Bloom Code limpios.
+9. **Cifras.** Cada cifra de un portafolio se rastrea a un archivo del motor o al manifiesto de
+   corridas, o se etiqueta "cálculo didáctico" o "derivada".
+10. **Ensayos y muestras reservadas.** Cada corrida se cuenta. Las fechas de la muestra reservada
+    no se tocan hasta que se abre.
+11. **Secretos e higiene.** Ninguna clave impresa ni guardada en el repositorio. Las salidas de los
+    notebooks, borradas.
+12. **Citas.** Cada referencia lleva a una nota. Ninguna viene de la memoria del modelo.
+13. **Explica.** Puedes explicar cada línea cambiada con la IA apagada (ruta sin código: cada
+    resultado y cada tabla), y el mensaje del commit dice qué se movió y por qué.
 
 </details>
 
-## What you need, and what it costs
+## Qué necesitas y cuánto cuesta
 
-To install your researcher you need only a coding assistant. Everything else is your pick: the
-tools are choices, and your files stay the same whichever you choose.
+Para instalar tu investigador solo necesitas un asistente de programación. Todo lo demás lo eliges
+tú: las herramientas son opciones, y tus archivos son los mismos elijas lo que elijas.
 
-| For | Options | What it costs, read 2026-10-11 |
+| Para | Opciones | Cuánto cuesta, consultado el 2026-10-11 |
 | --- | --- | --- |
-| Your assistant | Claude Code, in the Claude desktop app | a paid Claude plan: Pro $20 a month, or $17 a month billed yearly; Max from $100 a month; the Free plan has no Claude Code |
-| | Codex, in the Codex app | in every ChatGPT plan, Free included (Free not yet tested for this install); Go $8 a month; Plus $20 a month |
-| Your editor | PyCharm or VS Code | free: PyCharm's core, and VS Code |
-| Versions | GitHub Desktop, or git | free; a GitHub account, free, only for `backup` |
-| The library view | Obsidian, or your editor's preview | free |
-| Data | Yahoo Finance, for a first test; FMP; LSEG | see the [Data Curator's providers](https://kaxanuk-data-curator.readthedocs.io) |
-| No code, and the engines | the Investment Lab | by subscription: lab@kaxanuk.mx |
-| Optional | the Analytics Factory | by subscription; a sample on request: analytics@kaxanuk.mx |
+| Tu asistente | Claude Code, en la app de escritorio de Claude | un plan de pago de Claude: Pro, $20 al mes, o $17 al mes con pago anual; Max desde $100 al mes; el plan Free no incluye Claude Code |
+| | Codex, en la app de Codex | en cada plan de ChatGPT, Free incluido (Free todavía no se ha probado para esta instalación); Go, $8 al mes; Plus, $20 al mes |
+| Tu editor | PyCharm o VS Code | gratis: el núcleo de PyCharm, y VS Code |
+| Versiones | GitHub Desktop, o git | gratis; una cuenta de GitHub, gratis, solo para `backup` |
+| La vista de la biblioteca | Obsidian, o la vista previa de tu editor | gratis |
+| Datos | Yahoo Finance, para una primera prueba; FMP; LSEG | consulta los [proveedores del Data Curator](https://kaxanuk-data-curator.readthedocs.io) |
+| Sin código, y los motores | el Investment Lab | por suscripción: lab@kaxanuk.mx |
+| Opcional | la Analytics Factory | por suscripción; una muestra a solicitud: analytics@kaxanuk.mx |
 
-Gemini CLI, Cursor and Copilot CLI also run the researcher: see each one's page. Yahoo Finance has
-no fundamentals, no VWAP and no unadjusted prices, so a backtest on it is imprecise. From S04 both
-tracks use the Investment Lab's engines; without a licence, you follow S05 and S06 on the
-sessions' own figures. Prices change: check each page before you pay.
+Gemini CLI, Cursor y Copilot CLI también corren el investigador: consulta la página de cada uno.
+Yahoo Finance no tiene datos fundamentales, ni VWAP, ni precios sin ajustar, así que un backtest
+sobre sus datos es impreciso. Desde S04 las dos rutas usan los motores del Investment Lab; sin
+licencia, sigues S05 y S06 con las cifras propias de las sesiones. Los precios cambian: revisa cada
+página antes de pagar.
 
-## Who it is for
+## Para quién es
 
-Anyone who wants to learn KaxaNuk's research process and tools, beginner or advanced, and anyone
-who wants a research companion for their own work:
+Para cualquiera que quiera aprender el proceso de investigación y las herramientas de KaxaNuk,
+principiante o avanzado, y para cualquiera que quiera un compañero de investigación para su propio
+trabajo:
 
-- **Universities:** finance, economics, engineering and quantitative programmes that want a term
-  project with a real research process.
-- **Students** and **KN Hack participants**: the Bootcamp is the natural preparation for KN Hack.
-- **Investment teams** (pension funds, asset managers, insurers, advisers, family offices),
-  **emerging managers** and **individual professionals**.
-- **Anyone else:** a lawyer, an engineer, a student of any field. S01 stands on its own, and your
-  researcher works on any project.
+- **Universidades:** programas de finanzas, economía, ingeniería y métodos cuantitativos que
+  quieran un proyecto semestral con un proceso de investigación real.
+- **Estudiantes** y **participantes de KN Hack**: el Bootcamp es la preparación natural para
+  KN Hack.
+- **Equipos de inversión** (fondos de pensiones, administradoras de activos, aseguradoras,
+  asesores, family offices), **gestores emergentes** y **profesionales independientes**.
+- **Cualquier otra persona:** una abogada, un ingeniero, una estudiante de cualquier carrera. S01
+  se sostiene por sí sola, y tu investigador trabaja en cualquier tema.
 
-**No background is required.** Each session names the pillar sessions behind it, and its homework
-sends you to them for the basics or for more depth.
+**No se requiere ninguna formación previa.** Cada sesión nombra las sesiones de los pilares que
+hay detrás, y su tarea te manda a ellas para lo básico o para ir más a fondo.
 
-## How to take it
+## Cómo tomarlo
 
-- **On your own, from the link.** Follow each session's deck with your researcher, and do its
-  homework at your level.
-- **Live, online.** 90 minutes a session, with homework between sessions.
-- **Live, in person.** S01, to install and learn the researcher together.
-- **As a KN Hack team:** start S01 about five weeks before the event.
+- **Por tu cuenta, desde el enlace.** Sigue la presentación de cada sesión con tu investigador, y
+  haz su tarea a tu nivel.
+- **En vivo, en línea.** 90 minutos por sesión, con tarea entre sesiones.
+- **En vivo, en persona.** S01, para instalar y aprender el investigador juntos.
+- **Como equipo de KN Hack:** empieza S01 unas cinco semanas antes del evento.
 
-**Languages.** The material is in English, and in Spanish on this repository's `spanish` branch,
-pending review. Your researcher works in any language, so you can ask it to explain any session in
-yours.
+**Idiomas.** El material está en inglés, en la rama `english`, y en español en esta rama,
+pendiente de revisión. Tu investigador trabaja en cualquier idioma, así que puedes pedirle que te
+explique cualquier sesión en el tuyo.
 
-## Presentation day and assessment
+## El día de presentación y la evaluación
 
-The presentation is a separate day after S06: a cohort demo day, or KN Hack for that cohort.
+La presentación es un día aparte después de S06: un demo day de la generación, o KN Hack para esa
+generación.
 
-- **Ten minutes before a committee**, each part from a file: the hypothesis and why it should work
-  (`OBJECTIVE.md`); the universe and the benchmark, with the dead stocks (`Universe/`); the rule and
-  its control, saved first (`BLUEPRINT_1.md`); net, against the control and the benchmark, with N,
-  and where it came from (`FINDINGS_1.md`); and the verdict, with what comes next
+- **Diez minutos ante un comité**, cada parte desde un archivo: la hipótesis y por qué debería
+  funcionar (`OBJECTIVE.md`); el universo y el benchmark, con las acciones muertas (`Universe/`); la
+  regla y su control, guardados primero (`BLUEPRINT_1.md`); el neto, contra el control y el
+  benchmark, con N, y de dónde vino (`FINDINGS_1.md`); y el veredicto, con lo que sigue
   (`Paper_Trading/BITACORA.md`).
-- **Scored on the 3x3 rubric:** three areas (strategy definition, feature engineering, strategy
-  design), three rows each, every row scored 0, 33, 66 or 100. **There is no row for return.**
-- **Pass/fail process checks:** the results reproduce; the blueprint's save comes before the rule;
-  every figure traces to a file or carries a label; the trial count is published; the holdout is
-  opened once; the five gate criteria are assessed with evidence. A no, measured, counted and
-  explained, scores as fully as a yes.
-- **Certificates** are issued only at a live defence. A certificate states completion of an
-  educational program, never a qualification to manage money.
+- **Calificada con la rúbrica 3x3:** tres áreas (definición de la estrategia, ingeniería de
+  variables, diseño de la estrategia), tres filas cada una, cada fila calificada con 0, 33, 66
+  o 100. **No hay ninguna fila para el rendimiento.**
+- **Controles del proceso, de aprobado o reprobado:** los resultados se reproducen; el guardado del
+  blueprint va antes de la regla; cada cifra se rastrea a un archivo o lleva una etiqueta; el
+  conteo de ensayos se publica; la muestra reservada se abre una vez; los cinco criterios del filtro
+  se evalúan con evidencia. Un no, medido, contado y explicado, puntúa tan completo como un sí.
+- **Los certificados** se emiten solo en una defensa en vivo. Un certificado acredita que se
+  completó un programa educativo, nunca una calificación para administrar dinero.
 
-## Going deeper: the three pillars
+## Para ir más a fondo: los tres pilares
 
-Three pillar workshops go deeper, after the Bootcamp or alongside it, and open as each is
-published:
+Tres talleres de pilares van más a fondo, después del Bootcamp o a la par, y se abren conforme se
+publica cada uno:
 
-- **Coding Foundations:** coding, and coding with AI.
-- **Financial Markets:** markets, research ideas and the Analytics Factory's data sets.
-- **Mathematical Finance:** the mathematics and statistics of research.
+- **Coding Foundations:** programar, y programar con IA.
+- **Financial Markets:** los mercados, las ideas de investigación y los conjuntos de datos de la
+  Analytics Factory.
+- **Mathematical Finance:** las matemáticas y la estadística de la investigación.
 
-One rule runs through all four workshops: write down what you expect, save it, then do the work.
-The spec before the code; the claim and the benchmark before the data; the prediction before the
-estimate; the blueprint before the rule.
+Una regla recorre los cuatro talleres: escribe lo que esperas, guárdalo, luego haz el trabajo. La
+especificación antes que el código; la afirmación y el benchmark antes que los datos; la
+predicción antes que la estimación; el blueprint antes que la regla.
 
-## Questions
+## Preguntas
 
-Take your question to your researcher first. Then: workshops@kaxanuk.mx. For the Investment Lab:
-lab@kaxanuk.mx. For the Analytics Factory: analytics@kaxanuk.mx.
+Lleva tu pregunta primero a tu investigador. Luego: workshops@kaxanuk.mx. Para el Investment Lab:
+lab@kaxanuk.mx. Para la Analytics Factory: analytics@kaxanuk.mx.
 
-## What's new
+## Novedades
 
-- **2026-10-18. The six sessions, restructured.** Each deck is rebuilt around its step, with the
-  session's figures computed on Sharadar prices of the KN US Equity Core benchmark: S01 creates
-  your researcher and tours the Lab; S02 lands the objective and the universe; S03 gets the data
-  and analyzes a signal; S04 writes the hypothesis and builds the historical books; S05 simulates
-  and attributes them; S06 validates, decides, freezes and presents. The decks now sit at the root
-  of this page, named by their titles, and the Spanish decks are on the `spanish` branch.
-- **2026-10-14.** Every deck redrawn, ending at its close; what you look up rather than follow
-  moved to the handbook's reference pages.
-- **2026-10-11.** S01 rebuilt to install your researcher from the deck alone; the previous
-  edition's decks retired.
+- **2026-10-18. Las seis sesiones, reestructuradas.** Cada presentación se rehízo alrededor de su
+  paso, con cifras calculadas sobre precios de Sharadar del benchmark KN US Equity Core: S01 crea
+  tu investigador y recorre el Lab; S02 aterriza el objetivo y el universo; S03 obtiene los datos y
+  analiza una señal; S04 escribe la hipótesis y construye los portafolios históricos; S05 los
+  simula y los atribuye; S06 valida, decide, congela y presenta. Las presentaciones están ahora en
+  la raíz de esta página, nombradas por su título; las inglesas, en la rama `english`.
+- **2026-10-14.** Cada presentación redibujada, terminando en su cierre; lo que se consulta en
+  lugar de seguirse pasó a las páginas de referencia del manual.
+- **2026-10-11.** S01 rehecha para instalar tu investigador con la presentación sola; las
+  presentaciones de la edición anterior se retiraron.
 
-## Licence and disclaimer
+## Licencia y aviso legal
 
-The material is shared under [CC BY 4.0](LICENSE). It is educational material. Nothing here is a
-recommendation to buy, sell or hold any security. Every backtest is hypothetical. Every figure about
-a book comes from the engine that produced it, or is labelled as the course's own calculation. The
-promise is a correct test of an idea, never better returns.
+El material se comparte bajo [CC BY 4.0](LICENSE). Es material educativo. Nada aquí es una
+recomendación para comprar, vender o mantener ningún valor. Todo backtest es hipotético. Cada cifra
+sobre un portafolio viene del motor que la produjo, o se etiqueta como cálculo propio del curso. La
+promesa es una prueba correcta de una idea, nunca mejores rendimientos.
 
 <details>
-<summary>For your researcher: the course map</summary>
+<summary>Para tu investigador: el mapa del curso</summary>
 
-The KaxaNuk Researcher's `workshop` skill reads this block to tutor a learner through any session.
+La skill `workshop` del KaxaNuk Researcher lee este bloque para guiar a un participante por
+cualquier sesión. Se queda en inglés: es el formato que lee el investigador, escrito por
+`course_map.py` a partir de `course.yml`.
 
 <!-- course-map:start -->
 
@@ -613,7 +641,7 @@ sessions:
   folder: null
   title: Create Your Researcher and Learn to Use the Lab
   state: ready
-  deck: S01 Create Your Researcher and Learn to Use the Lab.pdf
+  deck: S01 Crea tu investigador y aprende a usar el Lab.pdf
   steps: []
   parts: []
   lab:
@@ -658,7 +686,7 @@ sessions:
   folder: null
   title: Your Strategy's Objective and the Investable Universe
   state: ready
-  deck: S02 Your Strategy's Objective and the Investable Universe.pdf
+  deck: S02 El objetivo de tu estrategia y el universo invertible.pdf
   steps:
   - 1
   - 2
@@ -713,7 +741,7 @@ sessions:
   folder: null
   title: Getting the Data and Feature Engineering
   state: ready
-  deck: S03 Getting the Data and Feature Engineering.pdf
+  deck: S03 Obtención de datos e ingeniería de variables.pdf
   steps:
   - 3
   parts:
@@ -772,7 +800,7 @@ sessions:
   folder: null
   title: Write Your Hypothesis and Build the Historical Portfolios
   state: ready
-  deck: S04 Write Your Hypothesis and Build the Historical Portfolios.pdf
+  deck: S04 Escribe tu hipótesis y construye los portafolios históricos.pdf
   steps:
   - 4
   parts:
@@ -826,7 +854,7 @@ sessions:
   folder: null
   title: Simulate Your Books and Attribute Their Return
   state: ready
-  deck: S05 Simulate Your Books and Attribute Their Return.pdf
+  deck: S05 Simula tus portafolios y atribuye su rendimiento.pdf
   steps:
   - 5
   - 6
@@ -879,7 +907,7 @@ sessions:
   folder: null
   title: Ready for Paper Trading? Validate, Freeze and Present
   state: ready
-  deck: S06 Ready for Paper Trading - Validate, Freeze and Present.pdf
+  deck: S06 Lista para paper trading - Valida, congela y presenta.pdf
   steps:
   - 7
   parts:
