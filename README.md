@@ -42,6 +42,24 @@ signal analyzed before any book; the blueprint saved before the rule; results ne
 an attribution; the holdout opened once; and a verdict, in writing, at the paper-trading gate. A
 rejected idea is reported as clearly as a kept one, and can earn full marks.
 
+## Before each session
+
+Starting from zero? Each pillar opens with six short First Steps sessions, 45 to 60 minutes each,
+in a chat with your researcher: it does the work, while you predict first, with the AI off, and
+check every number it gives. Before each Bootcamp session, take its two or three, in the order
+listed; after it, one Foundations session if you want more. The whole short path is about 15
+hours of First Steps beside the Bootcamp's 9. A session's three checkpoint questions, answered
+with the AI off, let you skip it. The links open as each pillar is published.
+
+| Session | Before this session | If you want more |
+| --- | --- | --- |
+| S01 | [CF P01 · Your Computer, Your Folders, Your Researcher](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P01-Your-Computer-Your-Folders-Your-Researcher), [CF P02 · Ask Your AI Well: Say What You Want, Then Review It](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P02-Ask-Your-AI-Well-Say-What-You-Want-Then-Review-It), [FM P01 · Stock, ETF, Index and Benchmark: Meet the KN US Equity Core](https://github.com/KaxaNuk/Financial-Markets/tree/english/P01-Stock-ETF-Index-and-Benchmark) | [CF S01 · Python Ecosystem: Your Workbench](https://github.com/KaxaNuk/Coding-Foundations/tree/english/S01-Python-Ecosystem) |
+| S02 | [CF P03 · Ask Your Table Questions](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P03-Ask-Your-Table-Questions), [MF P01 · Averages, Percentages and the Log Scale](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P01-Averages-Percentages-and-the-Log-Scale), [FM P06 · Don't Fool Yourself: Survivors, the Future, Too Many Tries](https://github.com/KaxaNuk/Financial-Markets/tree/english/P06-Dont-Fool-Yourself-Survivors-the-Future-Too-Many-Tries) | [FM S02 · Financial Markets Ecosystem](https://github.com/KaxaNuk/Financial-Markets/tree/english/S02-Financial-Markets-Ecosystem) |
+| S03 | [FM P02 · Price, Return and Compounding](https://github.com/KaxaNuk/Financial-Markets/tree/english/P02-Price-Return-and-Compounding), [FM P03 · Risk: How Much It Moves, How Far It Falls](https://github.com/KaxaNuk/Financial-Markets/tree/english/P03-Risk-How-Much-It-Moves-How-Far-It-Falls), [CF P04 · Read a Chart Without Being Fooled](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P04-Read-a-Chart-Without-Being-Fooled) | [FM S04 · Financial Statistics and Tail Risk](https://github.com/KaxaNuk/Financial-Markets/tree/english/S04-Financial-Statistics-and-Tail-Risk) |
+| S04 | [FM P04 · How the Market Works: What a Trade Costs](https://github.com/KaxaNuk/Financial-Markets/tree/english/P04-How-the-Market-Works-What-a-Trade-Costs), [MF P02 · How Much It Spreads: the Standard Deviation](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P02-How-Much-It-Spreads-the-Standard-Deviation), [CF P05 · From a Chat to a Script You Can Run Again](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P05-From-a-Chat-to-a-Script-You-Can-Run-Again) | [CF S06 · Classes: Objects for Prices and Books](https://github.com/KaxaNuk/Coding-Foundations/tree/english/S06-Classes) |
+| S05 | [FM P05 · What a Strategy Is, and Who It Must Beat](https://github.com/KaxaNuk/Financial-Markets/tree/english/P05-What-a-Strategy-Is-and-Who-It-Must-Beat), [MF P03 · Do They Move Together? Correlation and the Line](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P03-Do-They-Move-Together-Correlation-and-the-Line), [MF P04 · Chance: the Normal Curve and Fat Tails](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P04-Chance-the-Normal-Curve-and-Fat-Tails) | [MF S01 · Analysis and Calculus](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/S01-Analysis-and-Calculus) |
+| S06 | [MF P05 · Luck or Skill?](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P05-Luck-or-Skill), [MF P06 · Models and Their Error: Train, Test, Overfit](https://github.com/KaxaNuk/Mathematical-Finance/tree/english/P06-Models-and-Their-Error-Train-Test-Overfit), [CF P06 · Save Your Versions, Share Your Work](https://github.com/KaxaNuk/Coding-Foundations/tree/english/P06-Save-Your-Versions-Share-Your-Work) | [CF S07 · Modules: Packages, Imports and the Agent Loop](https://github.com/KaxaNuk/Coding-Foundations/tree/english/S07-Modules) |
+
 ## S01 · Create Your Researcher and Learn to Use the Lab
 
 **The deck:** [S01 Create Your Researcher and Learn to Use the Lab.pdf](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf), 26 slides, ending at its close and the disclaimer. What you look
@@ -306,6 +324,9 @@ lab@kaxanuk.mx. For the Analytics Factory: analytics@kaxanuk.mx.
 
 ## What's new
 
+- **2026-10-22. Before each session.** For a learner who starts from zero, each session now names
+  the two or three First Steps sessions of the pillars to take before it, in "Before each session"
+  above and in each deck's homework.
 - **2026-10-18. The six sessions, restructured.** Each deck is rebuilt around its step, with the
   session's figures computed on Sharadar prices of the KN US Equity Core benchmark: S01 creates
   your researcher and tours the Lab; S02 lands the objective and the universe; S03 gets the data
@@ -379,10 +400,10 @@ tools:
   researcher:
     name: KaxaNuk Researcher
     docs: https://github.com/KaxaNuk/KaxaNuk-Researcher
-    version: 1.13.0
+    version: 1.18.0
     apm: 0.33.0
     access: open source
-    checked: 2026-10-11
+    checked: 2026-10-19
   lab:
     name: KaxaNuk Investment Lab
     app: https://lab.kaxanuk.mx
@@ -506,6 +527,24 @@ pillars:
     repo: https://github.com/KaxaNuk/Mathematical-Finance
     public: false
 pillar_sessions:
+  CF P01:
+    folder: P01-Your-Computer-Your-Folders-Your-Researcher
+    title: Your Computer, Your Folders, Your Researcher
+  CF P02:
+    folder: P02-Ask-Your-AI-Well-Say-What-You-Want-Then-Review-It
+    title: 'Ask Your AI Well: Say What You Want, Then Review It'
+  CF P03:
+    folder: P03-Ask-Your-Table-Questions
+    title: Ask Your Table Questions
+  CF P04:
+    folder: P04-Read-a-Chart-Without-Being-Fooled
+    title: Read a Chart Without Being Fooled
+  CF P05:
+    folder: P05-From-a-Chat-to-a-Script-You-Can-Run-Again
+    title: From a Chat to a Script You Can Run Again
+  CF P06:
+    folder: P06-Save-Your-Versions-Share-Your-Work
+    title: Save Your Versions, Share Your Work
   CF S01:
     folder: S01-Python-Ecosystem
     title: 'Python Ecosystem: Your Workbench'
@@ -572,6 +611,24 @@ pillar_sessions:
   CF S24:
     folder: S24-Documentation
     title: 'Documentation: READMEs, Docstrings, Releases'
+  FM P01:
+    folder: P01-Stock-ETF-Index-and-Benchmark
+    title: 'Stock, ETF, Index and Benchmark: Meet the KN US Equity Core'
+  FM P02:
+    folder: P02-Price-Return-and-Compounding
+    title: Price, Return and Compounding
+  FM P03:
+    folder: P03-Risk-How-Much-It-Moves-How-Far-It-Falls
+    title: 'Risk: How Much It Moves, How Far It Falls'
+  FM P04:
+    folder: P04-How-the-Market-Works-What-a-Trade-Costs
+    title: 'How the Market Works: What a Trade Costs'
+  FM P05:
+    folder: P05-What-a-Strategy-Is-and-Who-It-Must-Beat
+    title: What a Strategy Is, and Who It Must Beat
+  FM P06:
+    folder: P06-Dont-Fool-Yourself-Survivors-the-Future-Too-Many-Tries
+    title: 'Don''t Fool Yourself: Survivors, the Future, Too Many Tries'
   FM S01:
     folder: S01-Intro-to-Investment-Research
     title: Intro to Investment Research
@@ -614,6 +671,24 @@ pillar_sessions:
   FM S18x:
     folder: S18-Indices-and-ETFs
     title: Survivorship and Point-in-Time Membership
+  MF P01:
+    folder: P01-Averages-Percentages-and-the-Log-Scale
+    title: Averages, Percentages and the Log Scale
+  MF P02:
+    folder: P02-How-Much-It-Spreads-the-Standard-Deviation
+    title: 'How Much It Spreads: the Standard Deviation'
+  MF P03:
+    folder: P03-Do-They-Move-Together-Correlation-and-the-Line
+    title: Do They Move Together? Correlation and the Line
+  MF P04:
+    folder: P04-Chance-the-Normal-Curve-and-Fat-Tails
+    title: 'Chance: the Normal Curve and Fat Tails'
+  MF P05:
+    folder: P05-Luck-or-Skill
+    title: Luck or Skill?
+  MF P06:
+    folder: P06-Models-and-Their-Error-Train-Test-Overfit
+    title: 'Models and Their Error: Train, Test, Overfit'
   MF S01:
     folder: S01-Analysis-and-Calculus
     title: Analysis and Calculus
@@ -705,6 +780,10 @@ sessions:
   - RESULTS.md
   - Experiments/Experiment_1/FINDINGS_1.md
   pillars:
+    before:
+    - CF P01
+    - CF P02
+    - FM P01
     core: []
     helpful:
     - CF S01
@@ -755,6 +834,10 @@ sessions:
   - RESULTS.md
   - Experiments/Experiment_1/FINDINGS_1.md
   pillars:
+    before:
+    - CF P03
+    - MF P01
+    - FM P06
     core:
     - CF S01
     - CF S03
@@ -811,6 +894,10 @@ sessions:
   - Data/analyzer.ipynb
   - RESULTS.md
   pillars:
+    before:
+    - FM P02
+    - FM P03
+    - CF P04
     core:
     - CF S15
     - CF S16
@@ -872,6 +959,10 @@ sessions:
   - Experiments/Experiment_1/experiment_1.ipynb
   - RESULTS.md
   pillars:
+    before:
+    - FM P04
+    - MF P02
+    - CF P05
     core:
     - CF S06
     - FM S05
@@ -932,6 +1023,10 @@ sessions:
   - Experiments/Experiment_1/JOURNAL_1.md
   - RESULTS.md
   pillars:
+    before:
+    - FM P05
+    - MF P03
+    - MF P04
     core:
     - FM S02x
     - FM S08
@@ -988,6 +1083,10 @@ sessions:
   - Experiments/Experiment_1/JOURNAL_1.md
   - Experiments/Experiment_1/BLUEPRINT_1.md
   pillars:
+    before:
+    - MF P05
+    - MF P06
+    - CF P06
     core:
     - CF S07
     - FM S09x
