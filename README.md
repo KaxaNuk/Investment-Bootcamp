@@ -37,7 +37,7 @@ flowchart LR
     S02 --> S03["<b>S03</b><br/>Datos y<br/>variables"]
     S03 --> S04["<b>S04</b><br/>Hipótesis<br/>y portafolios"]
     S04 --> S05["<b>S05</b><br/>Backtest y<br/>atribución"]
-    S05 --> S06["<b>S06</b><br/>Paper trading:<br/>cuándo usarla"]
+    S05 --> S06["<b>S06</b><br/>Paper trading<br/>y pitch"]
     style S01 fill:#E84328,stroke:#E84328,color:#ffffff
     style S02 fill:#F2F0EB,stroke:#121110,color:#121110
     style S03 fill:#F2F0EB,stroke:#121110,color:#121110
