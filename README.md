@@ -18,7 +18,8 @@
 
 En seis sesiones construyes una estrategia de inversión y pruebas la idea correctamente, **desde
 una afirmación escrita hasta un veredicto por escrito**, con tu propio KaxaNuk Researcher a tu
-lado. La promesa es probar bien una idea, nunca mejores rendimientos.
+lado. La promesa es probar bien una idea, con cada cálculo y cada supuesto a la vista, nunca mejores
+rendimientos.
 
 El Bootcamp es el primero de los KaxaNuk Training Workshops, abierto a todos. Quien empieza se
 lleva una idea general del proceso de investigación y sus herramientas; quien ya sabe, las aprende
