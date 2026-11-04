@@ -21,6 +21,16 @@ Golden-Flow is the worked example, end to end.
 - **You need an AI assistant** to run your researcher: Claude Code on a paid plan, Codex, Cursor,
   Copilot CLI or Antigravity.
 
+## Open the slides
+
+GitHub shows an HTML file as code, not as slides, so download it first:
+
+1. Click the session's file in the list above, or its link in the table below.
+2. Click **Download raw file**, the download arrow at the top right of the file.
+3. Open the downloaded file with a double click. It opens in Chrome or Edge, with no internet
+   needed.
+4. Move with the arrow keys, a click or a presentation clicker. F11 shows it full screen.
+
 ## The six sessions
 
 | Session | What you do | What you leave with |
