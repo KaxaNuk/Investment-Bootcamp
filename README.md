@@ -18,7 +18,7 @@
 
 In six sessions you build one investment strategy and test the idea correctly, **from a written
 claim to a verdict in writing**, with your own KaxaNuk Researcher beside you. The promise is to
-test an idea well, never better returns.
+test an idea well, with every calculation and every assumption in the open, never better returns.
 
 The Bootcamp is the first of the KaxaNuk Training Workshops, open to everyone. A beginner leaves
 with a general idea of the research process and its tools; an advanced user learns them in full.
