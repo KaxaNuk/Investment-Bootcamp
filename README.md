@@ -20,6 +20,16 @@ a fondo. Golden-Flow es el ejemplo, de principio a fin.
 - **Necesitas un asistente de IA** para tu investigador: Claude Code con plan de pago, Codex,
   Cursor, Copilot CLI o Antigravity.
 
+## Abre las slides
+
+GitHub muestra un archivo HTML como código, no como slides, así que primero descárgalo:
+
+1. Haz clic en el archivo de la sesión, en la lista de arriba, o en su enlace en la tabla de abajo.
+2. Haz clic en **Download raw file**, la flecha de descarga arriba a la derecha del archivo.
+3. Abre el archivo descargado con doble clic. Se abre en Chrome o Edge, sin necesidad de internet.
+4. Avanza con las flechas del teclado, con un clic o con un clicker de presentación. F11 lo muestra
+   en pantalla completa.
+
 ## Las seis sesiones
 
 | Sesión | Qué haces | Con qué te vas |
