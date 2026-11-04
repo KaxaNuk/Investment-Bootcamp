@@ -8,7 +8,8 @@
 
 [![Sesiones: 6](https://img.shields.io/badge/sesiones-6-121110?style=for-the-badge)](#-las-seis-sesiones)
 [![En vivo: cada semana, 90 min](https://img.shields.io/badge/en%20vivo-cada%20semana%20·%2090%20min-121110?style=for-the-badge)](#-cómo-funciona)
-[![Abre la S01](https://img.shields.io/badge/abre-las%20slides%20de%20la%20S01-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)
+[![Slides de la S01: HTML](https://img.shields.io/badge/slides%20S01-HTML-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)
+[![Slides de la S01: PDF](https://img.shields.io/badge/slides%20S01-PDF-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf)
 [![Licencia: CC BY 4.0](https://img.shields.io/badge/licencia-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/deed.es)
 
 </div>
@@ -49,16 +50,18 @@ flowchart LR
 | | |
 | --- | --- |
 | 🎥 **En vivo** | Una sesión por semana, en línea, de 90 minutos |
-| 📥 **Las slides** | La presentación de cada sesión se publica aquí la semana en que se da, en un solo archivo HTML |
+| 📥 **Las slides** | La presentación de cada sesión se publica aquí la semana en que se da, en dos formatos: HTML, interactivo, y PDF, para leer o imprimir |
 | 🛤️ **Dos rutas** | Sin código, en el Investment Lab · o con código, en el KaxaNuk Strategy Template |
 | 🤖 **Tu asistente** | Claude Code con plan de pago · Codex · Cursor · Copilot CLI · Antigravity |
 
 ## 🖥️ Abre las slides
 
 > [!TIP]
-> GitHub muestra un archivo HTML como código, no como slides. **Descárgalo y luego ábrelo.**
+> **El PDF se abre aquí mismo en GitHub**: haz clic para leerlo. **El HTML es la presentación
+> interactiva**, con sus animaciones, y GitHub lo muestra como código, así que primero descárgalo.
 
-1. Haz clic en el archivo de la sesión, arriba en esta página, o en su enlace en la tabla de abajo.
+1. Haz clic en el archivo HTML de la sesión, arriba en esta página, o en su enlace en la tabla de
+   abajo.
 2. Haz clic en **Download raw file**, la flecha de descarga ⤓ arriba a la derecha del archivo.
 3. Abre el archivo descargado con doble clic. Se abre en **Chrome o Edge**, sin necesidad de
    internet.
@@ -69,7 +72,7 @@ flowchart LR
 
 | | Sesión | Qué haces | Con qué te vas |
 | :---: | --- | --- | --- |
-| 🟥 | [**S01 · Crea tu investigador y aprende a usar el Lab**](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)<br/>**Disponible** | Instalas tu investigador y lo entrenas con papers. Conoces el Investment Lab y ves cada parte de una estrategia en Golden-Flow. | Tu investigador, con nombre · tu primera nota citada · una idea que probar |
+| 🟥 | [**S01 · Crea tu investigador y aprende a usar el Lab**](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)<br/>**Disponible** · [HTML](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html) · [PDF](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf) | Instalas tu investigador y lo entrenas con papers. Conoces el Investment Lab y ves cada parte de una estrategia en Golden-Flow. | Tu investigador, con nombre · tu primera nota citada · una idea que probar |
 | ⬜ | **S02 · El objetivo de tu estrategia y el universo invertible**<br/>Semana 2 | Empiezas tu estrategia, escribes su objetivo y eliges primero su benchmark. Construyes el universo como era en cada fecha, con las empresas que dejaron de cotizar. | Tu repositorio · tu `OBJECTIVE.md` · tu universo |
 | ⬜ | **S03 · Obtención de datos e ingeniería de variables**<br/>Semana 3 | Descargas tus datos y construyes variables. Analizas una señal sola, antes de cualquier portafolio. | Tus datos · una señal que se queda o se va |
 | ⬜ | **S04 · Escribe tu hipótesis y construye los portafolios históricos**<br/>Semana 4 | Guardas una hipótesis refutable antes de la regla. Construyes portafolios históricos solo con lo que se sabía cada día. | Tu blueprint · tu regla y su control |
