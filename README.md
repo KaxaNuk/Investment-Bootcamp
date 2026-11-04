@@ -7,7 +7,7 @@
 **English** · [Español](https://github.com/KaxaNuk/Investment-Bootcamp/tree/spanish)
 
 [![Sessions: 6](https://img.shields.io/badge/sessions-6-121110?style=for-the-badge)](#-the-six-sessions)
-[![Live: weekly, 90 min](https://img.shields.io/badge/live-weekly%20·%2090%20min-121110?style=for-the-badge)](#-how-it-works)
+[![Live: weekly, 60 min](https://img.shields.io/badge/live-weekly%20·%2060%20min-121110?style=for-the-badge)](#-how-it-works)
 [![S01 slides: HTML](https://img.shields.io/badge/S01%20slides-HTML-E84328?style=for-the-badge)](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html)
 [![S01 slides: PDF](https://img.shields.io/badge/S01%20slides-PDF-E84328?style=for-the-badge)](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf)
 [![Licence: CC BY 4.0](https://img.shields.io/badge/licence-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/)
@@ -49,7 +49,7 @@ flowchart LR
 
 | | |
 | --- | --- |
-| 🎥 **Live** | One session a week, online, 90 minutes |
+| 🎥 **Live** | One session a week, online, 60 minutes |
 | 📥 **The slides** | Each session's deck is published here the week it is given, in two formats: HTML, interactive, and PDF, to read or print |
 | 🛤️ **Two tracks** | No code, in the Investment Lab · or code, on the KaxaNuk Strategy Template |
 | 🤖 **Your assistant** | Claude Code on a paid plan · Codex · Cursor · Copilot CLI · Antigravity |
