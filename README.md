@@ -10,6 +10,7 @@
 [![En vivo: cada semana, 60 min](https://img.shields.io/badge/en%20vivo-cada%20semana%20·%2060%20min-121110?style=for-the-badge)](#-cómo-funciona)
 [![Slides de la S01: HTML](https://img.shields.io/badge/slides%20S01-HTML-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)
 [![Slides de la S01: PDF](https://img.shields.io/badge/slides%20S01-PDF-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf)
+[![Video de la S01: YouTube](https://img.shields.io/badge/video%20S01-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/g_ETCXjbD0E)
 [![Licencia: CC BY 4.0](https://img.shields.io/badge/licencia-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/deed.es)
 
 </div>
@@ -26,8 +27,15 @@ lleva una idea general del proceso de investigación y sus herramientas; quien y
 a fondo. **Golden-Flow** es el ejemplo, de principio a fin.
 
 > [!IMPORTANT]
-> **La S01 es en vivo el miércoles 2026-11-04 a las 10:00, hora de la Ciudad de México.**
-> [Regístrate en Luma →](https://luma.com/houg6p99)
+> **Ya está la grabación de la S01.** Mírala con sus slides al lado.
+
+<div align="center">
+
+[![Mira la S01 en YouTube](https://img.youtube.com/vi/g_ETCXjbD0E/maxresdefault.jpg)](https://youtu.be/g_ETCXjbD0E)
+
+**[▶ Mira la S01 · Crea tu investigador y aprende a usar el Lab](https://youtu.be/g_ETCXjbD0E)**
+
+</div>
 
 ## 🗺️ El recorrido
 
@@ -50,7 +58,7 @@ flowchart LR
 
 | | |
 | --- | --- |
-| 🎥 **En vivo** | Una sesión por semana, en línea, de 60 minutos |
+| 🎥 **En vivo** | Una sesión por semana, en línea, de 60 minutos; después, su grabación se enlaza aquí |
 | 📥 **Las slides** | La presentación de cada sesión se publica aquí la semana en que se da, en dos formatos: HTML, interactivo, y PDF, para leer o imprimir |
 | 🛤️ **Dos rutas** | Sin código, en el Investment Lab · o con código, en el KaxaNuk Strategy Template |
 | 🤖 **Tu asistente** | Claude Code con plan de pago · Codex · Cursor · Copilot CLI · Antigravity |
@@ -73,7 +81,7 @@ flowchart LR
 
 | | Sesión | Qué haces | Con qué te vas |
 | :---: | --- | --- | --- |
-| 🟥 | [**S01 · Crea tu investigador y aprende a usar el Lab**](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)<br/>**Disponible** · [HTML](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html) · [PDF](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf) | Instalas tu investigador y lo entrenas con papers. Conoces el Investment Lab y ves cada parte de una estrategia en Golden-Flow. | Tu investigador, con nombre · tu primera nota citada · una idea que probar |
+| 🟥 | [**S01 · Crea tu investigador y aprende a usar el Lab**](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)<br/>**Disponible** · [Video](https://youtu.be/g_ETCXjbD0E) · [HTML](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html) · [PDF](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf) | Instalas tu investigador y lo entrenas con papers. Conoces el Investment Lab y ves cada parte de una estrategia en Golden-Flow. | Tu investigador, con nombre · tu primera nota citada · una idea que probar |
 | ⬜ | **S02 · El objetivo de tu estrategia y el universo invertible**<br/>Semana 2 | Empiezas tu estrategia, escribes su objetivo y eliges primero su benchmark. Construyes el universo como era en cada fecha, con las empresas que dejaron de cotizar. | Tu repositorio · tu `OBJECTIVE.md` · tu universo |
 | ⬜ | **S03 · Obtención de datos e ingeniería de variables**<br/>Semana 3 | Descargas tus datos y construyes variables. Analizas una señal sola, antes de cualquier portafolio. | Tus datos · una señal que se queda o se va |
 | ⬜ | **S04 · Escribe tu hipótesis y construye los portafolios históricos**<br/>Semana 4 | Guardas una hipótesis refutable antes de la regla. Construyes portafolios históricos solo con lo que se sabía cada día. | Tu blueprint · tu regla y su control |
