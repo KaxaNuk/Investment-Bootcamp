@@ -13,6 +13,7 @@
 [![S02 slides: HTML](https://img.shields.io/badge/S02%20slides-HTML-E84328?style=for-the-badge)](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)
 [![S02 slides: PDF](https://img.shields.io/badge/S02%20slides-PDF-E84328?style=for-the-badge)](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf)
 [![S01 video: YouTube](https://img.shields.io/badge/S01%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/g_ETCXjbD0E)
+[![S02 video: YouTube](https://img.shields.io/badge/S02%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rdh02OIDZvE)
 [![Licence: CC BY 4.0](https://img.shields.io/badge/licence-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/)
 
 </div>
@@ -28,14 +29,16 @@ with a general idea of the research process and its tools; an advanced user lear
 **Golden-Flow** is the worked example, end to end.
 
 > [!IMPORTANT]
-> **S02's slides are out, *From Idea to Signal*,** for the live session of 2026-11-11. And
-> S01's recording is out, in Spanish: watch it with its slides beside you.
+> **S02's recording is out, *From Idea to Signal*,** in Spanish. Watch it with its slides
+> beside you.
 
 <div align="center">
 
-[![Watch S01 on YouTube](https://img.youtube.com/vi/g_ETCXjbD0E/maxresdefault.jpg)](https://youtu.be/g_ETCXjbD0E)
+[![Watch S02 on YouTube](https://img.youtube.com/vi/rdh02OIDZvE/maxresdefault.jpg)](https://youtu.be/rdh02OIDZvE)
 
-**[▶ Watch S01 · Create Your Researcher and Learn to Use the Lab](https://youtu.be/g_ETCXjbD0E)**
+**[▶ Watch S02 · From Idea to Signal: Objective, Universe and Data](https://youtu.be/rdh02OIDZvE)**
+
+[▶ Watch S01 · Create Your Researcher and Learn to Use the Lab](https://youtu.be/g_ETCXjbD0E)
 
 </div>
 
@@ -80,7 +83,7 @@ flowchart LR
 | | Session | What you do | You leave with |
 | :---: | --- | --- | --- |
 | 🟥 | [**S01 · Create Your Researcher and Learn to Use the Lab**](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html)<br/>**Available** · [Video](https://youtu.be/g_ETCXjbD0E) · [HTML](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html) · [PDF](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf) | Install your researcher and train it with papers. Meet the Investment Lab, and see each part of a strategy on Golden-Flow. | Your researcher, named · your first cited note · an idea to test |
-| 🟥 | [**S02 · From Idea to Signal: Objective, Universe and Data**](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)<br/>**Available** · [HTML](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html) · [PDF](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf) | Write your strategy's idea and its claims, with papers for and against. Build its universe with the dead stocks kept, download the data and analyze your signal before any portfolio. | Your `OBJECTIVE.md` · your universe · your data · your signal, analyzed |
+| 🟥 | [**S02 · From Idea to Signal: Objective, Universe and Data**](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)<br/>**Available** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html) · [PDF](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf) | Write your strategy's idea and its claims, with papers for and against. Build its universe with the dead stocks kept, download the data and analyze your signal before any portfolio. | Your `OBJECTIVE.md` · your universe · your data · your signal, analyzed |
 | ⬜ | **S03 · Write Your Hypothesis and Build the Historical Portfolios**<br/>Week 3 | Save a refutable hypothesis before the rule. Build historical books with only what was known each day. | Your blueprint · your rule and its control |
 | ⬜ | **S04 · Simulate Your Books and Attribute Their Return**<br/>Week 4 | Backtest net of costs against the KN US Equity Core and SPY. Attribute every point to factors and sectors. | Your track record · where its return came from |
 | ⬜ | **S05 · Ready for Paper Trading? Validate, Freeze and Present**<br/>Week 5 | Analyze a strategy over the whole window, by period and by factor. Decide when to use it, at discretion or by a rule, and freeze it for paper trading. | Your verdict, in writing · your frozen book |
