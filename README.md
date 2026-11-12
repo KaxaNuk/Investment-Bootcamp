@@ -13,6 +13,7 @@
 [![Slides de la S02: HTML](https://img.shields.io/badge/slides%20S02-HTML-E84328?style=for-the-badge)](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html)
 [![Slides de la S02: PDF](https://img.shields.io/badge/slides%20S02-PDF-E84328?style=for-the-badge)](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.pdf)
 [![Video de la S01: YouTube](https://img.shields.io/badge/video%20S01-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/g_ETCXjbD0E)
+[![Video de la S02: YouTube](https://img.shields.io/badge/video%20S02-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rdh02OIDZvE)
 [![Licencia: CC BY 4.0](https://img.shields.io/badge/licencia-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/deed.es)
 
 </div>
@@ -29,14 +30,15 @@ lleva una idea general del proceso de investigación y sus herramientas; quien y
 a fondo. **Golden-Flow** es el ejemplo, de principio a fin.
 
 > [!IMPORTANT]
-> **Ya están las slides de la S02, *De la idea a la señal*,** para la sesión en vivo del
-> 2026-11-11. Y ya está la grabación de la S01: mírala con sus slides al lado.
+> **Ya está la grabación de la S02, *De la idea a la señal*.** Mírala con sus slides al lado.
 
 <div align="center">
 
-[![Mira la S01 en YouTube](https://img.youtube.com/vi/g_ETCXjbD0E/maxresdefault.jpg)](https://youtu.be/g_ETCXjbD0E)
+[![Mira la S02 en YouTube](https://img.youtube.com/vi/rdh02OIDZvE/maxresdefault.jpg)](https://youtu.be/rdh02OIDZvE)
 
-**[▶ Mira la S01 · Crea tu investigador y aprende a usar el Lab](https://youtu.be/g_ETCXjbD0E)**
+**[▶ Mira la S02 · De la idea a la señal: objetivo, universo y datos](https://youtu.be/rdh02OIDZvE)**
+
+[▶ Mira la S01 · Crea tu investigador y aprende a usar el Lab](https://youtu.be/g_ETCXjbD0E)
 
 </div>
 
@@ -83,7 +85,7 @@ flowchart LR
 | | Sesión | Qué haces | Con qué te vas |
 | :---: | --- | --- | --- |
 | 🟥 | [**S01 · Crea tu investigador y aprende a usar el Lab**](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)<br/>**Disponible** · [Video](https://youtu.be/g_ETCXjbD0E) · [HTML](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html) · [PDF](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf) | Instalas tu investigador y lo entrenas con papers. Conoces el Investment Lab y ves cada parte de una estrategia en Golden-Flow. | Tu investigador, con nombre · tu primera nota citada · una idea que probar |
-| 🟥 | [**S02 · De la idea a la señal: objetivo, universo y datos**](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html)<br/>**Disponible** · [HTML](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html) · [PDF](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.pdf) | Escribes la idea de tu estrategia y sus afirmaciones, con papers a favor y en contra. Construyes su universo con las empresas que dejaron de cotizar, descargas los datos y analizas tu señal antes de cualquier portafolio. | Tu `OBJECTIVE.md` · tu universo · tus datos · tu señal analizada |
+| 🟥 | [**S02 · De la idea a la señal: objetivo, universo y datos**](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html)<br/>**Disponible** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html) · [PDF](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.pdf) | Escribes la idea de tu estrategia y sus afirmaciones, con papers a favor y en contra. Construyes su universo con las empresas que dejaron de cotizar, descargas los datos y analizas tu señal antes de cualquier portafolio. | Tu `OBJECTIVE.md` · tu universo · tus datos · tu señal analizada |
 | ⬜ | **S03 · Escribe tu hipótesis y construye los portafolios históricos**<br/>Semana 3 | Guardas una hipótesis refutable antes de la regla. Construyes portafolios históricos solo con lo que se sabía cada día. | Tu blueprint · tu regla y su control |
 | ⬜ | **S04 · Simula tus portafolios y atribuye su rendimiento**<br/>Semana 4 | Haces el backtest neto de costos contra el KN US Equity Core y SPY. Atribuyes cada punto a factores y sectores. | Tu historial · de dónde vino su rendimiento |
 | ⬜ | **S05 · ¿Lista para paper trading? Valida, congela y presenta**<br/>Semana 5 | Analizas una estrategia en toda la ventana, por periodo y por factor. Decides cuándo usarla, a discreción o con una regla, y la congelas para paper trading. | Tu veredicto, por escrito · tu portafolio congelado |
