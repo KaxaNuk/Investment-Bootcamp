@@ -16,6 +16,7 @@
 [![S03 slides: PDF](https://img.shields.io/badge/S03%20slides-PDF-E84328?style=for-the-badge)](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf)
 [![S01 video: YouTube](https://img.shields.io/badge/S01%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/g_ETCXjbD0E)
 [![S02 video: YouTube](https://img.shields.io/badge/S02%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rdh02OIDZvE)
+[![S03 video: YouTube](https://img.shields.io/badge/S03%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rT40-64VxgI?t=522)
 [![Licence: CC BY 4.0](https://img.shields.io/badge/licence-CC%20BY%204.0-F2F0EB?style=for-the-badge&labelColor=121110)](https://creativecommons.org/licenses/by/4.0/)
 
 </div>
@@ -31,14 +32,16 @@ with a general idea of the research process and its tools; an advanced user lear
 **Golden-Flow** is the worked example, end to end.
 
 > [!IMPORTANT]
-> **S03's slides are out, *Write Your Hypothesis and Build the Historical Portfolios*.** And
-> S02's recording is out, in Spanish: watch it with its slides beside you.
+> **S03's recording is out, *Write Your Hypothesis and Build the Historical Portfolios*,** in
+> Spanish. Watch it with its slides beside you.
 
 <div align="center">
 
-[![Watch S02 on YouTube](https://img.youtube.com/vi/rdh02OIDZvE/maxresdefault.jpg)](https://youtu.be/rdh02OIDZvE)
+[![Watch S03 on YouTube](https://img.youtube.com/vi/rT40-64VxgI/maxresdefault.jpg)](https://youtu.be/rT40-64VxgI?t=522)
 
-**[▶ Watch S02 · From Idea to Signal: Objective, Universe and Data](https://youtu.be/rdh02OIDZvE)**
+**[▶ Watch S03 · Write Your Hypothesis and Build the Historical Portfolios](https://youtu.be/rT40-64VxgI?t=522)**
+
+[▶ Watch S02 · From Idea to Signal: Objective, Universe and Data](https://youtu.be/rdh02OIDZvE)
 
 [▶ Watch S01 · Create Your Researcher and Learn to Use the Lab](https://youtu.be/g_ETCXjbD0E)
 
@@ -86,7 +89,7 @@ flowchart LR
 | :---: | --- | --- | --- |
 | 🟥 | [**S01 · Create Your Researcher and Learn to Use the Lab**](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html)<br/>**Available** · [Video](https://youtu.be/g_ETCXjbD0E) · [HTML](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html) · [PDF](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf) | Install your researcher and train it with papers. Meet the Investment Lab, and see each part of a strategy on Golden-Flow. | Your researcher, named · your first cited note · an idea to test |
 | 🟥 | [**S02 · From Idea to Signal: Objective, Universe and Data**](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)<br/>**Available** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html) · [PDF](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf) | Write your strategy's idea and its claims, with papers for and against. Build its universe with the dead stocks kept, download the data and analyze your signal before any portfolio. | Your `OBJECTIVE.md` · your universe · your data · your signal, analyzed |
-| 🟥 | [**S03 · Write Your Hypothesis and Build the Historical Portfolios**](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html)<br/>**Available** · [HTML](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html) · [PDF](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf) | Write your experiment 1 hypothesis before the rule. Build your historical books with what was known each day: point in time, corporate events and sectors. | Your blueprint · your rule and its control · your books |
+| 🟥 | [**S03 · Write Your Hypothesis and Build the Historical Portfolios**](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html)<br/>**Available** · [Video](https://youtu.be/rT40-64VxgI?t=522) · [HTML](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html) · [PDF](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf) | Write your experiment 1 hypothesis before the rule. Build your historical books with what was known each day: point in time, corporate events and sectors. | Your blueprint · your rule and its control · your books |
 | ⬜ | **S04 · Simulate Your Books and Attribute Their Return**<br/>Week 4 | Backtest net of costs against the KN US Equity Core and SPY. Attribute every point to factors and sectors. | Your track record · where its return came from |
 | ⬜ | **S05 · Ready for Paper Trading? Validate, Freeze and Present**<br/>Week 5 | Analyze a strategy over the whole window, by period and by factor. Decide when to use it, at discretion or by a rule, and freeze it for paper trading. | Your verdict, in writing · your frozen book |
 
