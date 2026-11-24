@@ -36,9 +36,11 @@ US-Golden-Flow; `init-example` copies the version the KaxaNuk Researcher ships, 
 its own.
 
 > [!IMPORTANT]
-> **S04's slides are out:** *Simulate Your Books: the Backtest, Net of Costs*. S01 to S03 are
-> updated too: their figures now come from Golden-Flow rebuilt on the Lab. And S03's recording
-> is out, in Spanish: watch it with its slides beside you.
+> **The Bootcamp now has six sessions:** S05 is attribution, and S06 paper trading and your
+> strategy's pitch. **S04's slides are out:** *Simulate Your Books: the Backtest, Net of Costs*. S01
+> to S03 are updated too: their figures come from Golden-Flow rebuilt on the Lab, and each session
+> names its library's documentation. S03's recording is out, in Spanish: watch it with its slides
+> beside you.
 
 <div align="center">
 
