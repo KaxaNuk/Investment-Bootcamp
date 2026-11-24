@@ -37,9 +37,11 @@ Lab, US-Golden-Flow; `init-example` copia la versión que distribuye el KaxaNuk 
 propias cifras.
 
 > [!IMPORTANT]
-> **Ya están las slides de la S04:** *Simula tus portafolios: el backtest, neto de costos*. La
-> S01, la S02 y la S03 también se actualizaron: sus cifras ahora vienen de Golden-Flow
-> reconstruido en el Lab. Y ya está la grabación de la S03: mírala con sus slides al lado.
+> **El Bootcamp ahora tiene seis sesiones:** la S05 es la atribución, y la S06 el paper trading
+> y el pitch de tu estrategia. **Ya están las slides de la S04:** *Simula tus portafolios: el
+> backtest, neto de costos*. La S01, la S02 y la S03 también se actualizaron: sus cifras vienen de
+> Golden-Flow reconstruido en el Lab, y cada sesión nombra la documentación de su librería. Ya está
+> la grabación de la S03: mírala con sus slides al lado.
 
 <div align="center">
 
