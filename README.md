@@ -14,6 +14,8 @@
 [![S02 slides: PDF](https://img.shields.io/badge/S02%20slides-PDF-E84328?style=for-the-badge)](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf)
 [![S03 slides: HTML](https://img.shields.io/badge/S03%20slides-HTML-E84328?style=for-the-badge)](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html)
 [![S03 slides: PDF](https://img.shields.io/badge/S03%20slides-PDF-E84328?style=for-the-badge)](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf)
+[![S04 slides: HTML](https://img.shields.io/badge/S04%20slides-HTML-E84328?style=for-the-badge)](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.html)
+[![S04 slides: PDF](https://img.shields.io/badge/S04%20slides-PDF-E84328?style=for-the-badge)](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.pdf)
 [![S01 video: YouTube](https://img.shields.io/badge/S01%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/g_ETCXjbD0E)
 [![S02 video: YouTube](https://img.shields.io/badge/S02%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rdh02OIDZvE)
 [![S03 video: YouTube](https://img.shields.io/badge/S03%20video-YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtu.be/rT40-64VxgI?t=522)
@@ -29,11 +31,14 @@ test an idea well, with every calculation and every assumption in the open, neve
 
 The Bootcamp is the first of the KaxaNuk Training Workshops, open to everyone. A beginner leaves
 with a general idea of the research process and its tools; an advanced user learns them in full.
-**Golden-Flow** is the worked example, end to end.
+**Golden-Flow** is the worked example, end to end. The slides quote it rebuilt on the Lab,
+US-Golden-Flow; `init-example` copies the version the KaxaNuk Researcher ships, with figures of
+its own.
 
 > [!IMPORTANT]
-> **S03's recording is out, *Write Your Hypothesis and Build the Historical Portfolios*,** in
-> Spanish. Watch it with its slides beside you.
+> **S04's slides are out, *Simulate Your Books: the Backtest, Net of Costs*.** S01 to S03 are
+> updated too: their figures now come from Golden-Flow rebuilt on the Lab. And S03's recording
+> is out, in Spanish: watch it with its slides beside you.
 
 <div align="center">
 
@@ -53,12 +58,12 @@ with a general idea of the research process and its tools; an advanced user lear
 flowchart LR
     S01["<b>S01</b><br/>Your researcher<br/>and the Lab"] --> S02["<b>S02</b><br/>From idea<br/>to signal"]
     S02 --> S03["<b>S03</b><br/>Hypothesis<br/>and portfolios"]
-    S03 --> S04["<b>S04</b><br/>Backtest and<br/>attribution"]
-    S04 --> S05["<b>S05</b><br/>Paper trading<br/>and pitch"]
+    S03 --> S04["<b>S04</b><br/>The backtest,<br/>net of costs"]
+    S04 --> S05["<b>S05</b><br/>Attribution<br/>and verdict"]
     style S01 fill:#E84328,stroke:#E84328,color:#ffffff
     style S02 fill:#E84328,stroke:#E84328,color:#ffffff
     style S03 fill:#E84328,stroke:#E84328,color:#ffffff
-    style S04 fill:#F2F0EB,stroke:#121110,color:#121110
+    style S04 fill:#E84328,stroke:#E84328,color:#ffffff
     style S05 fill:#F2F0EB,stroke:#121110,color:#121110
 ```
 
@@ -90,12 +95,12 @@ flowchart LR
 | 🟥 | [**S01 · Create Your Researcher and Learn to Use the Lab**](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html)<br/>**Available** · [Video](https://youtu.be/g_ETCXjbD0E) · [HTML](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html) · [PDF](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf) | Install your researcher and train it with papers. Meet the Investment Lab, and see each part of a strategy on Golden-Flow. | Your researcher, named · your first cited note · an idea to test |
 | 🟥 | [**S02 · From Idea to Signal: Objective, Universe and Data**](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)<br/>**Available** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html) · [PDF](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf) | Write your strategy's idea and its claims, with papers for and against. Build its universe with the dead stocks kept, download the data and analyze your signal before any portfolio. | Your `OBJECTIVE.md` · your universe · your data · your signal, analyzed |
 | 🟥 | [**S03 · Write Your Hypothesis and Build the Historical Portfolios**](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html)<br/>**Available** · [Video](https://youtu.be/rT40-64VxgI?t=522) · [HTML](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html) · [PDF](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf) | Write your experiment 1 hypothesis before the rule. Build your historical books with what was known each day: point in time, corporate events and sectors. | Your blueprint · your rule and its control · your books |
-| ⬜ | **S04 · Simulate Your Books and Attribute Their Return**<br/>Week 4 | Backtest net of costs against the KN US Equity Core and SPY. Attribute every point to factors and sectors. | Your track record · where its return came from |
-| ⬜ | **S05 · Ready for Paper Trading? Validate, Freeze and Present**<br/>Week 5 | Analyze a strategy over the whole window, by period and by factor. Decide when to use it, at discretion or by a rule, and freeze it for paper trading. | Your verdict, in writing · your frozen book |
+| 🟥 | [**S04 · Simulate Your Books: the Backtest, Net of Costs**](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.html)<br/>**Available** · [HTML](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.html) · [PDF](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.pdf) | Turn your books into a track record with the Backtest Engine, net of costs, against your control, the KN US Equity Core and SPY. Read it by period, and take a first look at factor models. | Your track record · your `FINDINGS_1.md` |
+| ⬜ | **S05 · Attribute Its Return and Decide: Ready for Paper Trading?**<br/>Week 5 | Attribute every point to factors and sectors. Judge the strategy over the whole window and by period, and decide whether it has earned paper trading. | Where its return came from · your verdict, in writing |
 
 ## 💬 Questions
 
-Ask your researcher first: say *"I'm on Bootcamp S03"*. Then write to
+Ask your researcher first: say *"I'm on Bootcamp S04"*. Then write to
 [workshops@kaxanuk.mx](mailto:workshops@kaxanuk.mx).
 
 ---
