@@ -6,7 +6,7 @@
 
 [English](https://github.com/KaxaNuk/Investment-Bootcamp/tree/english) · **Español**
 
-[![Sesiones: 5](https://img.shields.io/badge/sesiones-5-121110?style=for-the-badge)](#-las-cinco-sesiones)
+[![Sesiones: 6](https://img.shields.io/badge/sesiones-6-121110?style=for-the-badge)](#-las-seis-sesiones)
 [![En vivo: cada semana, 60 min](https://img.shields.io/badge/en%20vivo-cada%20semana%20·%2060%20min-121110?style=for-the-badge)](#-cómo-funciona)
 [![Slides de la S01: HTML](https://img.shields.io/badge/slides%20S01-HTML-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.html)
 [![Slides de la S01: PDF](https://img.shields.io/badge/slides%20S01-PDF-E84328?style=for-the-badge)](S01%20Crea%20tu%20investigador%20y%20aprende%20a%20usar%20el%20Lab.pdf)
@@ -25,7 +25,7 @@
 
 ---
 
-En cinco sesiones construyes una estrategia de inversión y pruebas la idea correctamente, **desde
+En seis sesiones construyes una estrategia de inversión y pruebas la idea correctamente, **desde
 una afirmación escrita hasta un veredicto por escrito**, con tu propio KaxaNuk Researcher a tu
 lado. La promesa es probar bien una idea, con cada cálculo y cada supuesto a la vista, nunca mejores
 rendimientos.
@@ -60,12 +60,14 @@ flowchart LR
     S01["<b>S01</b><br/>Tu investigador<br/>y el Lab"] --> S02["<b>S02</b><br/>De la idea<br/>a la señal"]
     S02 --> S03["<b>S03</b><br/>Hipótesis<br/>y portafolios"]
     S03 --> S04["<b>S04</b><br/>El backtest,<br/>neto de costos"]
-    S04 --> S05["<b>S05</b><br/>Atribución<br/>y veredicto"]
+    S04 --> S05["<b>S05</b><br/>De dónde vino<br/>el rendimiento"]
+    S05 --> S06["<b>S06</b><br/>Paper trading<br/>y pitch"]
     style S01 fill:#E84328,stroke:#E84328,color:#ffffff
     style S02 fill:#E84328,stroke:#E84328,color:#ffffff
     style S03 fill:#E84328,stroke:#E84328,color:#ffffff
     style S04 fill:#E84328,stroke:#E84328,color:#ffffff
     style S05 fill:#F2F0EB,stroke:#121110,color:#121110
+    style S06 fill:#F2F0EB,stroke:#121110,color:#121110
 ```
 
 ## 📅 Cómo funciona
@@ -91,7 +93,7 @@ flowchart LR
 4. Avanza con las **flechas del teclado**, con un **clic** o con un **clicker de presentación**.
    **F11** lo muestra en pantalla completa.
 
-## 📚 Las cinco sesiones
+## 📚 Las seis sesiones
 
 | | Sesión | Qué haces | Con qué te vas |
 | :---: | --- | --- | --- |
@@ -99,7 +101,8 @@ flowchart LR
 | 🟥 | [**S02 · De la idea a la señal: objetivo, universo y datos**](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html)<br/>**Disponible** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.html) · [PDF](S02%20De%20la%20idea%20a%20la%20se%C3%B1al%20-%20objetivo%2C%20universo%20y%20datos.pdf) | Escribes la idea de tu estrategia y sus afirmaciones, con papers a favor y en contra. Construyes su universo con las empresas que dejaron de cotizar, descargas los datos y analizas tu señal antes de cualquier portafolio. | Tu `OBJECTIVE.md` · tu universo · tus datos · tu señal analizada |
 | 🟥 | [**S03 · Escribe tu hipótesis y construye los portafolios históricos**](S03%20Escribe%20tu%20hip%C3%B3tesis%20y%20construye%20los%20portafolios%20hist%C3%B3ricos.html)<br/>**Disponible** · [Video](https://youtu.be/rT40-64VxgI?t=522) · [HTML](S03%20Escribe%20tu%20hip%C3%B3tesis%20y%20construye%20los%20portafolios%20hist%C3%B3ricos.html) · [PDF](S03%20Escribe%20tu%20hip%C3%B3tesis%20y%20construye%20los%20portafolios%20hist%C3%B3ricos.pdf) | Escribes la hipótesis de tu experimento 1 antes de la regla. Construyes tus portafolios históricos con lo que se sabía cada día: point in time, eventos corporativos y sectores. | Tu blueprint · tu regla y su control · tus portafolios |
 | 🟥 | [**S04 · Simula tus portafolios: el backtest, neto de costos**](S04%20Simula%20tus%20portafolios%20-%20el%20backtest%2C%20neto%20de%20costos.html)<br/>**Disponible** · [HTML](S04%20Simula%20tus%20portafolios%20-%20el%20backtest%2C%20neto%20de%20costos.html) · [PDF](S04%20Simula%20tus%20portafolios%20-%20el%20backtest%2C%20neto%20de%20costos.pdf) | Conviertes tus portafolios en un historial con el Backtest Engine, neto de costos, contra tu control, el KN US Equity Core y SPY. Lo lees por periodo y das un primer vistazo a los modelos de factores. | Tu historial · tu `FINDINGS_1.md` |
-| ⬜ | **S05 · Atribuye su rendimiento y decídelo: ¿lista para paper trading?**<br/>Semana 5 | Atribuyes cada punto a factores y sectores. Juzgas la estrategia en toda la ventana y por periodo, y decides si se ganó el paper trading. | De dónde vino su rendimiento · tu veredicto, por escrito |
+| ⬜ | **S05 · Atribuye su rendimiento: de dónde vino**<br/>Semana 5 | Repartes tu historial por sector y por factor contra el KN US Equity Core: lo que pagó el mercado, y lo que es propio de tu regla. | De dónde vino su rendimiento · tu `RESULTS.md` |
+| ⬜ | **S06 · Paper trading y el pitch de tu estrategia**<br/>Semana 6 | Lees tu estrategia contra el filtro, en dos capas, y aprendes cómo se congela un portafolio y se corre en papel. La presentas en tu propia presentación. | Tu veredicto, por escrito · tu pitch |
 
 ## 💬 Preguntas
 
