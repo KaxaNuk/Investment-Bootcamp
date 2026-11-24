@@ -40,7 +40,7 @@ propias cifras.
 > **El Bootcamp ahora tiene seis sesiones:** la S05 es la atribución, y la S06 el paper trading
 > y el pitch de tu estrategia. **Ya están las slides de la S04:** *Simula tus portafolios: el
 > backtest, neto de costos*. La S01, la S02 y la S03 también se actualizaron: sus cifras vienen de
-> Golden-Flow reconstruido en el Lab, y cada sesión nombra la documentación de su librería. Ya está
+> Golden-Flow reconstruido en el Lab. Ya está
 > la grabación de la S03: mírala con sus slides al lado.
 
 <div align="center">
@@ -188,10 +188,9 @@ herramientas son opciones, y tus archivos son los mismos con cualquiera.
 
 Yahoo Finance no tiene estados financieros, VWAP ni precios sin ajustar, así que un backtest con
 sus datos es impreciso. Desde la S04 las dos rutas usan los motores del Investment Lab; sin
-licencia, sigues de la S04 a la S06 con las cifras de las sesiones. Cada librería documenta su
-método: [Data Curator](https://kaxanuk-data-curator.readthedocs.io/en/latest/),
-[Backtest Engine](https://kaxanuk-backtest-engine.readthedocs-hosted.com/en/latest/),
-[Attribution Analysis](https://kaxanuk-attribution-analysis.readthedocs-hosted.com/en/latest/).
+licencia, sigues de la S04 a la S06 con las cifras de las sesiones. El Data Curator, de código
+abierto, documenta su método en
+[kaxanuk-data-curator.readthedocs.io](https://kaxanuk-data-curator.readthedocs.io/en/latest/).
 Los precios cambian: revisa cada página antes de pagar.
 
 ## El día de presentación y la evaluación
