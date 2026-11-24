@@ -6,7 +6,7 @@
 
 **English** · [Español](https://github.com/KaxaNuk/Investment-Bootcamp/tree/spanish)
 
-[![Sessions: 5](https://img.shields.io/badge/sessions-5-121110?style=for-the-badge)](#-the-five-sessions)
+[![Sessions: 6](https://img.shields.io/badge/sessions-6-121110?style=for-the-badge)](#-the-six-sessions)
 [![Live: weekly, 60 min](https://img.shields.io/badge/live-weekly%20·%2060%20min-121110?style=for-the-badge)](#-how-it-works)
 [![S01 slides: HTML](https://img.shields.io/badge/S01%20slides-HTML-E84328?style=for-the-badge)](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.html)
 [![S01 slides: PDF](https://img.shields.io/badge/S01%20slides-PDF-E84328?style=for-the-badge)](S01%20Create%20Your%20Researcher%20and%20Learn%20to%20Use%20the%20Lab.pdf)
@@ -25,7 +25,7 @@
 
 ---
 
-In five sessions you build one investment strategy and test the idea correctly, **from a written
+In six sessions you build one investment strategy and test the idea correctly, **from a written
 claim to a verdict in writing**, with your own KaxaNuk Researcher beside you. The promise is to
 test an idea well, with every calculation and every assumption in the open, never better returns.
 
@@ -59,12 +59,14 @@ flowchart LR
     S01["<b>S01</b><br/>Your researcher<br/>and the Lab"] --> S02["<b>S02</b><br/>From idea<br/>to signal"]
     S02 --> S03["<b>S03</b><br/>Hypothesis<br/>and portfolios"]
     S03 --> S04["<b>S04</b><br/>The backtest,<br/>net of costs"]
-    S04 --> S05["<b>S05</b><br/>Attribution<br/>and verdict"]
+    S04 --> S05["<b>S05</b><br/>Where the return<br/>came from"]
+    S05 --> S06["<b>S06</b><br/>Paper trading<br/>and pitch"]
     style S01 fill:#E84328,stroke:#E84328,color:#ffffff
     style S02 fill:#E84328,stroke:#E84328,color:#ffffff
     style S03 fill:#E84328,stroke:#E84328,color:#ffffff
     style S04 fill:#E84328,stroke:#E84328,color:#ffffff
     style S05 fill:#F2F0EB,stroke:#121110,color:#121110
+    style S06 fill:#F2F0EB,stroke:#121110,color:#121110
 ```
 
 ## 📅 How it works
@@ -88,7 +90,7 @@ flowchart LR
 4. Move with the **arrow keys**, a **click** or a **presentation clicker**. **F11** shows it full
    screen.
 
-## 📚 The five sessions
+## 📚 The six sessions
 
 | | Session | What you do | You leave with |
 | :---: | --- | --- | --- |
@@ -96,7 +98,8 @@ flowchart LR
 | 🟥 | [**S02 · From Idea to Signal: Objective, Universe and Data**](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html)<br/>**Available** · [Video](https://youtu.be/rdh02OIDZvE) · [HTML](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.html) · [PDF](S02%20From%20Idea%20to%20Signal%20-%20Objective%2C%20Universe%20and%20Data.pdf) | Write your strategy's idea and its claims, with papers for and against. Build its universe with the dead stocks kept, download the data and analyze your signal before any portfolio. | Your `OBJECTIVE.md` · your universe · your data · your signal, analyzed |
 | 🟥 | [**S03 · Write Your Hypothesis and Build the Historical Portfolios**](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html)<br/>**Available** · [Video](https://youtu.be/rT40-64VxgI?t=522) · [HTML](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.html) · [PDF](S03%20Write%20Your%20Hypothesis%20and%20Build%20the%20Historical%20Portfolios.pdf) | Write your experiment 1 hypothesis before the rule. Build your historical books with what was known each day: point in time, corporate events and sectors. | Your blueprint · your rule and its control · your books |
 | 🟥 | [**S04 · Simulate Your Books: the Backtest, Net of Costs**](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.html)<br/>**Available** · [HTML](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.html) · [PDF](S04%20Simulate%20Your%20Books%20-%20the%20Backtest%2C%20Net%20of%20Costs.pdf) | Turn your books into a track record with the Backtest Engine, net of costs, against your control, the KN US Equity Core and SPY. Read it by period, and take a first look at factor models. | Your track record · your `FINDINGS_1.md` |
-| ⬜ | **S05 · Attribute Its Return and Decide: Ready for Paper Trading?**<br/>Week 5 | Attribute every point to factors and sectors. Judge the strategy over the whole window and by period, and decide whether it has earned paper trading. | Where its return came from · your verdict, in writing |
+| ⬜ | **S05 · Attribute Its Return: Where It Came From**<br/>Week 5 | Split your track record by sector and by factor against the KN US Equity Core: what the market paid, and what is your rule's own. | Where its return came from · your `RESULTS.md` |
+| ⬜ | **S06 · Paper Trading and Your Strategy's Pitch**<br/>Week 6 | Read your strategy against the gate, in two layers, and learn how a book is frozen and run on paper. Present it in your own deck. | Your verdict, in writing · your pitch |
 
 ## 💬 Questions
 
