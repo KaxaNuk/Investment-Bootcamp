@@ -38,8 +38,7 @@ its own.
 > [!IMPORTANT]
 > **The Bootcamp now has six sessions:** S05 is attribution, and S06 paper trading and your
 > strategy's pitch. **S04's slides are out:** *Simulate Your Books: the Backtest, Net of Costs*. S01
-> to S03 are updated too: their figures come from Golden-Flow rebuilt on the Lab, and each session
-> names its library's documentation. S03's recording is out, in Spanish: watch it with its slides
+> to S03 are updated too: their figures come from Golden-Flow rebuilt on the Lab. S03's recording is out, in Spanish: watch it with its slides
 > beside you.
 
 <div align="center">
@@ -185,10 +184,8 @@ tools are choices, and your files stay the same whichever you choose.
 
 Yahoo Finance has no fundamentals, no VWAP and no unadjusted prices, so a backtest on it is
 imprecise. From S04 both tracks use the Investment Lab's engines; without a licence, you follow S04
-to S06 on the sessions' own figures. Each library documents its method:
-[Data Curator](https://kaxanuk-data-curator.readthedocs.io/en/latest/),
-[Backtest Engine](https://kaxanuk-backtest-engine.readthedocs-hosted.com/en/latest/),
-[Attribution Analysis](https://kaxanuk-attribution-analysis.readthedocs-hosted.com/en/latest/).
+to S06 on the sessions' own figures. The Data Curator, open source, documents its method at
+[kaxanuk-data-curator.readthedocs.io](https://kaxanuk-data-curator.readthedocs.io/en/latest/).
 Prices change: check each page before you pay.
 
 ## Presentation day and assessment
